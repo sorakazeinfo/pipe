@@ -1,0 +1,23 @@
+.pp-contract {
+	counter-reset: section;
+
+	.pp-contract__part-heading,
+	.pp-contract__chapter-heading {
+		padding: 0.5rem 0;
+
+		&:before {
+			content : counter(section) '. ';
+			counter-increment : section;
+		}
+	}
+
+	.pp-contract__list {
+		line-height: 1.8;
+	}
+
+	.pp-contract__number-list {
+		line-height: 1.8;
+		list-style-type: decimal;
+		padding-inline-start: calc(40px / 1.6);
+	}
+}

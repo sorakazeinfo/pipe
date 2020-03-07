@@ -1,0 +1,55 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	color: $color-black;
+	font-family: "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "Hiragino Sans", -apple-system, BlinkMacSystemFont, "Meiryo", system-ui, sans-serif;
+	scroll-behavior: smooth;
+}
+
+body, h1, h2, h3, h4, h5, h6, ul, ol, li, select {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	border: 0;
+}
+
+ul, ol {
+	list-style: none;
+}
+
+p {
+	letter-spacing: .3px;
+	line-height: 1.7;
+}
+
+a {
+	&:link {
+		color: $color-link;
+	}
+
+	&:visited {
+		color: $color-link-visited;
+	}
+
+	&:hover {
+		color: $color-link-hover;
+	}
+
+	&:active {
+		color: $color-link-active;
+	}
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+	font-size: 0.9rem;
+}

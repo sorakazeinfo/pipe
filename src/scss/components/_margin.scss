@@ -1,0 +1,64 @@
+$pipe-margin-default: 1rem !default;
+$pipe-margin-large: 1.5rem !default;
+$pipe-margin-small: 0.5rem !default;
+
+.pp-margin {
+	margin: $pipe-margin-default;
+
+	&--large {
+		margin: $pipe-margin-large;
+	}
+
+	&--small {
+		margin: $pipe-margin-small;
+	}
+
+	&-top {
+		margin-top: $pipe-margin-default;
+
+		&--large {
+			margin-top: $pipe-margin-large;
+		}
+
+		&--small {
+			margin-top: $pipe-margin-small;
+		}
+	}
+
+	&-right {
+		margin-right: $pipe-margin-default;
+
+		&--large {
+			margin-right: $pipe-margin-large;
+		}
+
+		&--small {
+			margin-right: $pipe-margin-small;
+		}
+	}
+
+	&-bottom {
+		margin-bottom: $pipe-margin-default;
+
+		&--large {
+			margin-bottom: $pipe-margin-large;
+		}
+
+		&--small {
+			margin-bottom: $pipe-margin-small;
+		}
+	}
+
+	&-left {
+		margin-left: $pipe-margin-default;
+
+		&--large {
+			margin-left: $pipe-margin-large;
+		}
+
+		&--small {
+			margin-left: $pipe-margin-small;
+		}
+	}
+}
+

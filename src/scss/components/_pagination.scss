@@ -1,0 +1,46 @@
+$pipe-pagination-item-padding: 0.5rem 1rem !default;
+
+%pipe-pagination-hover-style {
+	background-color: $color-primary-hover;
+	border: 1px solid $color-primary-hover;
+	color: $color-primary-text-inverse;
+}
+
+.pp-pagination {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	a {
+		border: 1px solid $color-primary;
+		border-radius: $border-radius;
+		display: inline-block;
+		margin: 0.25rem;
+		padding: $pipe-pagination-item-padding;
+		text-decoration: none;
+
+		&:hover, &:focus {
+			@extend %pipe-pagination-hover-style;
+		}
+
+		&:active {
+			background-color: $color-primary-active;
+			border: 1px solid $color-primary-active;
+			color: $color-primary-text-inverse;
+		}
+	}
+
+	&__item--active > a {
+		@extend %pipe-pagination-hover-style;
+		pointer-events: none;
+	}
+
+	&__item--disable > a {
+		opacity: 0.6;
+		pointer-events: none;
+	}
+
+	&__item--leader {
+		padding: $pipe-pagination-item-padding;
+	}
+}

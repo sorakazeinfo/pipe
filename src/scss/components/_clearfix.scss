@@ -1,0 +1,11 @@
+.pp-clearfix {
+	zoom: 1; // For IE6 and 7
+
+	&:after {
+		content: '';
+		clear: both;
+		display: block;
+		height: 0;
+		visibility: hidden;
+	}
+}

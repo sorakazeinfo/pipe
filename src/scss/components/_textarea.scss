@@ -1,0 +1,33 @@
+%pipe-textarea-default {
+	appearance: none;
+	-webkit-appearance: none;
+	border-radius: $border-radius;
+	border: 1px solid #ccc;
+	padding: 8px;
+
+	&:focus {
+		@include focusFormBorder;
+	}
+
+	&:not(:focus):not(:placeholder-shown):invalid {
+		@include invalidFormBorder;
+	}
+}
+
+.pp-textarea {
+	@extend %pipe-textarea-default;
+
+	&--max {
+		@extend %pipe-textarea-default;
+		width: 100%;
+	}
+
+	&--error {
+		@include invalidFormBorder;
+	}
+}
+
+label > .pp-textarea {
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}

@@ -1,0 +1,94 @@
+$pipe-button-border-radius: $border-radius !default;
+
+%pipe-button-default {
+	@include resetButton;
+	border-radius: $pipe-button-border-radius;
+	padding: 0.6rem;
+
+	> i {
+		vertical-align: middle;
+	}
+
+	&:disabled {
+		cursor: not-allowed;
+		opacity: 0.6;
+	}
+}
+
+@mixin pipe-button-style(
+	$background-color,
+	$background-color-hover,
+	$background-color-active,
+	$text-color
+) {
+	background-color: $background-color;
+	color: $text-color;
+
+	&:hover:not(:disabled), &:focus:not(:disabled) {
+		background-color: $background-color-hover;
+	}
+
+	&:active:not(:disabled) {
+		background-color: $background-color-active;
+	}
+}
+
+.pp-button {
+	@extend %pipe-button-default;
+	@include pipe-button-style(
+		$color-lighter-gray,
+		$color-light-gray,
+		$color-gray,
+		$color-black
+	);
+
+	&--primary {
+		@extend %pipe-button-default;
+		@include pipe-button-style(
+			$color-primary,
+			$color-primary-hover,
+			$color-primary-active,
+			$color-primary-text-inverse
+		);
+	}
+
+	&--info {
+		@extend %pipe-button-default;
+		@include pipe-button-style(
+			$color-info,
+			$color-info-hover,
+			$color-info-active,
+			$color-info-text-inverse
+		);
+	}
+
+	&--success {
+		@extend %pipe-button-default;
+		@include pipe-button-style(
+			$color-success,
+			$color-success-hover,
+			$color-success-active,
+			$color-success-text-inverse
+		);
+	}
+
+	&--warning {
+		@extend %pipe-button-default;
+		@include pipe-button-style(
+			$color-warning,
+			$color-warning-hover,
+			$color-warning-active,
+			$color-warning-text-inverse
+		);
+	}
+
+	&--danger {
+		@extend %pipe-button-default;
+		@include pipe-button-style(
+			$color-danger,
+			$color-danger-hover,
+			$color-danger-active,
+			$color-danger-text-inverse
+		);
+	}
+}

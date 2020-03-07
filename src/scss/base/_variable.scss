@@ -1,0 +1,49 @@
+// breakpoints
+$breakpoint-mobile: 560px;
+$breakpoint-tablet: 960px;
+$breakpoint-max-mobile: "screen and (max-width: #{$breakpoint-mobile - 1})";
+$breakpoint-min-mobile: "screen and (min-width: #{$breakpoint-mobile})";
+
+// colors
+$color-white: #fff;
+$color-lighter-gray: #eee;
+$color-light-gray: #ddd;
+$color-gray: #ccc;
+$color-dark-gray: #bbb;
+$color-darker-gray: #aaa;
+$color-black: #333;
+
+$color-primary: #dc143c;
+$color-primary-hover: darken($color-primary, 5%);
+$color-primary-active: darken($color-primary, 10%);
+$color-primary-input-border: lighten($color-primary, 30%);
+$color-primary-text: darken($color-primary, 5%);
+$color-primary-text-inverse: $color-white;
+
+$color-info: #3298dc;
+$color-info-hover: darken($color-info, 5%);
+$color-info-active: darken($color-info, 10%);
+$color-info-text-inverse: $color-white;
+
+$color-success: #48c774;
+$color-success-hover: darken($color-success, 5%);
+$color-success-active: darken($color-success, 10%);
+$color-success-text-inverse: $color-white;
+
+$color-warning: #ffdd57;
+$color-warning-hover: darken($color-warning, 5%);
+$color-warning-active: darken($color-warning, 10%);
+$color-warning-text-inverse: $color-black;
+
+$color-danger: #f14668;
+$color-danger-hover: darken($color-danger, 5%);
+$color-danger-active: darken($color-danger, 10%);
+$color-danger-text-inverse: $color-white;
+
+$color-link: $color-primary;
+$color-link-visited: $color-primary;
+$color-link-hover: $color-primary;
+$color-link-active: $color-primary;
+
+// Others
+$border-radius: 4px;

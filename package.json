@@ -1,0 +1,29 @@
+{
+  "name": "pipe-framework",
+  "version": "1.0.0",
+  "description": "Pipe is CSS and JavaScript Framework",
+  "main": "app.js",
+  "scripts": {
+    "build:css": "node-sass ./src/scss/pipe.scss ./dist/pipe.css --output-style compressed",
+    "dev:css": "node-sass ./src/scss/pipe.scss ./docs/dist/pipe.css --output-style expanded",
+    "watch:css": "node-sass ./src/scss/pipe.scss ./docs/dist/pipe.css --output-style expanded --watch",
+    "build:js": "webpack --config webpack.prod.js",
+    "dev:js": "webpack --config webpack.dev.js",
+    "watch:js": "webpack --config webpack.dev.js --watch"
+  },
+  "author": "Hyte Sorakaze",
+  "license": "MIT",
+  "suggests": {
+    "smoothscroll-polyfill": "^0.4.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "babel-loader": "^8.0.6",
+    "node-sass": "^4.13.1",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11",
+    "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {}
+}

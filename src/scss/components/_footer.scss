@@ -1,0 +1,15 @@
+$pipe-footer-background-color: $color-lighter-gray !default;
+$pipe-footer-padding-top: 2rem !default;
+$pipe-footer-padding-right: 1rem !default;
+$pipe-footer-padding-bottom: 2rem !default;
+$pipe-footer-padding-left: 1rem !default;
+$pipe-footer-text-align: center !default;
+
+.pp-footer {
+	background-color: $pipe-footer-background-color;
+	padding-top: $pipe-footer-padding-top;
+	padding-right: $pipe-footer-padding-right;
+	padding-bottom: $pipe-footer-padding-bottom;
+	padding-left: $pipe-footer-padding-left;
+	text-align: $pipe-footer-text-align;
+}

@@ -1,0 +1,46 @@
+$pp-transform-table-th-background-color: $color-primary !default;
+$pp-transform-table-th-color: $color-primary-text-inverse !default;
+$pp-transform-table-cell-padding: 0.5rem !default;
+
+.pp-transform-table {
+	@media #{$breakpoint-max-mobile} {
+		> div {
+			> div {
+				&:first-child {
+					background-color: $pp-transform-table-th-background-color;
+					color: $pp-transform-table-th-color;
+					padding: $pp-transform-table-cell-padding;
+				}
+
+				&:last-child {
+					padding: $pp-transform-table-cell-padding;
+				}
+			}
+		}
+	}
+
+	@media #{$breakpoint-min-mobile} {
+		display: table;
+		width: 100%;
+
+		> div {
+			display: table-row;
+
+			> div {
+				display: table-cell;
+
+				&:first-child {
+					background-color: $pp-transform-table-th-background-color;
+					color: $pp-transform-table-th-color;
+					padding: $pp-transform-table-cell-padding;
+					width: 30%;
+				}
+
+				&:last-child {
+					padding: $pp-transform-table-cell-padding;
+					width: 70%;
+				}
+			}
+		}
+	}
+}

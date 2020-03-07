@@ -1,0 +1,76 @@
+$pipe-tab-menu-border-default: 1px solid $color-gray !default;
+$pipe-tab-menu-border-hover  : 1px solid $color-primary !default;
+
+.pp-tab {
+	&__menu {
+		display: flex;
+
+		> li {
+			flex-grow: 1;
+			border: $pipe-tab-menu-border-default;
+			border-right: 0;
+
+			&:hover:not([class]) {
+				border: $pipe-tab-menu-border-hover;
+
+				& + * {
+					border-left: 0;
+				}
+
+				& + [class] {
+					border-left: 0 !important;
+				}
+			}
+
+			&:first-child:not(:hover) {
+				border-left: $pipe-tab-menu-border-default;
+			}
+
+			&:last-child:not(:hover) {
+				border-right: $pipe-tab-menu-border-default;
+			}
+
+			&:first-child:hover {
+				border-left: $pipe-tab-menu-border-hover;
+			}
+
+			&:last-child:hover {
+				border-right: $pipe-tab-menu-border-hover;
+			}
+
+			> a {
+				display: block;
+				padding: 0.5rem;
+				text-decoration: none;
+
+				&:visited {
+					color: $color-primary;
+				}
+			}
+		}
+
+		&__active {
+			background-color: $color-primary;
+			border: 1px solid $color-primary !important;
+
+			> a {
+				color: $color-primary-text-inverse;
+				pointer-events: none;
+
+				&:visited {
+					color: $color-primary-text-inverse !important;
+				}
+			}
+		}
+	}
+
+	&__contents {
+		> div {
+			display: none;
+		}
+	}
+
+	&__menu + &__contents {
+		margin-top: 1.25rem;
+	}
+}

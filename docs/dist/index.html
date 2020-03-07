@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pipe Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+	<link rel="stylesheet" href="/docs.css">
+	<link rel="stylesheet" href="/pipe.css">
+</head>
+<body>
+	<header>
+		<div id="header">
+			<div id="logo">Pipe Document</div>
+		</div>
+	</header>
+
+	<div id="docs">
+		<div id="docs__menu">
+			<ul class="docs-ul">
+				<li><router-link to="/button">Button</router-link></li>
+				<li><router-link to="/contract">Contract</router-link></li>
+				<li><router-link to="/clearfix">Clearfix</router-link></li>
+				<li><router-link to="/form">Form</router-link></li>
+				<li><router-link to="/footer">Footer</router-link></li>
+				<li><router-link to="/heading">Heading</router-link></li>
+				<li><router-link to="/hidden">Hidden</router-link></li>
+				<li><router-link to="/margin">Margin</router-link></li>
+				<li><router-link to="/modal">Modal</router-link></li>
+				<li><router-link to="/notification">Notification</router-link></li>
+				<li><router-link to="/pagination">Pagination</router-link></li>
+				<li><router-link to="/tab">Tab</router-link></li>
+				<li><router-link to="/transform-table">Transform Table</router-link></li>
+				<li><router-link to="/scroll">Scroll</router-link></li>
+				<li><router-link to="/text">Text</router-link></li>
+				<li><router-link to="/text-counter">Text Counter</router-link></li>
+			</ul>
+		</div>
+
+		<div id="docs__main">
+			<router-view></router-view>
+		</div>
+	</div>
+
+	<script src="/docs.js"></script>
+	<script src="/pipe.js"></script>
+</body></html>

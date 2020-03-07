@@ -1,0 +1,40 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#header {
+	background-color: #ccc;
+	padding: 1rem
+}
+
+#header #logo {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+#docs {
+	display: flex;
+}
+
+#docs__menu {}
+
+#docs__main {
+	flex-grow: 3;
+	margin: 0 1rem;
+}
+
+.docs-ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.docs-ul li a {
+	display: block;
+	padding: 0.5rem 0.5rem;
+}
+
+.docs-ul li a:hover {
+	background-color: #eee;
+}

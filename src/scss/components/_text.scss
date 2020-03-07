@@ -1,0 +1,41 @@
+.pp-text {
+	&--center {
+		text-align: center;
+	}
+
+	&--left {
+		text-align: left;
+	}
+
+	&--right {
+		text-align: right;
+	}
+
+	&--large {
+		font-size: large;
+	}
+
+	&--small {
+		font-size: small;
+	}
+
+	&--primary {
+		color: $color-primary;
+	}
+
+	&--info {
+		color: $color-info;
+	}
+
+	&--success {
+		color: $color-success;
+	}
+
+	&--warning {
+		color: $color-warning;
+	}
+
+	&--danger {
+		color: $color-danger;
+	}
+}

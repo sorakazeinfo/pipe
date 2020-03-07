@@ -1,0 +1,46 @@
+$pipe-modal-base-z-index: 10 !default;
+$pipe-modal-close-z-index: $pipe-modal-base-z-index + 10 !default;
+$pipe-modal-contents-z-index: $pipe-modal-base-z-index + 5 !default;
+$pipe-modal-contents-max-width: 600px !default;
+$pipe-modal-contents-width: 90% !default;
+
+.pp-modal {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: scroll;
+	z-index: $pipe-modal-base-z-index;
+
+	&__overlay {
+		@include overlay;
+		z-index: $pipe-modal-base-z-index;
+	}
+
+	&__close {
+		color: #fff;
+		cursor: pointer;
+		position: absolute;
+		top: 2px;
+		right: 10px;
+		z-index: $pipe-modal-close-z-index;
+	}
+
+	&__contents {
+		background-color: #fff;
+		border-radius: $border-radius;
+		padding: 1rem;
+		position: relative;
+		margin: 2.5rem auto;
+		max-width: $pipe-modal-contents-max-width;
+		width: $pipe-modal-contents-width;
+		z-index: $pipe-modal-contents-z-index;
+	}
+
+	&__contents__close {
+		cursor: pointer;
+		text-align: right;
+	}
+}

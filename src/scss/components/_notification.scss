@@ -1,0 +1,37 @@
+$pipe-notification-border-radius: $border-radius !default;
+$pipe-notification-padding-top: 1rem !default;
+$pipe-notification-padding-right: 0.5rem !default;
+$pipe-notification-padding-bottom: 1rem !default;
+$pipe-notification-padding-left: 0.5rem !default;
+
+%pipe-notification-default {
+	border-radius: $pipe-notification-border-radius;
+	padding: $pipe-notification-padding-top $pipe-notification-padding-right $pipe-notification-padding-bottom $pipe-notification-padding-left;
+}
+
+.pp-notification {
+	&--primary {
+		@extend %pipe-notification-default;
+		background-color: $color-primary;
+	}
+
+	&--info {
+		@extend %pipe-notification-default;
+		background-color: $color-info;
+	}
+
+	&--success {
+		@extend %pipe-notification-default;
+		background-color: $color-success;
+	}
+
+	&--warning {
+		@extend %pipe-notification-default;
+		background-color: $color-warning;
+	}
+
+	&--danger {
+		@extend %pipe-notification-default;
+		background-color: $color-danger;
+	}
+}

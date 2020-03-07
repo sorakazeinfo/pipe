@@ -1,0 +1,25 @@
+$pipe-totop-bottom-position: 40px !default;
+$pipe-totop-right-position : 40px !default;
+
+.pp-totop {
+	border: 1px solid $color-primary;
+	border-radius: $border-radius;
+	color: $color-primary;
+	cursor: pointer;
+	position: fixed;
+	bottom: $pipe-totop-bottom-position;
+	right: $pipe-totop-right-position;
+	padding: 0.45rem 0.75rem;
+
+	&:focus, &:hover {
+		background-color: $color-primary-hover;
+		border: 1px solid $color-primary-hover;
+		color: $color-primary-text-inverse;
+	}
+
+	&:active {
+		background-color: $color-primary-active;
+		border: 1px solid $color-primary-active;
+		color: $color-primary-text-inverse;
+	}
+}

@@ -1,0 +1,16 @@
+.pp-hidden {
+	display: none;
+
+	@media #{$breakpoint-max-mobile} {
+		&--mobile {
+			display: none;
+		}
+	}
+
+	@media #{$breakpoint-min-mobile} {
+		&--tablet,
+		&--desktop {
+			display: none;
+		}
+	}
+}
