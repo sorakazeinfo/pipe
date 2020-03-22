@@ -52,6 +52,16 @@ $pipe-button-border-radius: $border-radius !default;
 		);
 	}
 
+	&--secondary {
+		@extend %pipe-button-default;
+		@include pipe-button-style(
+			$color-secondary,
+			$color-secondary-hover,
+			$color-secondary-active,
+			$color-secondary-text-inverse
+		);
+	}
+
 	&--info {
 		@extend %pipe-button-default;
 		@include pipe-button-style(

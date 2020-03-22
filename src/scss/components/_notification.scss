@@ -15,6 +15,11 @@ $pipe-notification-padding-left: 0.5rem !default;
 		background-color: $color-primary;
 	}
 
+	&--secondary {
+		@extend %pipe-notification-default;
+		background-color: $color-secondary;
+	}
+
 	&--info {
 		@extend %pipe-notification-default;
 		background-color: $color-info;

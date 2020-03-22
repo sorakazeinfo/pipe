@@ -57,6 +57,33 @@
 		</section>
 
 		<section>
+			<h2>.pp-button--secondary</h2>
+
+			<table>
+				<tr>
+					<th>Tag</th>
+					<th>Normal</th>
+					<th>Disabled</th>
+					<th>With icon</th>
+				</tr>
+
+				<tr>
+					<th>&lt;a&gt;</th>
+					<td><a class="pp-button--secondary">pp-button--secondary</a></td>
+					<td>invalid</td>
+					<td><a class="pp-button--secondary"><i class="fas fa-times-circle"></i>&nbsp;pp-button--secondary</a></td>
+				</tr>
+
+				<tr>
+					<th>&lt;button&gt;</th>
+					<td><button class="pp-button--secondary">pp-button--secondary</button></td>
+					<td><button class="pp-button--secondary" disabled>pp-button--secondary</button></td>
+					<td><button class="pp-button--secondary"><i class="fas fa-times-circle"></i>&nbsp;pp-button--secondary</button></td>
+				</tr>
+			</table>
+		</section>
+
+		<section>
 			<h2>.pp-button--info</h2>
 
 			<table>

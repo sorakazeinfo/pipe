@@ -20,6 +20,11 @@ $color-primary-input-border: lighten($color-primary, 30%) !default;
 $color-primary-text: darken($color-primary, 5%) !default;
 $color-primary-text-inverse: $color-white !default;
 
+$color-secondary: #c9c908 !default;
+$color-secondary-hover: darken($color-secondary, 5%) !default;
+$color-secondary-active: darken($color-secondary, 10%) !default;
+$color-secondary-text-inverse: $color-white !default;
+
 $color-info: #3298dc !default;
 $color-info-hover: darken($color-info, 5%) !default;
 $color-info-active: darken($color-info, 10%) !default;
