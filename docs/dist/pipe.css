@@ -52,7 +52,7 @@ select {
   font-size: 0.9rem;
 }
 
-.pp-button, .pp-button--primary, .pp-button--info, .pp-button--success, .pp-button--warning, .pp-button--danger {
+.pp-button, .pp-button--primary, .pp-button--secondary, .pp-button--info, .pp-button--success, .pp-button--warning, .pp-button--danger {
   appearance: none;
   background: none;
   border: none;
@@ -67,11 +67,11 @@ select {
   padding: 0.6rem;
 }
 
-.pp-button > i, .pp-button--primary > i, .pp-button--info > i, .pp-button--success > i, .pp-button--warning > i, .pp-button--danger > i {
+.pp-button > i, .pp-button--primary > i, .pp-button--secondary > i, .pp-button--info > i, .pp-button--success > i, .pp-button--warning > i, .pp-button--danger > i {
   vertical-align: middle;
 }
 
-.pp-button:disabled, .pp-button--primary:disabled, .pp-button--info:disabled, .pp-button--success:disabled, .pp-button--warning:disabled, .pp-button--danger:disabled {
+.pp-button:disabled, .pp-button--primary:disabled, .pp-button--secondary:disabled, .pp-button--info:disabled, .pp-button--success:disabled, .pp-button--warning:disabled, .pp-button--danger:disabled {
   cursor: not-allowed;
   opacity: 0.6;
 }
@@ -83,10 +83,12 @@ select {
 
 .pp-button:hover:not(:disabled), .pp-button:focus:not(:disabled) {
   background-color: #ddd;
+  color: #333;
 }
 
 .pp-button:active:not(:disabled) {
   background-color: #ccc;
+  color: #333;
 }
 
 .pp-button--primary {
@@ -96,10 +98,27 @@ select {
 
 .pp-button--primary:hover:not(:disabled), .pp-button--primary:focus:not(:disabled) {
   background-color: #c51236;
+  color: #fff;
 }
 
 .pp-button--primary:active:not(:disabled) {
   background-color: #ad102f;
+  color: #fff;
+}
+
+.pp-button--secondary {
+  background-color: #c9c908;
+  color: #fff;
+}
+
+.pp-button--secondary:hover:not(:disabled), .pp-button--secondary:focus:not(:disabled) {
+  background-color: #b0b007;
+  color: #fff;
+}
+
+.pp-button--secondary:active:not(:disabled) {
+  background-color: #989806;
+  color: #fff;
 }
 
 .pp-button--info {
@@ -109,10 +128,12 @@ select {
 
 .pp-button--info:hover:not(:disabled), .pp-button--info:focus:not(:disabled) {
   background-color: #248cd1;
+  color: #fff;
 }
 
 .pp-button--info:active:not(:disabled) {
   background-color: #207dbb;
+  color: #fff;
 }
 
 .pp-button--success {
@@ -122,10 +143,12 @@ select {
 
 .pp-button--success:hover:not(:disabled), .pp-button--success:focus:not(:disabled) {
   background-color: #3abc67;
+  color: #fff;
 }
 
 .pp-button--success:active:not(:disabled) {
   background-color: #34a85c;
+  color: #fff;
 }
 
 .pp-button--warning {
@@ -135,10 +158,12 @@ select {
 
 .pp-button--warning:hover:not(:disabled), .pp-button--warning:focus:not(:disabled) {
   background-color: #ffd83e;
+  color: #333;
 }
 
 .pp-button--warning:active:not(:disabled) {
   background-color: #ffd324;
+  color: #333;
 }
 
 .pp-button--danger {
@@ -148,10 +173,12 @@ select {
 
 .pp-button--danger:hover:not(:disabled), .pp-button--danger:focus:not(:disabled) {
   background-color: #ef2e55;
+  color: #fff;
 }
 
 .pp-button--danger:active:not(:disabled) {
   background-color: #ed1741;
+  color: #fff;
 }
 
 .pp-clearfix {
@@ -428,13 +455,17 @@ label > .pp-input {
   text-align: right;
 }
 
-.pp-notification--primary, .pp-notification--info, .pp-notification--success, .pp-notification--warning, .pp-notification--danger {
+.pp-notification--primary, .pp-notification--secondary, .pp-notification--info, .pp-notification--success, .pp-notification--warning, .pp-notification--danger {
   border-radius: 4px;
   padding: 1rem 0.5rem 1rem 0.5rem;
 }
 
 .pp-notification--primary {
   background-color: #dc143c;
+}
+
+.pp-notification--secondary {
+  background-color: #c9c908;
 }
 
 .pp-notification--info {
@@ -585,6 +616,10 @@ label > .pp-input {
 
 .pp-text--primary {
   color: #dc143c;
+}
+
+.pp-text--secondary {
+  color: #c9c908;
 }
 
 .pp-text--info {
