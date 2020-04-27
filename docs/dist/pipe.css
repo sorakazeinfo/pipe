@@ -64,6 +64,7 @@ select {
   outline: none;
   text-decoration: none;
   border-radius: 4px;
+  font-family: inherit;
   padding: 0.6rem;
 }
 
@@ -84,11 +85,13 @@ select {
 .pp-button:hover:not(:disabled), .pp-button:focus:not(:disabled) {
   background-color: #ddd;
   color: #333;
+  cursor: pointer;
 }
 
 .pp-button:active:not(:disabled) {
   background-color: #ccc;
   color: #333;
+  cursor: pointer;
 }
 
 .pp-button--primary {
@@ -99,11 +102,13 @@ select {
 .pp-button--primary:hover:not(:disabled), .pp-button--primary:focus:not(:disabled) {
   background-color: #c51236;
   color: #fff;
+  cursor: pointer;
 }
 
 .pp-button--primary:active:not(:disabled) {
   background-color: #ad102f;
   color: #fff;
+  cursor: pointer;
 }
 
 .pp-button--secondary {
@@ -114,11 +119,13 @@ select {
 .pp-button--secondary:hover:not(:disabled), .pp-button--secondary:focus:not(:disabled) {
   background-color: #b0b007;
   color: #fff;
+  cursor: pointer;
 }
 
 .pp-button--secondary:active:not(:disabled) {
   background-color: #989806;
   color: #fff;
+  cursor: pointer;
 }
 
 .pp-button--info {
@@ -129,11 +136,13 @@ select {
 .pp-button--info:hover:not(:disabled), .pp-button--info:focus:not(:disabled) {
   background-color: #248cd1;
   color: #fff;
+  cursor: pointer;
 }
 
 .pp-button--info:active:not(:disabled) {
   background-color: #207dbb;
   color: #fff;
+  cursor: pointer;
 }
 
 .pp-button--success {
@@ -144,11 +153,13 @@ select {
 .pp-button--success:hover:not(:disabled), .pp-button--success:focus:not(:disabled) {
   background-color: #3abc67;
   color: #fff;
+  cursor: pointer;
 }
 
 .pp-button--success:active:not(:disabled) {
   background-color: #34a85c;
   color: #fff;
+  cursor: pointer;
 }
 
 .pp-button--warning {
@@ -159,11 +170,13 @@ select {
 .pp-button--warning:hover:not(:disabled), .pp-button--warning:focus:not(:disabled) {
   background-color: #ffd83e;
   color: #333;
+  cursor: pointer;
 }
 
 .pp-button--warning:active:not(:disabled) {
   background-color: #ffd324;
   color: #333;
+  cursor: pointer;
 }
 
 .pp-button--danger {
@@ -174,11 +187,13 @@ select {
 .pp-button--danger:hover:not(:disabled), .pp-button--danger:focus:not(:disabled) {
   background-color: #ef2e55;
   color: #fff;
+  cursor: pointer;
 }
 
 .pp-button--danger:active:not(:disabled) {
   background-color: #ed1741;
   color: #fff;
+  cursor: pointer;
 }
 
 .pp-clearfix {
@@ -522,6 +537,44 @@ label > .pp-input {
 
 .pp-pagination__item--leader {
   padding: 0.5rem 1rem;
+}
+
+.snackbar--top, .snackbar--top--success, .snackbar--top--error, .snackbar--bottom, .snackbar--bottom--success, .snackbar--bottom--error {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  text-align: center;
+}
+
+.snackbar--top, .snackbar--top--success, .snackbar--top--error {
+  top: 0;
+  margin-top: 1rem;
+}
+
+.snackbar--bottom, .snackbar--bottom--success, .snackbar--bottom--error {
+  bottom: 0;
+  margin-bottom: 3rem;
+}
+
+.snackbar--top > span, .snackbar--top--success > span, .snackbar--top--error > span, .snackbar--bottom > span, .snackbar--bottom--success > span, .snackbar--bottom--error > span {
+  border-radius: 4px;
+  padding: 0.575rem;
+}
+
+.snackbar--top > span, .snackbar--bottom > span {
+  border: 1px solid #ccc;
+  background-color: #eee;
+}
+
+.snackbar--top--success > span, .snackbar--bottom--success > span {
+  background-color: #48c774;
+  color: #fff;
+}
+
+.snackbar--top--error > span, .snackbar--bottom--error > span {
+  background-color: #f14668;
+  color: #fff;
 }
 
 .pp-tab__menu {

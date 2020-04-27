@@ -12,6 +12,7 @@ import Modal from "./components/modal";
 import Notification from "./components/notification";
 import Pagination from "./components/pagination";
 import Scroll from "./components/scroll";
+import Snackbar from "./components/snackbar";
 import Tab from "./components/tab";
 import Text from "./components/text";
 import TextCounter from "./components/text_counter";
@@ -32,6 +33,7 @@ const routes = [
 	{path: "/notification", component: Notification},
 	{path: "/pagination", component: Pagination},
 	{path: "/scroll", component: Scroll},
+	{path: "/snackbar", component: Snackbar},
 	{path: "/tab", component: Tab},
 	{path: "/text", component: Text},
 	{path: "/text-counter", component: TextCounter},
