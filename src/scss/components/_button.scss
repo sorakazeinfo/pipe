@@ -28,11 +28,13 @@ $pipe-button-border-radius: $border-radius !default;
 	&:hover:not(:disabled), &:focus:not(:disabled) {
 		background-color: $background-color-hover;
 		color: $text-color;
+		cursor: pointer;
 	}
 
 	&:active:not(:disabled) {
 		background-color: $background-color-active;
 		color: $text-color;
+		cursor: pointer;
 	}
 }
 
