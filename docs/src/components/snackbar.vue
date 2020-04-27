@@ -12,61 +12,61 @@
 
 				<tbody>
 					<tr>
-						<td>.snackbar--top</td>
+						<td>.pp-snackbar--top</td>
 						<td><button @click="toggleSnackbar">Show</button></td>
 						<td style="display: none;">
-							<div class="snackbar--top">
-								<span>Hello, ".snackbar--top" selector!</span>
+							<div class="pp-snackbar--top">
+								<span>Hello, ".pp-snackbar--top" selector!</span>
 							</div>
 						</td>
 					</tr>
 
 					<tr>
-						<td>.snackbar--top--success</td>
+						<td>.pp-snackbar--top--success</td>
 						<td><button @click="toggleSnackbar">Show</button></td>
 						<td style="display: none;">
-							<div class="snackbar--top--success">
-								<span>Hello, ".snackbar--top--success" selector!</span>
+							<div class="pp-snackbar--top--success">
+								<span>Hello, ".pp-snackbar--top--success" selector!</span>
 							</div>
 						</td>
 					</tr>
 
 					<tr>
-						<td>.snackbar--top--error</td>
+						<td>.pp-snackbar--top--error</td>
 						<td><button @click="toggleSnackbar">Show</button></td>
 						<td style="display: none;">
-							<div class="snackbar--top--error">
-								<span>Hello, ".snackbar--top--error" selector!</span>
+							<div class="pp-snackbar--top--error">
+								<span>Hello, ".pp-snackbar--top--error" selector!</span>
 							</div>
 						</td>
 					</tr>
 
 					<tr>
-						<td>.snackbar--bottom</td>
+						<td>.pp-snackbar--bottom</td>
 						<td><button @click="toggleSnackbar">Show</button></td>
 						<td style="display: none;">
-							<div class="snackbar--bottom">
-								<span>Hello, ".snackbar--bottom" selector!</span>
+							<div class="pp-snackbar--bottom">
+								<span>Hello, ".pp-snackbar--bottom" selector!</span>
 							</div>
 						</td>
 					</tr>
 
 					<tr>
-						<td>.snackbar--bottom--success</td>
+						<td>.pp-snackbar--bottom--success</td>
 						<td><button @click="toggleSnackbar">Show</button></td>
 						<td style="display: none;">
-							<div class="snackbar--bottom--success">
-								<span>Hello, ".snackbar--bottom--success" selector!</span>
+							<div class="pp-snackbar--bottom--success">
+								<span>Hello, ".pp-snackbar--bottom--success" selector!</span>
 							</div>
 						</td>
 					</tr>
 
 					<tr>
-						<td>.snackbar--bottom--error</td>
+						<td>.pp-snackbar--bottom--error</td>
 						<td><button @click="toggleSnackbar">Show</button></td>
 						<td style="display: none;">
-							<div class="snackbar--bottom--error">
-								<span>Hello, ".snackbar--bottom--error" selector!</span>
+							<div class="pp-snackbar--bottom--error">
+								<span>Hello, ".pp-snackbar--bottom--error" selector!</span>
 							</div>
 						</td>
 					</tr>

@@ -42,7 +42,7 @@ $pipe-snackbar-label-padding: 0.575rem;
 	color: $color-danger-text-inverse;
 }
 
-.snackbar {
+.pp-snackbar {
 	&--top {
 		@extend %pipe-snackbar-position-top;
 		> span {
