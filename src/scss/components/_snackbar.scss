@@ -1,6 +1,6 @@
-$pipe-snackbar-top-margin   : 1rem;
-$pipe-snackbar-bottom-margin: 3rem;
-$pipe-snackbar-label-padding: 0.575rem;
+$pipe-snackbar-top-margin   : 1rem !default;
+$pipe-snackbar-bottom-margin: 3rem !default;
+$pipe-snackbar-label-padding: 0.575rem !default;
 
 %pipe-snackbar-position {
 	position: fixed;
