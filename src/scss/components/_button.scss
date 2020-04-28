@@ -1,10 +1,12 @@
-$pipe-button-border-radius: $pipe-border-radius !default;
+$pipe-button-border-radius   : $pipe-border-radius !default;
+$pipe-button-padding         : 0.6rem              !default;
+$pipe-button-disable-opacity : 0.6                 !default;
 
 %pipe-button-default {
 	@include pipe-resetButton;
 	border-radius: $pipe-button-border-radius;
 	font-family: inherit;
-	padding: 0.6rem;
+	padding: $pipe-button-padding;
 
 	> i {
 		vertical-align: middle;
@@ -12,7 +14,7 @@ $pipe-button-border-radius: $pipe-border-radius !default;
 
 	&:disabled {
 		cursor: not-allowed;
-		opacity: 0.6;
+		opacity: $pipe-button-disable-opacity;
 	}
 }
 

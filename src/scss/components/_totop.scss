@@ -1,25 +1,28 @@
-$pipe-totop-bottom-position: 40px !default;
-$pipe-totop-right-position : 40px !default;
+$pipe-totop-border-size     : 1px             !default;
+$pipe-totop-border-style    : solid           !default;
+$pipe-totop-bottom-position : 40px            !default;
+$pipe-totop-right-position  : 40px            !default;
+$pipe-totop-padding         : 0.45rem 0.75rem !default;
 
 .pp-totop {
-	border: 1px solid $pipe-color-primary;
+	border: $pipe-totop-border-size $pipe-totop-border-style $pipe-color-primary;
 	border-radius: $pipe-border-radius;
 	color: $pipe-color-primary;
 	cursor: pointer;
 	position: fixed;
 	bottom: $pipe-totop-bottom-position;
 	right: $pipe-totop-right-position;
-	padding: 0.45rem 0.75rem;
+	padding: $pipe-totop-padding;
 
 	&:focus, &:hover {
 		background-color: $pipe-color-primary-hover;
-		border: 1px solid $pipe-color-primary-hover;
+		border: $pipe-totop-border-size $pipe-totop-border-style $pipe-color-primary-hover;
 		color: $pipe-color-primary-text-inverse;
 	}
 
 	&:active {
 		background-color: $pipe-color-primary-active;
-		border: 1px solid $pipe-color-primary-active;
+		border: $pipe-totop-border-size $pipe-totop-border-style $pipe-color-primary-active;
 		color: $pipe-color-primary-text-inverse;
 	}
 }

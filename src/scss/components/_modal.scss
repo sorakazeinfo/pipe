@@ -1,8 +1,8 @@
-$pipe-modal-base-z-index: 10 !default;
-$pipe-modal-close-z-index: $pipe-modal-base-z-index + 10 !default;
-$pipe-modal-contents-z-index: $pipe-modal-base-z-index + 5 !default;
-$pipe-modal-contents-max-width: 600px !default;
-$pipe-modal-contents-width: 90% !default;
+$pipe-modal-base-z-index       : 10                            !default;
+$pipe-modal-close-z-index      : $pipe-modal-base-z-index + 10 !default;
+$pipe-modal-contents-z-index   : $pipe-modal-base-z-index + 5  !default;
+$pipe-modal-contents-max-width : 600px                         !default;
+$pipe-modal-contents-width     : 90%                           !default;
 
 .pp-modal {
 	display: none;

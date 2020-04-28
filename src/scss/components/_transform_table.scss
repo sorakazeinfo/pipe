@@ -1,6 +1,6 @@
-$pipe-transform-table-th-background-color: $pipe-color-primary !default;
-$pipe-transform-table-th-color: $pipe-color-primary-text-inverse !default;
-$pipe-transform-table-cell-padding: 0.5rem !default;
+$pipe-transform-table-th-background-color : $pipe-color-primary              !default;
+$pipe-transform-table-th-color            : $pipe-color-primary-text-inverse !default;
+$pipe-transform-table-cell-padding        : 0.5rem                           !default;
 
 .pp-transform-table {
 	@media #{$pipe-breakpoint-max-mobile} {

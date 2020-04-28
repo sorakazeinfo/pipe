@@ -1,9 +1,14 @@
+$pipe-input-default-border-size  : 1px    !default;
+$pipe-input-default-border-style : solid  !default;
+$pipe-input-default-border-color : #ccc !default;
+$pipe-input-default-padding      : 8px    !default;
+
 %pipe-input-default {
 	appearance: none;
 	-webkit-appearance: none;
 	border-radius: $pipe-border-radius;
-	border: 1px solid #ccc;
-	padding: 8px;
+	border: $pipe-input-default-border-size $pipe-input-default-border-style $pipe-input-default-border-color;
+	padding: $pipe-input-default-padding;
 
 	&:focus {
 		@include pipe-focusFormBorder;
