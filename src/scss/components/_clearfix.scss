@@ -1,6 +1,6 @@
 .pp-clearfix {
-	zoom: 1; // For IE6 and 7
-
+// Please enable if you support IE6 and IE7
+//	zoom: 1;
 	&:after {
 		content: '';
 		clear: both;
