@@ -1,19 +1,19 @@
-$pp-transform-table-th-background-color: $pipe-color-primary !default;
-$pp-transform-table-th-color: $pipe-color-primary-text-inverse !default;
-$pp-transform-table-cell-padding: 0.5rem !default;
+$pipe-transform-table-th-background-color: $pipe-color-primary !default;
+$pipe-transform-table-th-color: $pipe-color-primary-text-inverse !default;
+$pipe-transform-table-cell-padding: 0.5rem !default;
 
 .pp-transform-table {
 	@media #{$pipe-breakpoint-max-mobile} {
 		> div {
 			> div {
 				&:first-child {
-					background-color: $pp-transform-table-th-background-color;
-					color: $pp-transform-table-th-color;
-					padding: $pp-transform-table-cell-padding;
+					background-color: $pipe-transform-table-th-background-color;
+					color: $pipe-transform-table-th-color;
+					padding: $pipe-transform-table-cell-padding;
 				}
 
 				&:last-child {
-					padding: $pp-transform-table-cell-padding;
+					padding: $pipe-transform-table-cell-padding;
 				}
 			}
 		}
@@ -30,14 +30,14 @@ $pp-transform-table-cell-padding: 0.5rem !default;
 				display: table-cell;
 
 				&:first-child {
-					background-color: $pp-transform-table-th-background-color;
-					color: $pp-transform-table-th-color;
-					padding: $pp-transform-table-cell-padding;
+					background-color: $pipe-transform-table-th-background-color;
+					color: $pipe-transform-table-th-color;
+					padding: $pipe-transform-table-cell-padding;
 					width: 30%;
 				}
 
 				&:last-child {
-					padding: $pp-transform-table-cell-padding;
+					padding: $pipe-transform-table-cell-padding;
 					width: 70%;
 				}
 			}
