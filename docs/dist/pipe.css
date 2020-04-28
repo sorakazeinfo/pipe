@@ -52,6 +52,24 @@ select {
   font-size: 0.9rem;
 }
 
+.pp-breadcrumb {
+  display: flex;
+  padding: 0 0.5rem;
+}
+
+.pp-breadcrumb li a {
+  display: inline-block;
+  padding: 1rem 0.55rem;
+}
+
+.pp-breadcrumb li a:not([href]) {
+  color: #333;
+}
+
+.pp-breadcrumb li:not(:last-child):after {
+  content: ">";
+}
+
 .pp-button, .pp-button--primary, .pp-button--secondary, .pp-button--info, .pp-button--success, .pp-button--warning, .pp-button--danger {
   appearance: none;
   background: none;
@@ -194,10 +212,6 @@ select {
   background-color: #ed1741;
   color: #fff;
   cursor: pointer;
-}
-
-.pp-clearfix {
-  zoom: 1;
 }
 
 .pp-clearfix:after {
