@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import VueRouter from "vue-router";
+import Breadcrumb from "./components/breadcrumb";
 import Button from "./components/button";
 import Clearfix from "./components/clearfix";
 import Contract from "./components/contract";
@@ -21,6 +22,7 @@ import TransformTable from "./components/transform_table";
 Vue.use(VueRouter);
 
 const routes = [
+	{path: "/breadcrumb", component: Breadcrumb},
 	{path: "/button", component: Button},
 	{path: "/clearfix", component: Clearfix},
 	{path: "/contract", component: Contract},

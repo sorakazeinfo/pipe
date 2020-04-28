@@ -1,0 +1,23 @@
+$pipe-breadcrumb-divider      : ">"          !default;
+$pipe-breadcrumb-padding      : 0 0.5rem     !default;
+$pipe-beradcrumb-item-padding : 1rem 0.55rem !default;
+
+.pp-breadcrumb {
+	display: flex;
+	padding: $pipe-breadcrumb-padding;
+
+	li {
+		a {
+			display: inline-block;
+			padding: $pipe-beradcrumb-item-padding;
+
+			&:not([href]) {
+				color: $pipe-color-black;
+			}
+		}
+
+		&:not(:last-child):after {
+			content: $pipe-breadcrumb-divider;
+		}
+	}
+}
