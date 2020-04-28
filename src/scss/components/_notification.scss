@@ -1,4 +1,4 @@
-$pipe-notification-border-radius: $border-radius !default;
+$pipe-notification-border-radius: $pipe-border-radius !default;
 $pipe-notification-padding-top: 1rem !default;
 $pipe-notification-padding-right: 0.5rem !default;
 $pipe-notification-padding-bottom: 1rem !default;
@@ -12,31 +12,31 @@ $pipe-notification-padding-left: 0.5rem !default;
 .pp-notification {
 	&--primary {
 		@extend %pipe-notification-default;
-		background-color: $color-primary;
+		background-color: $pipe-color-primary;
 	}
 
 	&--secondary {
 		@extend %pipe-notification-default;
-		background-color: $color-secondary;
+		background-color: $pipe-color-secondary;
 	}
 
 	&--info {
 		@extend %pipe-notification-default;
-		background-color: $color-info;
+		background-color: $pipe-color-info;
 	}
 
 	&--success {
 		@extend %pipe-notification-default;
-		background-color: $color-success;
+		background-color: $pipe-color-success;
 	}
 
 	&--warning {
 		@extend %pipe-notification-default;
-		background-color: $color-warning;
+		background-color: $pipe-color-warning;
 	}
 
 	&--danger {
 		@extend %pipe-notification-default;
-		background-color: $color-danger;
+		background-color: $pipe-color-danger;
 	}
 }

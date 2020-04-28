@@ -1,6 +1,6 @@
 @mixin pipe-form-control-vertical {
 	background-color: rgba(238, 238, 238, 0.7);
-	border-radius: $border-radius;
+	border-radius: $pipe-border-radius;
 	margin: 0.75rem 0;
 	padding: 0.5rem;
 }
@@ -24,7 +24,7 @@
 
 	&--horizontal {
 		.pp-form__control {
-			@media #{$breakpoint-min-mobile} {
+			@media #{$pipe-breakpoint-min-mobile} {
 				display: flex;
 				margin-bottom: 1rem;
 
@@ -48,7 +48,7 @@
 				}
 			}
 
-			@media #{$breakpoint-max-mobile} {
+			@media #{$pipe-breakpoint-max-mobile} {
 				@include pipe-form-control-vertical;
 
 				label {

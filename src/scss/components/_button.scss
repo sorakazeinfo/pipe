@@ -1,4 +1,4 @@
-$pipe-button-border-radius: $border-radius !default;
+$pipe-button-border-radius: $pipe-border-radius !default;
 
 %pipe-button-default {
 	@include resetButton;
@@ -41,69 +41,69 @@ $pipe-button-border-radius: $border-radius !default;
 .pp-button {
 	@extend %pipe-button-default;
 	@include pipe-button-style(
-		$color-lighter-gray,
-		$color-light-gray,
-		$color-gray,
-		$color-black
+		$pipe-color-lighter-gray,
+		$pipe-color-light-gray,
+		$pipe-color-gray,
+		$pipe-color-black
 	);
 
 	&--primary {
 		@extend %pipe-button-default;
 		@include pipe-button-style(
-			$color-primary,
-			$color-primary-hover,
-			$color-primary-active,
-			$color-primary-text-inverse
+			$pipe-color-primary,
+			$pipe-color-primary-hover,
+			$pipe-color-primary-active,
+			$pipe-color-primary-text-inverse
 		);
 	}
 
 	&--secondary {
 		@extend %pipe-button-default;
 		@include pipe-button-style(
-			$color-secondary,
-			$color-secondary-hover,
-			$color-secondary-active,
-			$color-secondary-text-inverse
+			$pipe-color-secondary,
+			$pipe-color-secondary-hover,
+			$pipe-color-secondary-active,
+			$pipe-color-secondary-text-inverse
 		);
 	}
 
 	&--info {
 		@extend %pipe-button-default;
 		@include pipe-button-style(
-			$color-info,
-			$color-info-hover,
-			$color-info-active,
-			$color-info-text-inverse
+			$pipe-color-info,
+			$pipe-color-info-hover,
+			$pipe-color-info-active,
+			$pipe-color-info-text-inverse
 		);
 	}
 
 	&--success {
 		@extend %pipe-button-default;
 		@include pipe-button-style(
-			$color-success,
-			$color-success-hover,
-			$color-success-active,
-			$color-success-text-inverse
+			$pipe-color-success,
+			$pipe-color-success-hover,
+			$pipe-color-success-active,
+			$pipe-color-success-text-inverse
 		);
 	}
 
 	&--warning {
 		@extend %pipe-button-default;
 		@include pipe-button-style(
-			$color-warning,
-			$color-warning-hover,
-			$color-warning-active,
-			$color-warning-text-inverse
+			$pipe-color-warning,
+			$pipe-color-warning-hover,
+			$pipe-color-warning-active,
+			$pipe-color-warning-text-inverse
 		);
 	}
 
 	&--danger {
 		@extend %pipe-button-default;
 		@include pipe-button-style(
-			$color-danger,
-			$color-danger-hover,
-			$color-danger-active,
-			$color-danger-text-inverse
+			$pipe-color-danger,
+			$pipe-color-danger-hover,
+			$pipe-color-danger-active,
+			$pipe-color-danger-text-inverse
 		);
 	}
 }

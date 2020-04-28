@@ -5,7 +5,7 @@
 }
 
 html {
-	color: $color-black;
+	color: $pipe-color-black;
 	font-family: "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "Hiragino Sans", -apple-system, BlinkMacSystemFont, "Meiryo", system-ui, sans-serif;
 	scroll-behavior: smooth;
 }
@@ -30,19 +30,19 @@ p {
 
 a {
 	&:link {
-		color: $color-link;
+		color: $pipe-color-link;
 	}
 
 	&:visited {
-		color: $color-link-visited;
+		color: $pipe-color-link-visited;
 	}
 
 	&:hover {
-		color: $color-link-hover;
+		color: $pipe-color-link-hover;
 	}
 
 	&:active {
-		color: $color-link-active;
+		color: $pipe-color-link-active;
 	}
 }
 

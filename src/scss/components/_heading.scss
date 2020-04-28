@@ -2,13 +2,13 @@ $pp-heading-color: inherit !default;
 
 .pp-heading {
 	&--bullet {
-		border-left: 10px solid $color-primary;
+		border-left: 10px solid $pipe-color-primary;
 		color: $pp-heading-color;
 		padding-left: 10px;
 	}
 
 	&--border {
-		border-bottom: 2px solid $color-primary;
+		border-bottom: 2px solid $pipe-color-primary;
 		color: $pp-heading-color;
 		padding-bottom: 5px;
 	}

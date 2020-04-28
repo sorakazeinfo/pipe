@@ -1,9 +1,9 @@
-$pp-transform-table-th-background-color: $color-primary !default;
-$pp-transform-table-th-color: $color-primary-text-inverse !default;
+$pp-transform-table-th-background-color: $pipe-color-primary !default;
+$pp-transform-table-th-color: $pipe-color-primary-text-inverse !default;
 $pp-transform-table-cell-padding: 0.5rem !default;
 
 .pp-transform-table {
-	@media #{$breakpoint-max-mobile} {
+	@media #{$pipe-breakpoint-max-mobile} {
 		> div {
 			> div {
 				&:first-child {
@@ -19,7 +19,7 @@ $pp-transform-table-cell-padding: 0.5rem !default;
 		}
 	}
 
-	@media #{$breakpoint-min-mobile} {
+	@media #{$pipe-breakpoint-min-mobile} {
 		display: table;
 		width: 100%;
 

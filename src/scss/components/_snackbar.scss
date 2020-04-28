@@ -23,7 +23,7 @@ $pipe-snackbar-label-padding: 0.575rem;
 }
 
 %pipe-snackbar-style {
-	border-radius: $border-radius;
+	border-radius: $pipe-border-radius;
 	padding: $pipe-snackbar-label-padding;
 }
 
@@ -33,13 +33,13 @@ $pipe-snackbar-label-padding: 0.575rem;
 }
 
 %pipe-snackbar-theme-success {
-	background-color: $color-success;
-	color: $color-success-text-inverse;
+	background-color: $pipe-color-success;
+	color: $pipe-color-success-text-inverse;
 }
 
 %pipe-snackbar-theme-error {
-	background-color: $color-danger;
-	color: $color-danger-text-inverse;
+	background-color: $pipe-color-danger;
+	color: $pipe-color-danger-text-inverse;
 }
 
 .pp-snackbar {

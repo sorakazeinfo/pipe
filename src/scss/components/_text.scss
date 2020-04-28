@@ -20,26 +20,26 @@
 	}
 
 	&--primary {
-		color: $color-primary;
+		color: $pipe-color-primary;
 	}
 
 	&--secondary {
-		color: $color-secondary;
+		color: $pipe-color-secondary;
 	}
 
 	&--info {
-		color: $color-info;
+		color: $pipe-color-info;
 	}
 
 	&--success {
-		color: $color-success;
+		color: $pipe-color-success;
 	}
 
 	&--warning {
-		color: $color-warning;
+		color: $pipe-color-warning;
 	}
 
 	&--danger {
-		color: $color-danger;
+		color: $pipe-color-danger;
 	}
 }

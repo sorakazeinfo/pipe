@@ -1,5 +1,5 @@
-$pipe-tab-menu-border-default: 1px solid $color-gray !default;
-$pipe-tab-menu-border-hover  : 1px solid $color-primary !default;
+$pipe-tab-menu-border-default: 1px solid $pipe-color-gray !default;
+$pipe-tab-menu-border-hover  : 1px solid $pipe-color-primary !default;
 
 .pp-tab {
 	&__menu {
@@ -44,21 +44,21 @@ $pipe-tab-menu-border-hover  : 1px solid $color-primary !default;
 				text-decoration: none;
 
 				&:visited {
-					color: $color-primary;
+					color: $pipe-color-primary;
 				}
 			}
 		}
 
 		&__active {
-			background-color: $color-primary;
-			border: 1px solid $color-primary !important;
+			background-color: $pipe-color-primary;
+			border: 1px solid $pipe-color-primary !important;
 
 			> a {
-				color: $color-primary-text-inverse;
+				color: $pipe-color-primary-text-inverse;
 				pointer-events: none;
 
 				&:visited {
-					color: $color-primary-text-inverse !important;
+					color: $pipe-color-primary-text-inverse !important;
 				}
 			}
 		}

@@ -1,9 +1,9 @@
 $pipe-pagination-item-padding: 0.5rem 1rem !default;
 
 %pipe-pagination-hover-style {
-	background-color: $color-primary-hover;
-	border: 1px solid $color-primary-hover;
-	color: $color-primary-text-inverse;
+	background-color: $pipe-color-primary-hover;
+	border: 1px solid $pipe-color-primary-hover;
+	color: $pipe-color-primary-text-inverse;
 }
 
 .pp-pagination {
@@ -12,8 +12,8 @@ $pipe-pagination-item-padding: 0.5rem 1rem !default;
 	justify-content: center;
 
 	a {
-		border: 1px solid $color-primary;
-		border-radius: $border-radius;
+		border: 1px solid $pipe-color-primary;
+		border-radius: $pipe-border-radius;
 		display: inline-block;
 		margin: 0.25rem;
 		padding: $pipe-pagination-item-padding;
@@ -24,9 +24,9 @@ $pipe-pagination-item-padding: 0.5rem 1rem !default;
 		}
 
 		&:active {
-			background-color: $color-primary-active;
-			border: 1px solid $color-primary-active;
-			color: $color-primary-text-inverse;
+			background-color: $pipe-color-primary-active;
+			border: 1px solid $pipe-color-primary-active;
+			color: $pipe-color-primary-text-inverse;
 		}
 	}
 
