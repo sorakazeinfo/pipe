@@ -1,14 +1,17 @@
 {
   "name": "pipe-framework",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Pipe is CSS and JavaScript Framework",
   "main": "app.js",
   "scripts": {
-    "build:css": "node-sass ./src/scss/pipe.scss ./dist/pipe.css --output-style compressed",
+	"build": "npm run build:css & npm run build.dev:css & npm run build:js",
+    "build:css" : "node-sass ./src/scss/pipe.scss ./dist/pipe.min.css --output-style compressed",
+	"build.dev:css" : "node-sass ./src/scss/pipe.scss ./dist/pipe.css --output-style expanded",
+    "build:js" : "webpack --config webpack.prod.js",
+	"dev": "npm run dev:css & npm run dev:js",
     "dev:css": "node-sass ./src/scss/pipe.scss ./docs/dist/pipe.css --output-style expanded",
-    "watch:css": "node-sass ./src/scss/pipe.scss ./docs/dist/pipe.css --output-style expanded --watch",
-    "build:js": "webpack --config webpack.prod.js",
     "dev:js": "webpack --config webpack.dev.js",
+    "watch:css": "node-sass ./src/scss/pipe.scss ./docs/dist/pipe.css --output-style expanded --watch",
     "watch:js": "webpack --config webpack.dev.js --watch"
   },
   "author": "Hyte Sorakaze",
