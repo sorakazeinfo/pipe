@@ -1,4 +1,4 @@
-@mixin resetButton {
+@mixin pipe-resetButton {
 	appearance: none;
 	background: none;
 	border: none;
@@ -11,19 +11,19 @@
 	text-decoration: none;
 }
 
-@mixin focusFormBorder {
+@mixin pipe-focusFormBorder {
 	border: 1px solid $pipe-color-primary-input-border;
 	box-shadow: 0 0 0 .2em $pipe-color-primary-input-border;
 	outline: 0;
 }
 
-@mixin invalidFormBorder {
+@mixin pipe-invalidFormBorder {
 	border-color: $pipe-color-danger;
 	box-shadow: 0 0 0 .2em $pipe-color-danger;
 	outline: 0;
 }
 
-@mixin overlay {
+@mixin pipe-overlay {
 	background: rgba(0, 0, 0, 0.5);
 	position: fixed;
 	top: 0;

@@ -6,11 +6,11 @@
 	padding: 8px;
 
 	&:focus {
-		@include focusFormBorder;
+		@include pipe-focusFormBorder;
 	}
 
 	&:not(:focus):not(:placeholder-shown):invalid {
-		@include invalidFormBorder;
+		@include pipe-invalidFormBorder;
 	}
 }
 
@@ -23,7 +23,7 @@
 	}
 
 	&--error {
-		@include invalidFormBorder;
+		@include pipe-invalidFormBorder;
 	}
 }
 

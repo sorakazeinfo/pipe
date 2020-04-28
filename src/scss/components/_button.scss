@@ -1,7 +1,7 @@
 $pipe-button-border-radius: $pipe-border-radius !default;
 
 %pipe-button-default {
-	@include resetButton;
+	@include pipe-resetButton;
 	border-radius: $pipe-button-border-radius;
 	font-family: inherit;
 	padding: 0.6rem;

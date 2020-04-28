@@ -15,7 +15,7 @@ $pipe-modal-contents-width: 90% !default;
 	z-index: $pipe-modal-base-z-index;
 
 	&__overlay {
-		@include overlay;
+		@include pipe-overlay;
 		z-index: $pipe-modal-base-z-index;
 	}
 
