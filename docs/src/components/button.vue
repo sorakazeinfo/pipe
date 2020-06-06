@@ -42,9 +42,9 @@
 
 				<tr>
 					<th>&lt;a&gt;</th>
-					<td><a class="pp-button--primary">pp-button--primary</a></td>
+					<td><a href="#" class="pp-button--primary">pp-button--primary</a></td>
 					<td>invalid</td>
-					<td><a class="pp-button--primary"><i class="fas fa-times-circle"></i>&nbsp;pp-button--primary</a></td>
+					<td><a href="#" class="pp-button--primary"><i class="fas fa-times-circle"></i>&nbsp;pp-button--primary</a></td>
 				</tr>
 
 				<tr>
@@ -69,9 +69,9 @@
 
 				<tr>
 					<th>&lt;a&gt;</th>
-					<td><a class="pp-button--secondary">pp-button--secondary</a></td>
+					<td><a href="#" class="pp-button--secondary">pp-button--secondary</a></td>
 					<td>invalid</td>
-					<td><a class="pp-button--secondary"><i class="fas fa-times-circle"></i>&nbsp;pp-button--secondary</a></td>
+					<td><a href="#" class="pp-button--secondary"><i class="fas fa-times-circle"></i>&nbsp;pp-button--secondary</a></td>
 				</tr>
 
 				<tr>
@@ -96,9 +96,9 @@
 
 				<tr>
 					<th>&lt;a&gt;</th>
-					<td><a class="pp-button--info">pp-button--info</a></td>
+					<td><a href="#" class="pp-button--info">pp-button--info</a></td>
 					<td>invalid</td>
-					<td><a class="pp-button--info"><i class="fas fa-times-circle"></i>&nbsp;pp-button--info</a></td>
+					<td><a href="#" class="pp-button--info"><i class="fas fa-times-circle"></i>&nbsp;pp-button--info</a></td>
 				</tr>
 
 				<tr>
@@ -123,9 +123,9 @@
 
 				<tr>
 					<th>&lt;a&gt;</th>
-					<td><a class="pp-button--success">pp-button--success</a></td>
+					<td><a href="#" class="pp-button--success">pp-button--success</a></td>
 					<td>invalid</td>
-					<td><a class="pp-button--success"><i class="fas fa-times-circle"></i>&nbsp;pp-button--success</a></td>
+					<td><a href="#" class="pp-button--success"><i class="fas fa-times-circle"></i>&nbsp;pp-button--success</a></td>
 				</tr>
 
 				<tr>
@@ -150,9 +150,9 @@
 
 				<tr>
 					<th>&lt;a&gt;</th>
-					<td><a class="pp-button--warning">pp-button--warning</a></td>
+					<td><a href="#" class="pp-button--warning">pp-button--warning</a></td>
 					<td>invalid</td>
-					<td><a class="pp-button--warning"><i class="fas fa-times-circle"></i>&nbsp;pp-button--warning</a></td>
+					<td><a href="#" class="pp-button--warning"><i class="fas fa-times-circle"></i>&nbsp;pp-button--warning</a></td>
 				</tr>
 
 				<tr>
@@ -177,9 +177,9 @@
 
 				<tr>
 					<th>&lt;a&gt;</th>
-					<td><a class="pp-button--danger">pp-button--danger</a></td>
+					<td><a href="#" class="pp-button--danger">pp-button--danger</a></td>
 					<td>invalid</td>
-					<td><a class="pp-button--danger"><i class="fas fa-times-circle"></i>&nbsp;pp-button--danger</a></td>
+					<td><a href="#" class="pp-button--danger"><i class="fas fa-times-circle"></i>&nbsp;pp-button--danger</a></td>
 				</tr>
 
 				<tr>

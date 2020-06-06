@@ -24,8 +24,10 @@ $pipe-button-disable-opacity : 0.6                 !default;
 	$background-color-active,
 	$text-color
 ) {
-	background-color: $background-color;
-	color: $text-color;
+	&[href], &:not([href]) {
+		background-color: $background-color;
+		color: $text-color;
+	}
 
 	&:hover:not(:disabled), &:focus:not(:disabled) {
 		background-color: $background-color-hover;
