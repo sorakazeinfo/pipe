@@ -12,7 +12,11 @@
 				<div class="pp-modal__contents__close"><i class="fas fa-times fa-2x"></i></div>
 				<h3>Hello, Modal! Hello, Modal! Hello, Modal! Hello, Modal! Hello, Modal! Hello, Modal!</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<p><a class="pp-button--primary">Cancel</a><button class="pp-button--warning">Ok</button></p>
+
+				<p>
+					<a class="pp-button--primary">Cancel</a>
+					<button class="pp-button--warning">Ok</button>
+				</p>
 			</div>
 		</div>
 
@@ -23,7 +27,11 @@
 				<div class="pp-modal__contents__close"></div>
 				<h3>Hello, Modal2!</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<p><a class="pp-button--primary">Cancel</a><button class="pp-button--warning">Ok</button></p>
+
+				<p>
+					<a class="pp-button--primary">Cancel</a>
+					<button class="pp-button--warning">Ok</button>
+				</p>
 			</div>
 		</div>
 	</div>
