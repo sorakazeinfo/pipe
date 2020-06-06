@@ -5,8 +5,7 @@ export default class TextCounter {
 	}
 
 	initialize() {
-		const keyupEvent = document.createEvent("HTMLEvents");
-		      keyupEvent.initEvent("keyup", false, false);
+		const keyupEvent = new Event("keyup");
 
 		// Normal
 		let textForms = document.querySelectorAll(`[data-pipejs=${this.id}]`);
