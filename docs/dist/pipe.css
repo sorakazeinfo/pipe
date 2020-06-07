@@ -351,6 +351,10 @@ select {
   padding: 8px;
 }
 
+.pp-input:hover, .pp-input--max:hover {
+  border: 1px solid #999;
+}
+
 .pp-input:focus, .pp-input--max:focus {
   border: 1px solid #f594a7;
   box-shadow: 0 0 0 0.2em #f594a7;
