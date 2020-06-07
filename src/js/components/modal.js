@@ -8,7 +8,7 @@ export default class Modal {
 		if (modalTriggers.length > 0) {
 			modalTriggers.forEach(button => {
 				const id = button.getAttribute("data-pipe-target");
-				const modal = document.getElementById(id);
+				const modal = document.querySelector(id);
 
 				if (modal !== null) {
 					// Trigger

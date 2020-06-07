@@ -12,7 +12,7 @@ export default class TextCounter {
 		if (textForms.length > 0) {
 			textForms.forEach(textForm => {
 				const id = textForm.getAttribute("data-pipe-target");
-				const counter = document.getElementById(id);
+				const counter = document.querySelector(id);
 
 				if (counter !== null) {
 					// Text Form
@@ -32,7 +32,7 @@ export default class TextCounter {
 		if (textForms.length > 0) {
 			textForms.forEach(textForm => {
 				const id = textForm.getAttribute("data-pipe-target");
-				const counter = document.getElementById(id);
+				const counter = document.querySelector(id);
 
 				if (counter !== null) {
 					// Text Form

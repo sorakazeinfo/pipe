@@ -2,8 +2,8 @@
 	<div>
 		<h1>Modal</h1>
 
-		<p><button data-pipejs="modal" data-pipe-target="modal">Open Modal</button></p>
-		<p><button data-pipejs="modal" data-pipe-target="modal2">Open Modal2</button></p>
+		<p><button data-pipejs="modal" data-pipe-target="#modal">Open Modal</button></p>
+		<p><button data-pipejs="modal" data-pipe-target="#modal2">Open Modal2</button></p>
 
 		<div class="pp-modal" id="modal">
 			<div class="pp-modal__overlay"></div>
