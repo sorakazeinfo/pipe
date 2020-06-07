@@ -1,4 +1,4 @@
-export default class Scroll {
+export default class ToScroll {
 	constructor() {
 		this.id = "scroll";
 	}
