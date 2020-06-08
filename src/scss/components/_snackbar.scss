@@ -1,6 +1,7 @@
-$pipe-snackbar-top-margin   : 1rem !default;
-$pipe-snackbar-bottom-margin: 3rem !default;
-$pipe-snackbar-label-padding: 0.575rem !default;
+$pipe-snackbar-border-radius : $pipe-border-radius !default;
+$pipe-snackbar-top-margin    : 1rem                !default;
+$pipe-snackbar-bottom-margin : 3rem                !default;
+$pipe-snackbar-label-padding : 0.575rem            !default;
 
 %pipe-snackbar-position {
 	position: fixed;
@@ -23,7 +24,7 @@ $pipe-snackbar-label-padding: 0.575rem !default;
 }
 
 %pipe-snackbar-style {
-	border-radius: $pipe-border-radius;
+	border-radius: $pipe-snackbar-border-radius;
 	padding: $pipe-snackbar-label-padding;
 }
 

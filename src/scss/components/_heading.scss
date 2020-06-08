@@ -1,19 +1,22 @@
-$pipe-heading-color                 : inherit !default;
-$pipe-heading-bullet-border-left    : 10px    !default;
-$pipe-heading-bullet-padding-left   : 10px    !default;
-$pipe-heading-border-border-bottom  : 2px     !default;
-$pipe-heading-border-padding-bottom : 5px     !default;
+$pipe-heading-bullet-border-left    : 10px                !default;
+$pipe-heading-bullet-padding-left   : 10px                !default;
+$pipe-heading-bullet-border-color   : $pipe-color-primary !default;
+$pipe-heading-bullet-color          : inherit             !default;
+$pipe-heading-border-border-color   : $pipe-color-primary !default;
+$pipe-heading-border-color          : inherit             !default;
+$pipe-heading-border-border-bottom  : 2px                 !default;
+$pipe-heading-border-padding-bottom : 5px                 !default;
 
 .pp-heading {
 	&--bullet {
-		border-left: $pipe-heading-bullet-border-left solid $pipe-color-primary;
-		color: $pipe-heading-color;
+		border-left: $pipe-heading-bullet-border-left solid $pipe-heading-bullet-border-color;
+		color: $pipe-heading-bullet-color;
 		padding-left: $pipe-heading-bullet-padding-left;
 	}
 
 	&--border {
-		border-bottom: $pipe-heading-border-border-bottom solid $pipe-color-primary;
-		color: $pipe-heading-color;
+		border-bottom: $pipe-heading-border-border-bottom solid $pipe-heading-border-border-color;
+		color: $pipe-heading-border-color;
 		padding-bottom: $pipe-heading-border-padding-bottom;
 	}
 }

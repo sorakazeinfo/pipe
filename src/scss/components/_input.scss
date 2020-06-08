@@ -1,13 +1,14 @@
-$pipe-input-default-border-size  : 1px    !default;
-$pipe-input-default-border-style : solid  !default;
-$pipe-input-default-border-color : #ccc !default;
-$pipe-input-default-padding      : 8px    !default;
-$pipe-input-hover-border-color   : #999 !default;
+$pipe-input-default-border-color  : #ccc              !default;
+$pipe-input-default-border-radius : $pipe-border-radius !default;
+$pipe-input-default-border-size   : 1px                 !default;
+$pipe-input-default-border-style  : solid               !default;
+$pipe-input-default-padding       : 8px                 !default;
+$pipe-input-hover-border-color    : #999              !default;
 
 %pipe-input-default {
 	appearance: none;
 	-webkit-appearance: none;
-	border-radius: $pipe-border-radius;
+	border-radius: $pipe-input-default-border-radius;
 	border: $pipe-input-default-border-size $pipe-input-default-border-style $pipe-input-default-border-color;
 	padding: $pipe-input-default-padding;
 

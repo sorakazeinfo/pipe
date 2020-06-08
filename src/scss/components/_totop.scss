@@ -1,13 +1,19 @@
-$pipe-totop-border-size     : 1px             !default;
-$pipe-totop-border-style    : solid           !default;
-$pipe-totop-bottom-position : 40px            !default;
-$pipe-totop-right-position  : 40px            !default;
-$pipe-totop-padding         : 0.45rem 0.75rem !default;
+$pipe-totop-border-radius           : $pipe-border-radius        !default;
+$pipe-totop-border-size             : 1px                        !default;
+$pipe-totop-border-style            : solid                      !default;
+$pipe-totop-bottom-position         : 40px                       !default;
+$pipe-totop-color                   : $pipe-color-primary        !default;
+$pipe-totop-right-position          : 40px                       !default;
+$pipe-totop-padding                 : 0.45rem 0.75rem            !default;
+$pipe-totop-hover-background-color  : $pipe-color-primary-hover  !default;
+$pipe-totop-hover-border-color      : $pipe-color-primary-hover  !default;
+$pipe-totop-active-background-color : $pipe-color-primary-active !default;
+$pipe-totop-active-border-color     : $pipe-color-primary-active !default;
 
 .pp-totop {
 	border: $pipe-totop-border-size $pipe-totop-border-style $pipe-color-primary;
-	border-radius: $pipe-border-radius;
-	color: $pipe-color-primary;
+	border-radius: $pipe-totop-border-radius;
+	color: $pipe-totop-color;
 	cursor: pointer;
 	position: fixed;
 	bottom: $pipe-totop-bottom-position;
@@ -15,14 +21,14 @@ $pipe-totop-padding         : 0.45rem 0.75rem !default;
 	padding: $pipe-totop-padding;
 
 	&:focus, &:hover {
-		background-color: $pipe-color-primary-hover;
-		border: $pipe-totop-border-size $pipe-totop-border-style $pipe-color-primary-hover;
+		background-color: $pipe-totop-hover-background-color;
+		border: $pipe-totop-border-size $pipe-totop-border-style $pipe-totop-hover-border-color;
 		color: $pipe-color-primary-text-inverse;
 	}
 
 	&:active {
-		background-color: $pipe-color-primary-active;
-		border: $pipe-totop-border-size $pipe-totop-border-style $pipe-color-primary-active;
+		background-color: $pipe-totop-active-background-color;
+		border: $pipe-totop-border-size $pipe-totop-border-style $pipe-totop-active-border-color;
 		color: $pipe-color-primary-text-inverse;
 	}
 }

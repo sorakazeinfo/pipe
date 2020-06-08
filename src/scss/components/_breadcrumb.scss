@@ -1,6 +1,7 @@
-$pipe-breadcrumb-divider      : ">"          !default;
-$pipe-breadcrumb-padding      : 0 0.5rem     !default;
-$pipe-beradcrumb-item-padding : 1rem 0.55rem !default;
+$pipe-breadcrumb-not-link-color: $pipe-color-black !default;
+$pipe-breadcrumb-divider       : ">"               !default;
+$pipe-breadcrumb-padding       : 0 0.5rem          !default;
+$pipe-beradcrumb-item-padding  : 1rem 0.55rem      !default;
 
 .pp-breadcrumb {
 	display: flex;
@@ -12,7 +13,7 @@ $pipe-beradcrumb-item-padding : 1rem 0.55rem !default;
 			padding: $pipe-beradcrumb-item-padding;
 
 			&:not([href]) {
-				color: $pipe-color-black;
+				color: $pipe-breadcrumb-not-link-color;
 			}
 		}
 

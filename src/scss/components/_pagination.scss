@@ -1,9 +1,17 @@
-$pipe-pagination-item-padding: 0.5rem 1rem !default;
+$pipe-pagination-item-padding                 : 0.5rem 1rem                      !default;
+$pipe-pagination-hover-background-color       : $pipe-color-primary-hover        !default;
+$pipe-pagination-hover-border-color           : $pipe-color-primary-hover        !default;
+$pipe-pagination-hover-color                  : $pipe-color-primary-text-inverse !default;
+$pipe-pagination-link-border-color            : $pipe-color-primary              !default;
+$pipe-pagination-link-border-radius           : $pipe-border-radius              !default;
+$pipe-pagination-link-active-background-color : $pipe-color-primary-active       !default;
+$pipe-pagination-link-active-border-color     : $pipe-color-primary-active       !default;
+$pipe-pagination-link-active-color            : $pipe-color-primary-text-inverse !default;
 
 %pipe-pagination-hover-style {
-	background-color: $pipe-color-primary-hover;
-	border: 1px solid $pipe-color-primary-hover;
-	color: $pipe-color-primary-text-inverse;
+	background-color: $pipe-pagination-hover-background-color;
+	border: 1px solid $pipe-pagination-hover-border-color;
+	color: $pipe-pagination-hover-color;
 }
 
 .pp-pagination {
@@ -12,8 +20,8 @@ $pipe-pagination-item-padding: 0.5rem 1rem !default;
 	justify-content: center;
 
 	a {
-		border: 1px solid $pipe-color-primary;
-		border-radius: $pipe-border-radius;
+		border: 1px solid $pipe-pagination-link-border-color;
+		border-radius: $pipe-pagination-link-border-radius;
 		display: inline-block;
 		margin: 0.25rem;
 		padding: $pipe-pagination-item-padding;
@@ -24,9 +32,9 @@ $pipe-pagination-item-padding: 0.5rem 1rem !default;
 		}
 
 		&:active {
-			background-color: $pipe-color-primary-active;
-			border: 1px solid $pipe-color-primary-active;
-			color: $pipe-color-primary-text-inverse;
+			background-color: $pipe-pagination-link-active-background-color;
+			border: 1px solid $pipe-pagination-link-active-border-color;
+			color: $pipe-pagination-link-active-color;
 		}
 	}
 

@@ -1,5 +1,10 @@
-$pipe-tab-menu-border-default: 1px solid $pipe-color-gray !default;
-$pipe-tab-menu-border-hover  : 1px solid $pipe-color-primary !default;
+$pipe-tab-menu-border-default          : 1px solid $pipe-color-gray       !default;
+$pipe-tab-menu-border-hover            : 1px solid $pipe-color-primary    !default;
+$pipe-tab-menu-visited-link-color      : $pipe-color-primary              !default;
+$pipe-tab-menu-active-background-color : $pipe-color-primary              !default;
+$pipe-tab-menu-active-border-color     : $pipe-color-primary              !default;
+$pipe-tab-menu-active-color            : $pipe-color-primary-text-inverse !default;
+$pipe-tab-menu-active-visited-color    : $pipe-color-primary-text-inverse !default;
 
 .pp-tab {
 	&__menu {
@@ -44,21 +49,21 @@ $pipe-tab-menu-border-hover  : 1px solid $pipe-color-primary !default;
 				text-decoration: none;
 
 				&:visited {
-					color: $pipe-color-primary;
+					color: $pipe-tab-menu-visited-link-color;
 				}
 			}
 		}
 
 		&__active {
-			background-color: $pipe-color-primary;
-			border: 1px solid $pipe-color-primary !important;
+			background-color: $pipe-tab-menu-active-background-color;
+			border: 1px solid $pipe-tab-menu-active-border-color !important;
 
 			> a {
-				color: $pipe-color-primary-text-inverse;
+				color: $pipe-tab-menu-active-color;
 				pointer-events: none;
 
 				&:visited {
-					color: $pipe-color-primary-text-inverse !important;
+					color: $pipe-tab-menu-active-visited-color !important;
 				}
 			}
 		}
