@@ -276,6 +276,39 @@ select {
   content: "|";
 }
 
+.pp-footer__vertical-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pp-footer__vertical-menu__list {
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.pp-footer__vertical-menu__list__caption {
+  color: inherit;
+  border-bottom: 1px solid #aaa;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0 0 0.25rem 0;
+  margin: 0 0 0.5rem 0;
+}
+
+.pp-footer__vertical-menu__list li {
+  text-align: left;
+}
+
+.pp-footer__vertical-menu__list li a {
+  display: inline-block;
+  padding: 0.5rem 0;
+  text-decoration: none;
+}
+
+.pp-footer__vertical-menu__list li a:hover {
+  text-decoration: underline;
+}
+
 .pp-form--vertical .pp-form__control {
   background-color: rgba(238, 238, 238, 0.7);
   border-radius: 4px;
