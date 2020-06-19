@@ -1,8 +1,8 @@
 $pipe-notification-border-radius  : $pipe-border-radius !default;
 $pipe-notification-padding-top    : 1rem                !default;
-$pipe-notification-padding-right  : 0.5rem              !default;
+$pipe-notification-padding-right  : 1rem                !default;
 $pipe-notification-padding-bottom : 1rem                !default;
-$pipe-notification-padding-left   : 0.5rem              !default;
+$pipe-notification-padding-left   : 1rem                !default;
 
 %pipe-notification-default {
 	border-radius: $pipe-notification-border-radius;
