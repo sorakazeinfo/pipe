@@ -5,6 +5,16 @@ $pipe-footer-padding-bottom: 2rem !default;
 $pipe-footer-padding-left: 1rem !default;
 $pipe-footer-text-align: center !default;
 
+$pipe-footer-horizontal-menu-flex-wrap              : wrap      !default;
+$pipe-footer-horizontal-menu-justify-content        : center    !default;
+$pipe-footer-horizontal-menu-padding-top            : 0.5rem    !default;
+$pipe-footer-horizontal-menu-padding-right          : 1rem      !default;
+$pipe-footer-horizontal-menu-padding-bottom         : 0.5rem    !default;
+$pipe-footer-horizontal-menu-padding-left           : 1rem      !default;
+$pipe-footer-horizontal-menu-divider                : "|"       !default;
+$pipe-footer-horizontal-menu-text-decoration        : none      !default;
+$pipe-footer-horizontal-menu-text-decoration-active : underline !default;
+
 .pp-footer {
 	background-color: $pipe-footer-background-color;
 	padding-top: $pipe-footer-padding-top;
@@ -12,4 +22,26 @@ $pipe-footer-text-align: center !default;
 	padding-bottom: $pipe-footer-padding-bottom;
 	padding-left: $pipe-footer-padding-left;
 	text-align: $pipe-footer-text-align;
+
+	&__horizontal-menu {
+		display: flex;
+		flex-wrap: $pipe-footer-horizontal-menu-flex-wrap;
+		justify-content: $pipe-footer-horizontal-menu-justify-content;
+
+		li {
+			a {
+				display: inline-block;
+				padding: $pipe-footer-horizontal-menu-padding-top $pipe-footer-horizontal-menu-padding-right $pipe-footer-horizontal-menu-padding-bottom $pipe-footer-horizontal-menu-padding-left;
+				text-decoration: $pipe-footer-horizontal-menu-text-decoration;
+
+				&:hover {
+					text-decoration: $pipe-footer-horizontal-menu-text-decoration-active;
+				}
+			}
+
+			&:not(:last-child):after {
+				content: $pipe-footer-horizontal-menu-divider;
+			}
+		}
+	}
 }

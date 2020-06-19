@@ -256,6 +256,26 @@ select {
   text-align: center;
 }
 
+.pp-footer__horizontal-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pp-footer__horizontal-menu li a {
+  display: inline-block;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  text-decoration: none;
+}
+
+.pp-footer__horizontal-menu li a:hover {
+  text-decoration: underline;
+}
+
+.pp-footer__horizontal-menu li:not(:last-child):after {
+  content: "|";
+}
+
 .pp-form--vertical .pp-form__control {
   background-color: rgba(238, 238, 238, 0.7);
   border-radius: 4px;
