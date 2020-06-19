@@ -490,7 +490,7 @@ label > .pp-input {
 
 .pp-notification--primary, .pp-notification--secondary, .pp-notification--info, .pp-notification--success, .pp-notification--warning, .pp-notification--danger {
   border-radius: 4px;
-  padding: 1rem 0.5rem 1rem 0.5rem;
+  padding: 1rem 1rem 1rem 1rem;
 }
 
 .pp-notification--primary {
