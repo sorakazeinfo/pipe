@@ -6,6 +6,7 @@ $pipe-heading-border-border-color   : $pipe-color-primary !default;
 $pipe-heading-border-color          : inherit             !default;
 $pipe-heading-border-border-bottom  : 2px                 !default;
 $pipe-heading-border-padding-bottom : 5px                 !default;
+$pipe-heading-border-style          : solid               !default;
 
 .pp-heading {
 	&--bullet {
@@ -15,7 +16,7 @@ $pipe-heading-border-padding-bottom : 5px                 !default;
 	}
 
 	&--border {
-		border-bottom: $pipe-heading-border-border-bottom solid $pipe-heading-border-border-color;
+		border-bottom: $pipe-heading-border-border-bottom $pipe-heading-border-style $pipe-heading-border-border-color;
 		color: $pipe-heading-border-color;
 		padding-bottom: $pipe-heading-border-padding-bottom;
 	}
