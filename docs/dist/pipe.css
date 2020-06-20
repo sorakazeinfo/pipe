@@ -548,26 +548,32 @@ label > .pp-input {
 
 .pp-notification--primary {
   background-color: #dc143c;
+  color: #fff;
 }
 
 .pp-notification--secondary {
   background-color: #c9c908;
+  color: #fff;
 }
 
 .pp-notification--info {
   background-color: #3298dc;
+  color: #fff;
 }
 
 .pp-notification--success {
   background-color: #48c774;
+  color: #fff;
 }
 
 .pp-notification--warning {
   background-color: #ffdd57;
+  color: #333;
 }
 
 .pp-notification--danger {
   background-color: #f14668;
+  color: #fff;
 }
 
 .pp-pagination a:hover, .pp-pagination a:focus, .pp-pagination__item--active > a {
