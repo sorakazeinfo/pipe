@@ -256,17 +256,73 @@ select {
   text-align: center;
 }
 
+.pp-footer__horizontal-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pp-footer__horizontal-menu li a {
+  display: inline-block;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  text-decoration: none;
+}
+
+.pp-footer__horizontal-menu li a:hover {
+  text-decoration: underline;
+}
+
+.pp-footer__horizontal-menu li:not(:last-child):after {
+  content: "|";
+}
+
+.pp-footer__vertical-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pp-footer__vertical-menu__list {
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.pp-footer__vertical-menu__list__caption {
+  color: inherit;
+  border-bottom: 1px solid #aaa;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0 0 0.25rem 0;
+  margin: 0 0 0.5rem 0;
+}
+
+.pp-footer__vertical-menu__list li {
+  text-align: left;
+}
+
+.pp-footer__vertical-menu__list li a {
+  display: inline-block;
+  padding: 0.5rem 0;
+  text-decoration: none;
+}
+
+.pp-footer__vertical-menu__list li a:hover {
+  text-decoration: underline;
+}
+
 .pp-form--vertical .pp-form__control {
   background-color: rgba(238, 238, 238, 0.7);
   border-radius: 4px;
-  margin: 0.75rem 0;
-  padding: 0.5rem;
+  margin: 0.75rem 0 0.75rem 0;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 
 .pp-form--vertical .pp-form__control > label {
   display: block;
   font-weight: bold;
-  padding: 0.5rem 0 1rem;
+  padding-top: 0.5rem;
+  padding-right: 0;
+  padding-bottom: 1rem;
+  padding-left: 0;
 }
 
 @media screen and (min-width: 560px) {
@@ -290,8 +346,8 @@ select {
     flex-shrink: 1;
     background-color: rgba(238, 238, 238, 0.7);
     border-radius: 4px;
-    margin: 0.75rem 0;
-    padding: 0.5rem;
+    margin: 0.75rem 0 0.75rem 0;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
   }
 }
 
@@ -299,20 +355,33 @@ select {
   .pp-form--horizontal .pp-form__control {
     background-color: rgba(238, 238, 238, 0.7);
     border-radius: 4px;
-    margin: 0.75rem 0;
-    padding: 0.5rem;
+    margin: 0.75rem 0 0.75rem 0;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
   }
   .pp-form--horizontal .pp-form__control label {
     display: block;
     font-weight: bold;
-    padding: 0.5rem 0 1rem;
+    padding-top: 0.5rem;
+    padding-right: 0;
+    padding-bottom: 1rem;
+    padding-left: 0;
   }
 }
 
-.pp-form__control__help {
+.pp-form__control__note {
+  display: flex;
   font-size: 90%;
-  margin-top: 0.25rem;
-  margin-left: 0.5rem;
+  justify-content: space-between;
+  margin: 0.25rem 0 0 0.5rem;
+}
+
+.pp-form__control__note__help {
+  margin: 0 !important;
+}
+
+.pp-form__control__help, .pp-form__control__note__help {
+  font-size: 90%;
+  margin: 0.25rem 0 0 0.5rem;
 }
 
 .pp-heading--bullet {
@@ -495,26 +564,32 @@ label > .pp-input {
 
 .pp-notification--primary {
   background-color: #dc143c;
+  color: #fff;
 }
 
 .pp-notification--secondary {
   background-color: #c9c908;
+  color: #fff;
 }
 
 .pp-notification--info {
   background-color: #3298dc;
+  color: #fff;
 }
 
 .pp-notification--success {
   background-color: #48c774;
+  color: #fff;
 }
 
 .pp-notification--warning {
   background-color: #ffdd57;
+  color: #333;
 }
 
 .pp-notification--danger {
   background-color: #f14668;
+  color: #fff;
 }
 
 .pp-pagination a:hover, .pp-pagination a:focus, .pp-pagination__item--active > a {

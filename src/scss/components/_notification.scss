@@ -13,30 +13,36 @@ $pipe-notification-padding-left   : 1rem                !default;
 	&--primary {
 		@extend %pipe-notification-default;
 		background-color: $pipe-color-primary;
+		color: $pipe-color-primary-text-inverse;
 	}
 
 	&--secondary {
 		@extend %pipe-notification-default;
 		background-color: $pipe-color-secondary;
+		color: $pipe-color-secondary-text-inverse;
 	}
 
 	&--info {
 		@extend %pipe-notification-default;
 		background-color: $pipe-color-info;
+		color: $pipe-color-info-text-inverse;
 	}
 
 	&--success {
 		@extend %pipe-notification-default;
 		background-color: $pipe-color-success;
+		color: $pipe-color-success-text-inverse;
 	}
 
 	&--warning {
 		@extend %pipe-notification-default;
 		background-color: $pipe-color-warning;
+		color: $pipe-color-warning-text-inverse;
 	}
 
 	&--danger {
 		@extend %pipe-notification-default;
 		background-color: $pipe-color-danger;
+		color: $pipe-color-danger-text-inverse;
 	}
 }

@@ -107,10 +107,14 @@
 					<div><label>Already a member?</label></div>
 					<div>
 						<input type="text" class="pp-input--max">
-						<ul class="pp-form__control__help">
-							<li>help</li>
-							<li>text</li>
-						</ul>
+						<div class="pp-form__control__note">
+							<ul class="pp-form__control__note__help">
+								<li>help</li>
+								<li>text</li>
+							</ul>
+
+							<div>30/50文字</div>
+						</div>
 					</div>
 				</div>
 
