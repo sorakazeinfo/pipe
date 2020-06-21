@@ -93,6 +93,10 @@ $pipe-form-label-padding-left         : 0                          !default;
 		&__help {
 			margin: 0 !important;
 		}
+
+		> * {
+			font-size: $pipe-form-control-note-font-size;
+		}
 	}
 
 	&__control__help, // Depricated

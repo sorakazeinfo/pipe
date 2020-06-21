@@ -379,6 +379,10 @@ select {
   margin: 0 !important;
 }
 
+.pp-form__control__note > * {
+  font-size: 90%;
+}
+
 .pp-form__control__help, .pp-form__control__note__help {
   font-size: 90%;
   margin: 0.25rem 0 0 0.5rem;
