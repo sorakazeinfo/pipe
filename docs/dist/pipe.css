@@ -312,14 +312,17 @@ select {
 .pp-form--vertical .pp-form__control {
   background-color: rgba(238, 238, 238, 0.7);
   border-radius: 4px;
-  margin: 0.75rem 0;
-  padding: 0.5rem;
+  margin: 0.75rem 0 0.75rem 0;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 
 .pp-form--vertical .pp-form__control > label {
   display: block;
   font-weight: bold;
-  padding: 0.5rem 0 1rem;
+  padding-top: 0.5rem;
+  padding-right: 0;
+  padding-bottom: 1rem;
+  padding-left: 0;
 }
 
 @media screen and (min-width: 560px) {
@@ -343,8 +346,8 @@ select {
     flex-shrink: 1;
     background-color: rgba(238, 238, 238, 0.7);
     border-radius: 4px;
-    margin: 0.75rem 0;
-    padding: 0.5rem;
+    margin: 0.75rem 0 0.75rem 0;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
   }
 }
 
@@ -352,20 +355,22 @@ select {
   .pp-form--horizontal .pp-form__control {
     background-color: rgba(238, 238, 238, 0.7);
     border-radius: 4px;
-    margin: 0.75rem 0;
-    padding: 0.5rem;
+    margin: 0.75rem 0 0.75rem 0;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
   }
   .pp-form--horizontal .pp-form__control label {
     display: block;
     font-weight: bold;
-    padding: 0.5rem 0 1rem;
+    padding-top: 0.5rem;
+    padding-right: 0;
+    padding-bottom: 1rem;
+    padding-left: 0;
   }
 }
 
 .pp-form__control__help {
   font-size: 90%;
-  margin-top: 0.25rem;
-  margin-left: 0.5rem;
+  margin: 0.25rem 0 0 0.5rem;
 }
 
 .pp-heading--bullet {
