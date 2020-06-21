@@ -368,7 +368,18 @@ select {
   }
 }
 
-.pp-form__control__help {
+.pp-form__control__note {
+  display: flex;
+  font-size: 90%;
+  justify-content: space-between;
+  margin: 0.25rem 0 0 0.5rem;
+}
+
+.pp-form__control__note__help {
+  margin: 0 !important;
+}
+
+.pp-form__control__help, .pp-form__control__note__help {
   font-size: 90%;
   margin: 0.25rem 0 0 0.5rem;
 }

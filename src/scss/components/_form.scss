@@ -10,11 +10,11 @@ $pipe-form-control-padding-right      : 0.5rem                     !default;
 $pipe-form-control-padding-bottom     : 0.5rem                     !default;
 $pipe-form-control-padding-left       : 0.5rem                     !default;
 
-$pipe-form-control-help-font-size     : 90%                        !default;
-$pipe-form-control-help-margin-top    : 0.25rem                    !default;
-$pipe-form-control-help-margin-right  : 0                          !default;
-$pipe-form-control-help-margin-bottom : 0                          !default;
-$pipe-form-control-help-margin-left   : 0.5rem                     !default;
+$pipe-form-control-note-font-size     : 90%                        !default;
+$pipe-form-control-note-margin-top    : 0.25rem                    !default;
+$pipe-form-control-note-margin-right  : 0                          !default;
+$pipe-form-control-note-margin-bottom : 0                          !default;
+$pipe-form-control-note-margin-left   : 0.5rem                     !default;
 
 $pipe-form-label-padding-top          : 0.5rem                     !default;
 $pipe-form-label-padding-right        : 0                          !default;
@@ -84,8 +84,21 @@ $pipe-form-label-padding-left         : 0                          !default;
 		}
 	}
 
-	&__control__help {
-		font-size: $pipe-form-control-help-font-size;
-		margin: $pipe-form-control-help-margin-top $pipe-form-control-help-margin-right $pipe-form-control-help-margin-bottom $pipe-form-control-help-margin-left;
+	&__control__note {
+		display: flex;
+		font-size: $pipe-form-control-note-font-size;
+		justify-content: space-between;
+		margin: $pipe-form-control-note-margin-top $pipe-form-control-note-margin-right $pipe-form-control-note-margin-bottom $pipe-form-control-note-margin-left;
+
+		&__help {
+			margin: 0 !important;
+		}
 	}
+
+	&__control__help, // Depricated
+	&__control__note__help {
+		font-size: $pipe-form-control-note-font-size;
+		margin: $pipe-form-control-note-margin-top $pipe-form-control-note-margin-right $pipe-form-control-note-margin-bottom $pipe-form-control-note-margin-left;
+	}
+
 }
