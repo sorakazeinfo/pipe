@@ -771,6 +771,7 @@ label > .pp-radio--large {
 }
 
 .pp-tab__menu > li > a {
+  color: #dc143c;
   display: block;
   padding: 0.5rem;
   text-decoration: none;
@@ -786,7 +787,7 @@ label > .pp-radio--large {
 }
 
 .pp-tab__menu__active > a {
-  color: #fff;
+  color: #fff !important;
   pointer-events: none;
 }
 

@@ -44,6 +44,7 @@ $pipe-tab-menu-active-visited-color    : $pipe-color-primary-text-inverse !defau
 			}
 
 			> a {
+				color: $pipe-tab-menu-visited-link-color;
 				display: block;
 				padding: 0.5rem;
 				text-decoration: none;
@@ -59,7 +60,7 @@ $pipe-tab-menu-active-visited-color    : $pipe-color-primary-text-inverse !defau
 			border: 1px solid $pipe-tab-menu-active-border-color !important;
 
 			> a {
-				color: $pipe-tab-menu-active-color;
+				color: $pipe-tab-menu-active-color !important;
 				pointer-events: none;
 
 				&:visited {
