@@ -803,6 +803,42 @@ label > .pp-radio--large {
   margin-top: 1.25rem;
 }
 
+.pp-tab-border__menu {
+  border-bottom: 1px solid #aaa;
+  position: relative;
+}
+
+.pp-tab-border__menu > ul {
+  display: flex;
+  position: relative;
+  top: 1px;
+}
+
+.pp-tab-border__menu > ul > li a {
+  border-bottom: 1px solid #aaa;
+  color: #dc143c;
+  display: block;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+
+.pp-tab-border__menu > ul > li a:hover {
+  border-bottom: 1px solid #dc143c;
+}
+
+.pp-tab-border__menu__active > a {
+  border-bottom: 1px solid #dc143c !important;
+  color: #dc143c;
+}
+
+.pp-tab-border__contents > div {
+  display: none;
+}
+
+.pp-tab-border__menu + .pp-tab-border__contents {
+  margin-top: 1.25rem;
+}
+
 .pp-text--center {
   text-align: center;
 }
