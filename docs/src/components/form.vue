@@ -49,14 +49,62 @@
 
 		<section>
 			<h2>Checkbox</h2>
-			<div><input type="checkbox" class="pp-checkbox" checked></div>
-			<div><label><input type="checkbox" class="pp-checkbox" checked>checkbox</label></div>
+
+			<table>
+				<tr>
+					<td><strong>Default</strong></td>
+					<td>
+						<label class="pp-form__control__label"><input type="checkbox" class="pp-checkbox">checkbox</label>
+						<input type="checkbox" class="pp-checkbox">
+					</td>
+				</tr>
+
+				<tr>
+					<td><strong>.pp-checkbox--medium</strong></td>
+					<td>
+						<label class="pp-form__control__label"><input type="checkbox" class="pp-checkbox--medium" checked>checkbox</label>
+						<input type="checkbox" class="pp-checkbox--medium">
+					</td>
+				</tr>
+
+				<tr>
+					<td><strong>.pp-checkbox--large</strong></td>
+					<td>
+						<label class="pp-form__control__label"><input type="checkbox" class="pp-checkbox--large" checked>checkbox</label>
+						<input type="checkbox" class="pp-checkbox--large">
+					</td>
+				</tr>
+			</table>
 		</section>
 
 		<section>
 			<h2>Radio</h2>
-			<div><input type="radio" class="pp-radio" checked></div>
-			<div><label><input type="radio" class="pp-radio" checked>radio</label></div>
+
+			<table>
+				<tr>
+					<td><strong>Default</strong></td>
+					<td>
+						<label class="pp-form__control__label"><input type="radio" class="pp-radio">radio</label>
+						<input type="radio" class="pp-radio">
+					</td>
+				</tr>
+
+				<tr>
+					<td><strong>.pp-radio--medium</strong></td>
+					<td>
+						<label class="pp-form__control__label"><input type="radio" class="pp-radio--medium" checked>radio</label>
+						<input type="radio" class="pp-radio--medium">
+					</td>
+				</tr>
+
+				<tr>
+					<td><strong>.pp-radio--large</strong></td>
+					<td>
+						<label class="pp-form__control__label"><input type="radio" class="pp-radio--large" checked>radio</label>
+						<input type="radio" class="pp-radio--large">
+					</td>
+				</tr>
+			</table>
 		</section>
 
 		<section>

@@ -105,4 +105,7 @@ $pipe-form-label-padding-left         : 0                          !default;
 		margin: $pipe-form-control-note-margin-top $pipe-form-control-note-margin-right $pipe-form-control-note-margin-bottom $pipe-form-control-note-margin-left;
 	}
 
+	&__control__label {
+		cursor: pointer;
+	}
 }
