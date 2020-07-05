@@ -1,0 +1,42 @@
+$pipe-checkbox-scale-medium                   : 1.5     !default;
+$pipe-checkbox-scale-large                    : 2       !default;
+
+$pipe-checkbox-with-label-margin-right        : 0.5rem  !default;
+$pipe-checkbox-with-label-margin-left         : 0.5rem  !default;
+$pipe-checkbox-with-label-margin-right-medium : 0.6rem  !default;
+$pipe-checkbox-with-label-margin-left-medium  : 0.6rem  !default;
+$pipe-checkbox-with-label-margin-right-large  : 0.75rem !default;
+$pipe-checkbox-with-label-margin-left-large   : 0.75rem !default;
+
+%pipe-checkbox-default {
+	cursor: pointer;
+}
+
+.pp-checkbox {
+	@extend %pipe-checkbox-default;
+
+	&--medium {
+		@extend %pipe-checkbox-default;
+		transform: scale($pipe-checkbox-scale-medium);
+	}
+
+	&--large {
+		@extend %pipe-checkbox-default;
+		transform: scale($pipe-checkbox-scale-large);
+	}
+}
+
+label > .pp-checkbox {
+	margin-right: $pipe-checkbox-with-label-margin-right;
+	margin-left : $pipe-checkbox-with-label-margin-left;
+}
+
+label > .pp-checkbox--medium {
+	margin-right: $pipe-checkbox-with-label-margin-right-medium;
+	margin-left : $pipe-checkbox-with-label-margin-left-medium;
+}
+
+label > .pp-checkbox--large {
+	margin-right: $pipe-checkbox-with-label-margin-right-large;
+	margin-left : $pipe-checkbox-with-label-margin-left-large;
+}
