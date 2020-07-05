@@ -1,9 +1,11 @@
+$pipe-transform-breakpoint-max-mobile     : $pipe-breakpoint-max-mobile      !default;
+$pipe-transform-breakpoint-min-mobile     : $pipe-breakpoint-min-mobile      !default;
 $pipe-transform-table-th-background-color : $pipe-color-primary              !default;
 $pipe-transform-table-th-color            : $pipe-color-primary-text-inverse !default;
 $pipe-transform-table-cell-padding        : 0.5rem                           !default;
 
 .pp-transform-table {
-	@media #{$pipe-breakpoint-max-mobile} {
+	@media #{$pipe-transform-breakpoint-max-mobile} {
 		> div {
 			> div {
 				&:first-child {
@@ -19,7 +21,7 @@ $pipe-transform-table-cell-padding        : 0.5rem                           !de
 		}
 	}
 
-	@media #{$pipe-breakpoint-min-mobile} {
+	@media #{$pipe-transform-breakpoint-min-mobile} {
 		display: table;
 		width: 100%;
 

@@ -1,4 +1,8 @@
+$pipe-form-breakpoint-min-mobile      : $pipe-breakpoint-min-mobile !default;
+$pipe-form-breakpoint-max-mobile      : $pipe-breakpoint-max-mobile !default;
+
 $pipe-form-control-background-color   : rgba(238, 238, 238, 0.7) !default;
+$pipe-form-control-border-radius      : $pipe-border-radius        !default;
 
 $pipe-form-control-margin-top         : 0.75rem                    !default;
 $pipe-form-control-margin-right       : 0                          !default;
@@ -23,7 +27,7 @@ $pipe-form-label-padding-left         : 0                          !default;
 
 @mixin pipe-form-control-vertical {
 	background-color: $pipe-form-control-background-color;
-	border-radius: $pipe-border-radius;
+	border-radius: $pipe-form-control-border-radius;
 	margin: $pipe-form-control-margin-top $pipe-form-control-margin-right $pipe-form-control-margin-bottom $pipe-form-control-margin-left;
 	padding: $pipe-form-control-padding-top $pipe-form-control-padding-right $pipe-form-control-padding-bottom $pipe-form-control-padding-left;
 }
@@ -50,7 +54,7 @@ $pipe-form-label-padding-left         : 0                          !default;
 
 	&--horizontal {
 		.pp-form__control {
-			@media #{$pipe-breakpoint-min-mobile} {
+			@media #{$pipe-form-breakpoint-min-mobile} {
 				display: flex;
 				margin-bottom: 1rem;
 
@@ -74,7 +78,7 @@ $pipe-form-label-padding-left         : 0                          !default;
 				}
 			}
 
-			@media #{$pipe-breakpoint-max-mobile} {
+			@media #{$pipe-form-breakpoint-max-mobile} {
 				@include pipe-form-control-vertical;
 
 				label {
