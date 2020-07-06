@@ -1,0 +1,42 @@
+$pipe-radio-scale-medium                   : 1.5     !default;
+$pipe-radio-scale-large                    : 2       !default;
+
+$pipe-radio-with-label-margin-right        : 0.5rem  !default;
+$pipe-radio-with-label-margin-left         : 0.5rem  !default;
+$pipe-radio-with-label-margin-right-medium : 0.6rem  !default;
+$pipe-radio-with-label-margin-left-medium  : 0.6rem  !default;
+$pipe-radio-with-label-margin-right-large  : 0.75rem !default;
+$pipe-radio-with-label-margin-left-large   : 0.75rem !default;
+
+%pipe-radio-default {
+	cursor: pointer;
+}
+
+.pp-radio {
+	@extend %pipe-radio-default;
+
+	&--medium {
+		@extend %pipe-radio-default;
+		transform: scale($pipe-radio-scale-medium);
+	}
+
+	&--large {
+		@extend %pipe-radio-default;
+		transform: scale($pipe-radio-scale-large);
+	}
+}
+
+label > .pp-radio {
+	margin-right: $pipe-radio-with-label-margin-right;
+	margin-left : $pipe-radio-with-label-margin-left;
+}
+
+label > .pp-radio--medium {
+	margin-right: $pipe-radio-with-label-margin-right-medium;
+	margin-left : $pipe-radio-with-label-margin-left-medium;
+}
+
+label > .pp-radio--large {
+	margin-right: $pipe-radio-with-label-margin-right-large;
+	margin-left : $pipe-radio-with-label-margin-left-large;
+}

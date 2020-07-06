@@ -1,13 +1,16 @@
+$pipe-hidden-breakpoint-max-mobile : $pipe-breakpoint-max-mobile !default;
+$pipe-hidden-breakpoint-min-mobile : $pipe-breakpoint-min-mobile !default;
+
 .pp-hidden {
 	display: none;
 
-	@media #{$pipe-breakpoint-max-mobile} {
+	@media #{$pipe-hidden-breakpoint-max-mobile} {
 		&--mobile {
 			display: none;
 		}
 	}
 
-	@media #{$pipe-breakpoint-min-mobile} {
+	@media #{$pipe-hidden-breakpoint-min-mobile} {
 		&--tablet,
 		&--desktop {
 			display: none;

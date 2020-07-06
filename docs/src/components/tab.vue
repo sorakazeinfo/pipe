@@ -40,5 +40,26 @@
 			</div>
 		</div>
 
+		<br>
+
+		<div class="pp-tab-border" data-pipejs="tab">
+			<div class="pp-tab-border__menu">
+				<ul>
+					<li><a href="#contents11">List11</a></li>
+					<li><a href="#contents12">List12</a></li>
+					<li class="pp-tab-border__menu__active"><a href="#contents13">List13</a></li>
+					<li><a href="#contents14">List14</a></li>
+					<li><a href="#contents15">List15</a></li>
+				</ul>
+			</div>
+
+			<div class="pp-tab-border__contents">
+				<div id="contents11">Contents11</div>
+				<div id="contents12">Contents12</div>
+				<div id="contents13">Contents13</div>
+				<div id="contents14">Contents14</div>
+				<div id="contents15">Contents15</div>
+			</div>
+		</div>
 	</div>
 </template>

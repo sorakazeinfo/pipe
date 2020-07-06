@@ -6,6 +6,12 @@ $pipe-tab-menu-active-border-color     : $pipe-color-primary              !defau
 $pipe-tab-menu-active-color            : $pipe-color-primary-text-inverse !default;
 $pipe-tab-menu-active-visited-color    : $pipe-color-primary-text-inverse !default;
 
+$pipe-tab-border-border-bottom-size         : 1px                 !default;
+$pipe-tab-border-border-bottom-color        : #aaa                !default;
+$pipe-tab-border-border-bottom-color-active : $pipe-color-primary !default;
+$pipe-tab-border-menu-item-color            : $pipe-color-primary !default;
+$pipe-tab-border-menu-item-padding          : 0.5rem              !default;
+
 .pp-tab {
 	&__menu {
 		display: flex;
@@ -44,6 +50,7 @@ $pipe-tab-menu-active-visited-color    : $pipe-color-primary-text-inverse !defau
 			}
 
 			> a {
+				color: $pipe-tab-menu-visited-link-color;
 				display: block;
 				padding: 0.5rem;
 				text-decoration: none;
@@ -59,13 +66,55 @@ $pipe-tab-menu-active-visited-color    : $pipe-color-primary-text-inverse !defau
 			border: 1px solid $pipe-tab-menu-active-border-color !important;
 
 			> a {
-				color: $pipe-tab-menu-active-color;
+				color: $pipe-tab-menu-active-color !important;
 				pointer-events: none;
 
 				&:visited {
 					color: $pipe-tab-menu-active-visited-color !important;
 				}
 			}
+		}
+	}
+
+	&__contents {
+		> div {
+			display: none;
+		}
+	}
+
+	&__menu + &__contents {
+		margin-top: 1.25rem;
+	}
+}
+
+.pp-tab-border {
+	&__menu {
+		border-bottom: $pipe-tab-border-border-bottom-size solid $pipe-tab-border-border-bottom-color;
+		position: relative;
+
+		> ul {
+			display: flex;
+			position: relative;
+			top: $pipe-tab-border-border-bottom-size;
+
+			> li {
+				a {
+					border-bottom: $pipe-tab-border-border-bottom-size solid $pipe-tab-border-border-bottom-color;
+					color: $pipe-tab-border-menu-item-color;
+					display: block;
+					padding: $pipe-tab-border-menu-item-padding;
+					text-decoration: none;
+
+					&:hover {
+						border-bottom: $pipe-tab-border-border-bottom-size solid $pipe-tab-border-border-bottom-color-active;
+					}
+				}
+			}
+		}
+
+		&__active > a {
+			border-bottom: $pipe-tab-border-border-bottom-size solid $pipe-tab-border-border-bottom-color-active !important;
+			color: $pipe-tab-border-menu-item-color;
 		}
 	}
 

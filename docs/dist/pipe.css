@@ -214,6 +214,33 @@ select {
   cursor: pointer;
 }
 
+.pp-checkbox, .pp-checkbox--medium, .pp-checkbox--large {
+  cursor: pointer;
+}
+
+.pp-checkbox--medium {
+  transform: scale(1.5);
+}
+
+.pp-checkbox--large {
+  transform: scale(2);
+}
+
+label > .pp-checkbox {
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+label > .pp-checkbox--medium {
+  margin-right: 0.6rem;
+  margin-left: 0.6rem;
+}
+
+label > .pp-checkbox--large {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+}
+
 .pp-clearfix:after {
   content: '';
   clear: both;
@@ -386,6 +413,10 @@ select {
 .pp-form__control__help, .pp-form__control__note__help {
   font-size: 90%;
   margin: 0.25rem 0 0 0.5rem;
+}
+
+.pp-form__control__label {
+  cursor: pointer;
 }
 
 .pp-heading--bullet {
@@ -636,6 +667,33 @@ label > .pp-input {
   padding: 0.5rem 1rem;
 }
 
+.pp-radio, .pp-radio--medium, .pp-radio--large {
+  cursor: pointer;
+}
+
+.pp-radio--medium {
+  transform: scale(1.5);
+}
+
+.pp-radio--large {
+  transform: scale(2);
+}
+
+label > .pp-radio {
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+label > .pp-radio--medium {
+  margin-right: 0.6rem;
+  margin-left: 0.6rem;
+}
+
+label > .pp-radio--large {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+}
+
 .pp-snackbar--top, .pp-snackbar--top--success, .pp-snackbar--top--error, .pp-snackbar--bottom, .pp-snackbar--bottom--success, .pp-snackbar--bottom--error {
   position: fixed;
   left: 0;
@@ -713,6 +771,7 @@ label > .pp-input {
 }
 
 .pp-tab__menu > li > a {
+  color: #dc143c;
   display: block;
   padding: 0.5rem;
   text-decoration: none;
@@ -728,7 +787,7 @@ label > .pp-input {
 }
 
 .pp-tab__menu__active > a {
-  color: #fff;
+  color: #fff !important;
   pointer-events: none;
 }
 
@@ -741,6 +800,42 @@ label > .pp-input {
 }
 
 .pp-tab__menu + .pp-tab__contents {
+  margin-top: 1.25rem;
+}
+
+.pp-tab-border__menu {
+  border-bottom: 1px solid #aaa;
+  position: relative;
+}
+
+.pp-tab-border__menu > ul {
+  display: flex;
+  position: relative;
+  top: 1px;
+}
+
+.pp-tab-border__menu > ul > li a {
+  border-bottom: 1px solid #aaa;
+  color: #dc143c;
+  display: block;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+
+.pp-tab-border__menu > ul > li a:hover {
+  border-bottom: 1px solid #dc143c;
+}
+
+.pp-tab-border__menu__active > a {
+  border-bottom: 1px solid #dc143c !important;
+  color: #dc143c;
+}
+
+.pp-tab-border__contents > div {
+  display: none;
+}
+
+.pp-tab-border__menu + .pp-tab-border__contents {
   margin-top: 1.25rem;
 }
 
