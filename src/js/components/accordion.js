@@ -1,4 +1,4 @@
-export default class Modal {
+export default class Accordion {
 	constructor() {
 		this.id = "accordion";
 		this.activeClass = "pipejs-accordion-active";
