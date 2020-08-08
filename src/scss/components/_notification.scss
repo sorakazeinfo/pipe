@@ -46,25 +46,25 @@ $pipe-notification-padding-left   : 1rem                !default;
 		color: $pipe-color-danger-text-inverse;
 	}
 
-    &__link {
-        position: relative;
+	&__link {
+		position: relative;
 
-        > a {
-            color: inherit !important;
-            text-decoration: none;
+		> a {
+			color: inherit !important;
+			text-decoration: none;
 
-            &:after {
-                position: absolute;
-                content: "";
-                top: 0;
-                right: 0;
-                bottom: 0;
-                left: 0;
-            }
+			&:after {
+				position: absolute;
+				content: "";
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+			}
 
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-    }
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
 }
