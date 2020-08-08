@@ -1,14 +1,14 @@
 {
   "name": "pipe-framework",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Pipe is CSS and JavaScript Framework",
   "main": "app.js",
   "scripts": {
-	"build": "npm run build:css & npm run build.dev:css & npm run build:js",
+    "build": "npm run build:css & npm run build.dev:css & npm run build:js",
     "build:css" : "node-sass ./src/scss/pipe.scss ./dist/pipe.min.css --output-style compressed",
-	"build.dev:css" : "node-sass ./src/scss/pipe.scss ./dist/pipe.css --output-style expanded",
+    "build.dev:css" : "node-sass ./src/scss/pipe.scss ./dist/pipe.css --output-style expanded",
     "build:js" : "webpack --config webpack.prod.js",
-	"dev": "npm run dev:css & npm run dev:js",
+    "dev": "npm run dev:css & npm run dev:js",
     "dev:css": "node-sass ./src/scss/pipe.scss ./docs/dist/pipe.css --output-style expanded",
     "dev:js": "webpack --config webpack.dev.js",
     "watch:css": "node-sass ./src/scss/pipe.scss ./docs/dist/pipe.css --output-style expanded --watch",
@@ -23,7 +23,7 @@
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.5",
     "babel-loader": "^8.1.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^4.14.1",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",
     "webpack-merge": "^4.2.2"

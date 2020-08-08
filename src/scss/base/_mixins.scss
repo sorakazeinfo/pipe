@@ -13,13 +13,13 @@
 
 @mixin pipe-focusFormBorder {
 	border: 1px solid $pipe-color-primary-input-border;
-	box-shadow: 0 0 0 .2em $pipe-color-primary-input-border;
+	box-shadow: 0 0 0 .1em $pipe-color-primary-input-border;
 	outline: 0;
 }
 
 @mixin pipe-invalidFormBorder {
 	border-color: $pipe-color-danger;
-	box-shadow: 0 0 0 .2em $pipe-color-danger;
+	box-shadow: 0 0 0 .1em $pipe-color-danger;
 	outline: 0;
 }
 

@@ -39,7 +39,7 @@
 		color: $pipe-color-warning;
 	}
 
-	&--danger {
+	&--danger, &--error {
 		color: $pipe-color-danger;
 	}
 }

@@ -133,6 +133,15 @@
 						<li>text</li>
 					</ul>
 				</div>
+
+				<div class="pp-form__control">
+					<label>Gender</label>
+					<div>
+						<label class="pp-form__control__label"><input type="radio" class="pp-radio">Do not select</label>
+						<label class="pp-form__control__label"><input type="radio" class="pp-radio">Male</label>
+						<label class="pp-form__control__label"><input type="radio" class="pp-radio">Female</label>
+					</div>
+				</div>
 			</div>
 		</section>
 
