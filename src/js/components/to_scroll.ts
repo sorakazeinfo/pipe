@@ -1,4 +1,6 @@
 export default class ToScroll {
+	private id: string;
+
 	constructor() {
 		this.id = "scroll";
 	}
@@ -20,7 +22,7 @@ export default class ToScroll {
 					e.preventDefault();
 					destinationElement.scrollIntoView({
 						behavior: "smooth",
-						block: block
+						block: "start"
 					});
 				});
 			});

@@ -1,5 +1,5 @@
 module.exports = {
-  entry: "./src/js/pipe.js",
+  entry: "./src/js/pipe.ts",
   module: {
     rules: [
       {

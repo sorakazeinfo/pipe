@@ -1,4 +1,7 @@
 export default class Tab {
+	private id: string;
+	private tabs: Array<TabContainer>;
+
 	constructor() {
 		this.id = "tab";
 		this.tabs = [];
@@ -7,7 +10,7 @@ export default class Tab {
 	initialize() {
 		const tabs = document.querySelectorAll(`[data-pipejs=${this.id}]`);
 		if (tabs.length > 0) {
-			tabs.forEach(tab => {
+			tabs.forEach((tab: HTMLElement) => {
 				this.tabs.push(new TabContainer(tab));
 			});
 
@@ -17,12 +20,14 @@ export default class Tab {
 }
 
 class TabContainer {
-	constructor(tab) {
+	private rootElement: HTMLElement;
+	private tabItems: Array<any>;
+	private activeClassName: string;
+	private menuItemSelector: string;
+
+	constructor(tab: HTMLElement) {
 		this.rootElement = tab;
 		this.tabItems = [];
-
-		this.itemElements = [];
-		this.contentElements = [];
 
 		if (tab.classList.contains("pp-tab")) {
 			this.activeClassName = "pp-tab__menu__active";
@@ -50,11 +55,11 @@ class TabContainer {
 	initialize() {
 		// Collect
 		const menuItems = this.rootElement.querySelectorAll(this.menuItemSelector);
-		menuItems.forEach(item => {
+		menuItems.forEach((item: HTMLElement) => {
 			this.tabItems.push({
 				id: Math.random().toString(18).slice(-8),
 				menu: item,
-				content: this.rootElement.querySelector(item.firstElementChild.hash),
+				content: this.rootElement.querySelector((<HTMLAnchorElement>item.firstElementChild).hash),
 				visible: item.classList.contains(this.activeClassName)
 			});
 		});

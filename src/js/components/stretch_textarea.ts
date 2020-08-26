@@ -1,4 +1,6 @@
 export default class StretchTextarea {
+	private id: string;
+
 	constructor() {
 		this.id = "textarea-expanded";
 	}
