@@ -35,65 +35,32 @@ export default class TextCounter {
 		}
 	}
 
-	initialize() {
+	bindEvent(textForm: HTMLElement, mode: string): void {
 		const keyupEvent = new Event("keyup");
+		const id: string = textForm.getAttribute("data-pipe-target");
+		const counter: HTMLElement = document.querySelector(id);
 
-		// Normal
-		let textForms = document.querySelectorAll(`[data-pipejs=${this.id}]`);
-		if (textForms.length > 0) {
-			textForms.forEach(textForm => {
-				const id: string = textForm.getAttribute("data-pipe-target");
-				const counter: HTMLElement = document.querySelector(id);
-
-				if (counter !== null) {
-					// Text Form
-					textForm.addEventListener("keyup", e => {
-						e.preventDefault();
-						const targetElement: HTMLTextAreaElement = <HTMLTextAreaElement>e.target;
-						const length: number = this.getCharacterLength("normal", targetElement.value);
-						const minChar: number = parseInt(targetElement.getAttribute("data-pipe-min")) ?? 0;
-						const maxChar: number = parseInt(targetElement.getAttribute("data-pipe-max")) ?? 0;
-						this.displayCounter(counter, length, minChar, maxChar);
-					});
-
-					// Event Trigger
-					textForm.dispatchEvent(keyupEvent);
-				}
+		if (counter !== null) {
+			// Text Form
+			textForm.addEventListener("keyup", e => {
+				e.preventDefault();
+				const targetElement: HTMLTextAreaElement = <HTMLTextAreaElement>e.target;
+				const length: number = this.getCharacterLength(mode, targetElement.value);
+				const minChar: number = parseInt(targetElement.getAttribute("data-pipe-min")) ?? 0;
+				const maxChar: number = parseInt(targetElement.getAttribute("data-pipe-max")) ?? 0;
+				this.displayCounter(counter, length, minChar, maxChar);
 			});
+
+			// Event Trigger
+			textForm.dispatchEvent(keyupEvent);
 		}
+	}
 
-		// Strict
-		textForms = document.querySelectorAll(`[data-pipejs=${this.idStrict}]`);
-		if (textForms.length > 0) {
-			textForms.forEach(textForm => {
-				const id: string = textForm.getAttribute("data-pipe-target");
-				const counter: HTMLElement = document.querySelector(id);
+	initialize() {
+		const normalForms: NodeListOf<HTMLElement> = document.querySelectorAll(`[data-pipejs=${this.id}]`);
+		normalForms.forEach(normalForm => this.bindEvent(normalForm, "normal"));
 
-				if (counter !== null) {
-					// Text Form
-					textForm.addEventListener("keyup", function(e) {
-						e.preventDefault();
-
-						const targetElement: HTMLTextAreaElement = <HTMLTextAreaElement>e.target;
-						const maxChar: number = parseInt(targetElement.getAttribute("data-pipe-max"));
-						const currentCharCount = targetElement.value.replace(/\r\n|\n|\s|　/g,'').length;
-
-						if (isNaN(maxChar) === false) {
-							if (currentCharCount > maxChar) {
-								counter.classList.add("pp-text--danger");
-							} else {
-								counter.classList.remove("pp-text--danger");
-							}
-							counter.innerText = currentCharCount.toString();
-						} else {
-							counter.innerText = currentCharCount.toString();
-						}
-					});
-
-					// Event Trigger
-					textForm.dispatchEvent(keyupEvent);
-				}
-			});
-		}
+		const strictForms: NodeListOf<HTMLElement> = document.querySelectorAll(`[data-pipejs=${this.idStrict}]`)
+		strictForms.forEach(strictForm => this.bindEvent(strictForm, "strict"));
 	}
 }
