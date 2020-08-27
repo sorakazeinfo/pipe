@@ -7,6 +7,26 @@ export default class TextCounter {
 		this.idStrict = "text-counter-strict"
 	}
 
+	displayCounter(target: HTMLElement, length: number, minLength: number, maxLength: number): void {
+		if (minLength > 0) {
+			target.classList.remove("pp-text--info");
+
+			if (length < minLength) {
+				target.classList.add("pp-text--info");
+			}
+		}
+
+		if (maxLength > 0) {
+			target.classList.remove("pp-text--danger");
+
+			if (length > maxLength) {
+				target.classList.add("pp-text--danger");
+			}
+		}
+
+		target.innerText = length.toString();
+	}
+
 	initialize() {
 		const keyupEvent = new Event("keyup");
 
@@ -19,22 +39,13 @@ export default class TextCounter {
 
 				if (counter !== null) {
 					// Text Form
-					textForm.addEventListener("keyup", function(e) {
+					textForm.addEventListener("keyup", e => {
 						e.preventDefault();
-
 						const targetElement: HTMLTextAreaElement = <HTMLTextAreaElement>e.target;
-						const maxChar: number = parseInt(targetElement.getAttribute("data-pipe-max"));
-
-						if (isNaN(maxChar) === false) {
-							if (targetElement.value.length > maxChar) {
-								counter.classList.add("pp-text--danger");
-							} else {
-								counter.classList.remove("pp-text--danger");
-							}
-							counter.innerText = targetElement.value.length.toString();
-						} else {
-							counter.innerText = targetElement.value.length.toString();
-						}
+						const length: number = targetElement.value.length;
+						const minChar: number = parseInt(targetElement.getAttribute("data-pipe-min")) ?? 0;
+						const maxChar: number = parseInt(targetElement.getAttribute("data-pipe-max")) ?? 0;
+						this.displayCounter(counter, length, minChar, maxChar);
 					});
 
 					// Event Trigger
