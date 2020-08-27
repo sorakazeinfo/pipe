@@ -17,18 +17,18 @@ export default class Accordion {
 			if (targetElement !== null) {
 				trigger.addEventListener("click", e => {
 					e.preventDefault();
-					this.click(targetElement);
+					this.click(targetElement, this.activeClass);
 				});
 			}
 		});
 	}
 
-	click(targetElement: HTMLElement): void {
-		if (targetElement.classList.contains(this.activeClass)) {
-			targetElement.classList.remove(this.activeClass);
+	click(targetElement: HTMLElement, activeClass: string): void {
+		if (targetElement.classList.contains(activeClass)) {
+			targetElement.classList.remove(activeClass);
 			targetElement.style.maxHeight = "0";
 		} else {
-			targetElement.classList.add(this.activeClass);
+			targetElement.classList.add(activeClass);
 			targetElement.style.maxHeight = targetElement.scrollHeight + "px";
 		}
 	}
