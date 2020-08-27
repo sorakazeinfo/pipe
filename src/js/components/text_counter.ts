@@ -24,15 +24,14 @@ export default class TextCounter {
 
 						const targetElement: HTMLTextAreaElement = <HTMLTextAreaElement>e.target;
 						const maxChar: number = parseInt(targetElement.getAttribute("data-pipe-max"));
-						const counterFirstElementChild: HTMLElement = <HTMLElement>counter.firstElementChild;
 
 						if (isNaN(maxChar) === false) {
 							if (targetElement.value.length > maxChar) {
-								counterFirstElementChild.classList.add("pp-text--danger");
+								counter.classList.add("pp-text--danger");
 							} else {
-								counterFirstElementChild.classList.remove("pp-text--danger");
+								counter.classList.remove("pp-text--danger");
 							}
-							counterFirstElementChild.innerText = targetElement.value.length.toString();
+							counter.innerText = targetElement.value.length.toString();
 						} else {
 							counter.innerText = targetElement.value.length.toString();
 						}
@@ -58,16 +57,15 @@ export default class TextCounter {
 
 						const targetElement: HTMLTextAreaElement = <HTMLTextAreaElement>e.target;
 						const maxChar: number = parseInt(targetElement.getAttribute("data-pipe-max"));
-						const counterFirstElementChild: HTMLElement = <HTMLElement>counter.firstElementChild;
 						const currentCharCount = targetElement.value.replace(/\r\n|\n|\s|　/g,'').length;
 
 						if (isNaN(maxChar) === false) {
 							if (currentCharCount > maxChar) {
-								counterFirstElementChild.classList.add("pp-text--danger");
+								counter.classList.add("pp-text--danger");
 							} else {
-								counterFirstElementChild.classList.remove("pp-text--danger");
+								counter.classList.remove("pp-text--danger");
 							}
-							counterFirstElementChild.innerText = currentCharCount.toString();
+							counter.innerText = currentCharCount.toString();
 						} else {
 							counter.innerText = currentCharCount.toString();
 						}
