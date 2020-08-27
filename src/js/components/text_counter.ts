@@ -27,6 +27,14 @@ export default class TextCounter {
 		target.innerText = length.toString();
 	}
 
+	getCharacterLength(mode: string, value: string): number {
+		if (mode === "strict") {
+			return value.replace(/\r\n|\n|\s|　/g,'').length;
+		} else {
+			return value.length;
+		}
+	}
+
 	initialize() {
 		const keyupEvent = new Event("keyup");
 
@@ -42,7 +50,7 @@ export default class TextCounter {
 					textForm.addEventListener("keyup", e => {
 						e.preventDefault();
 						const targetElement: HTMLTextAreaElement = <HTMLTextAreaElement>e.target;
-						const length: number = targetElement.value.length;
+						const length: number = this.getCharacterLength("normal", targetElement.value);
 						const minChar: number = parseInt(targetElement.getAttribute("data-pipe-min")) ?? 0;
 						const maxChar: number = parseInt(targetElement.getAttribute("data-pipe-max")) ?? 0;
 						this.displayCounter(counter, length, minChar, maxChar);
