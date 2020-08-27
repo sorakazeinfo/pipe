@@ -14,6 +14,21 @@
 				</div>
 			</div>
 		</div>
+
+		<br>
+
+		<div class="item">
+			<div
+				data-pipejs="accordion"
+				data-pipe-target="#description2">
+					<a href="#">toggle2</a>
+			</div>
+
+			<div id="description2">
+				<div style="padding: 1rem">toggle2 description.
+				</div>
+			</div>
+		</div>
 	</div>
 </template>
 
