@@ -12,23 +12,26 @@ export default class Accordion {
 
 		if (triggers.length > 0) {
 			triggers.forEach(trigger => {
-				trigger.addEventListener("click", e => {
-					e.preventDefault();
+				const target: string = trigger.getAttribute("data-pipe-target");
+				const targetElement: HTMLElement = document.querySelector(target);
 
-					const target = trigger.getAttribute("data-pipe-target");
-					if (target !== null) {
-						const targetElement: HTMLElement = document.querySelector(target);
-
-						if (targetElement.classList.contains(this.activeClass)) {
-							targetElement.classList.remove(this.activeClass);
-							targetElement.style.maxHeight = "0";
-						} else {
-							targetElement.classList.add(this.activeClass);
-							targetElement.style.maxHeight = targetElement.scrollHeight + "px";
-						}
-					}
-				});
+				if (targetElement !== null) {
+					trigger.addEventListener("click", e => {
+						e.preventDefault();
+						this.click(targetElement);
+					});
+				}
 			});
+		}
+	}
+
+	click(targetElement: HTMLElement): void {
+		if (targetElement.classList.contains(this.activeClass)) {
+			targetElement.classList.remove(this.activeClass);
+			targetElement.style.maxHeight = "0";
+		} else {
+			targetElement.classList.add(this.activeClass);
+			targetElement.style.maxHeight = targetElement.scrollHeight + "px";
 		}
 	}
 }
