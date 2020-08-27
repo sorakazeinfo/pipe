@@ -10,19 +10,17 @@ export default class Accordion {
 	initialize() {
 		const triggers: NodeListOf<HTMLElement> = document.querySelectorAll(`[data-pipejs=${this.id}]`);
 
-		if (triggers.length > 0) {
-			triggers.forEach(trigger => {
-				const target: string = trigger.getAttribute("data-pipe-target");
-				const targetElement: HTMLElement = document.querySelector(target);
+		triggers.forEach(trigger => {
+			const target: string = trigger.getAttribute("data-pipe-target");
+			const targetElement: HTMLElement = document.querySelector(target);
 
-				if (targetElement !== null) {
-					trigger.addEventListener("click", e => {
-						e.preventDefault();
-						this.click(targetElement);
-					});
-				}
-			});
-		}
+			if (targetElement !== null) {
+				trigger.addEventListener("click", e => {
+					e.preventDefault();
+					this.click(targetElement);
+				});
+			}
+		});
 	}
 
 	click(targetElement: HTMLElement): void {
