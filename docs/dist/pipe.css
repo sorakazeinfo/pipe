@@ -461,13 +461,13 @@ label > .pp-checkbox--large {
 
 .pp-input:focus, .pp-input--max:focus {
   border: 1px solid #f594a7;
-  box-shadow: 0 0 0 0.2em #f594a7;
+  box-shadow: 0 0 0 0.1em #f594a7;
   outline: 0;
 }
 
 .pp-input:not(:focus):not(:placeholder-shown):invalid, .pp-input--max:not(:focus):not(:placeholder-shown):invalid {
   border-color: #f14668;
-  box-shadow: 0 0 0 0.2em #f14668;
+  box-shadow: 0 0 0 0.1em #f14668;
   outline: 0;
 }
 
@@ -477,7 +477,7 @@ label > .pp-checkbox--large {
 
 .pp-input--error {
   border-color: #f14668;
-  box-shadow: 0 0 0 0.2em #f14668;
+  box-shadow: 0 0 0 0.1em #f14668;
   outline: 0;
 }
 
@@ -592,7 +592,7 @@ label > .pp-input {
   text-align: right;
 }
 
-.pp-notification--primary, .pp-notification--secondary, .pp-notification--info, .pp-notification--success, .pp-notification--warning, .pp-notification--danger {
+.pp-notification--primary, .pp-notification--secondary, .pp-notification--info, .pp-notification--success, .pp-notification--warning, .pp-notification--danger, .pp-notification--error {
   border-radius: 4px;
   padding: 1rem 1rem 1rem 1rem;
 }
@@ -622,9 +622,31 @@ label > .pp-input {
   color: #333;
 }
 
-.pp-notification--danger {
+.pp-notification--danger, .pp-notification--error {
   background-color: #f14668;
   color: #fff;
+}
+
+.pp-notification__link {
+  position: relative;
+}
+
+.pp-notification__link > a {
+  color: inherit !important;
+  text-decoration: none;
+}
+
+.pp-notification__link > a:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.pp-notification__link > a:hover {
+  text-decoration: underline;
 }
 
 .pp-pagination a:hover, .pp-pagination a:focus, .pp-pagination__item--active > a {
@@ -879,7 +901,7 @@ label > .pp-radio--large {
   color: #ffdd57;
 }
 
-.pp-text--danger {
+.pp-text--danger, .pp-text--error {
   color: #f14668;
 }
 
@@ -893,13 +915,13 @@ label > .pp-radio--large {
 
 .pp-textarea:focus, .pp-textarea--max:focus {
   border: 1px solid #f594a7;
-  box-shadow: 0 0 0 0.2em #f594a7;
+  box-shadow: 0 0 0 0.1em #f594a7;
   outline: 0;
 }
 
 .pp-textarea:not(:focus):not(:placeholder-shown):invalid, .pp-textarea--max:not(:focus):not(:placeholder-shown):invalid {
   border-color: #f14668;
-  box-shadow: 0 0 0 0.2em #f14668;
+  box-shadow: 0 0 0 0.1em #f14668;
   outline: 0;
 }
 
@@ -909,7 +931,7 @@ label > .pp-radio--large {
 
 .pp-textarea--error {
   border-color: #f14668;
-  box-shadow: 0 0 0 0.2em #f14668;
+  box-shadow: 0 0 0 0.1em #f14668;
   outline: 0;
 }
 
