@@ -1,0 +1,22 @@
+import AppComponent from "../base/AppComponent";
+
+export default class Loading extends AppComponent {
+	constructor() {
+		super();
+		this.id = "loading";
+	}
+
+	public initialize(): void {
+		const triggerElements: NodeListOf<HTMLElement> = this.getTriggerElements();
+
+		triggerElements.forEach((triggerElement: HTMLElement) => {
+			const target: string = triggerElement.getAttribute("data-pipe-target");
+			const targetElement: HTMLElement = document.querySelector(target);
+
+			triggerElement.addEventListener("click", (e: MouseEvent) => {
+				triggerElement.style.display = "none";
+				targetElement.style.display = "";
+			});
+		});
+	}
+}

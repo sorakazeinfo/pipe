@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import Form from "./components/form";
 import Heading from "./components/heading";
 import Hidden from "./components/hidden";
+import Loading from "./components/loading";
 import Margin from "./components/margin";
 import Modal from "./components/modal";
 import Notification from "./components/notification";
@@ -32,6 +33,7 @@ const routes = [
 	{path: "/form", component: Form},
 	{path: "/heading", component: Heading},
 	{path: "/hidden", component: Hidden},
+	{path: "/loading", component: Loading},
 	{path: "/margin", component: Margin},
 	{path: "/modal", component: Modal},
 	{path: "/notification", component: Notification},
