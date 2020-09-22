@@ -5,6 +5,7 @@ import Breadcrumb from "./components/breadcrumb";
 import Button from "./components/button";
 import Clearfix from "./components/clearfix";
 import Contract from "./components/contract";
+import Divider from "./components/divider";
 import Footer from "./components/Footer";
 import Form from "./components/form";
 import Heading from "./components/heading";
@@ -30,6 +31,7 @@ const routes = [
 	{path: "/button", component: Button},
 	{path: "/clearfix", component: Clearfix},
 	{path: "/contract", component: Contract},
+	{path: "/divider", component: Divider},
 	{path: "/footer", component: Footer},
 	{path: "/form", component: Form},
 	{path: "/heading", component: Heading},
