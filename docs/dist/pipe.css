@@ -781,6 +781,18 @@ label > .pp-radio--large {
   margin-left: 0.75rem;
 }
 
+.pp-select > select, .pp-select--max > select {
+  font-size: 0.95rem;
+  padding-top: 0.3rem;
+  padding-right: 1rem;
+  padding-bottom: 0.3rem;
+  padding-left: 0.3rem;
+}
+
+.pp-select--max > select {
+  width: 100%;
+}
+
 .pp-snackbar--top, .pp-snackbar--top--success, .pp-snackbar--top--error, .pp-snackbar--bottom, .pp-snackbar--bottom--success, .pp-snackbar--bottom--error {
   position: fixed;
   left: 0;

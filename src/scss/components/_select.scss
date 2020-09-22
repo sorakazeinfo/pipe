@@ -1,0 +1,26 @@
+$pipe-select-font-size      : 0.95rem !default;
+$pipe-select-padding-top    : 0.3rem  !default;
+$pipe-select-padding-right  : 1rem    !default;
+$pipe-select-padding-bottom : 0.3rem  !default;
+$pipe-select-padding-left   : 0.3rem  !default;
+
+%pipe-select-default {
+	font-size: $pipe-select-font-size;
+	padding-top: $pipe-select-padding-top;
+	padding-right: $pipe-select-padding-right;
+	padding-bottom: $pipe-select-padding-bottom;
+	padding-left: $pipe-select-padding-left;
+}
+
+.pp-select {
+	> select {
+		@extend %pipe-select-default;
+	}
+
+	&--max {
+		> select {
+			@extend %pipe-select-default;
+			width: 100%;
+		}
+	}
+}
