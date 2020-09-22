@@ -274,6 +274,34 @@ label > .pp-checkbox--large {
   padding-inline-start: calc(40px / 1.6);
 }
 
+.pp-dl > dt {
+  margin-top: 0.5rem;
+  margin-right: 0;
+  margin-bottom: 0.5rem;
+  margin-left: 0;
+}
+
+.pp-dl > dd {
+  line-height: 1.7;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+.pp-dl__dt--bold {
+  font-weight: bold;
+}
+
+.pp-dl__dt--underline {
+  text-decoration: underline;
+}
+
+.pp-dl__dt--bullet {
+  border-left: 10px solid #dc143c;
+  padding-left: 10px;
+}
+
 .pp-footer {
   background-color: #eee;
   padding-top: 2rem;

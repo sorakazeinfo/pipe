@@ -1,0 +1,46 @@
+$pipe-dl-dt-bullet-color        : $pipe-color-primary !default;
+$pipe-dl-dt-bullet-border-left  : 10px                !default;
+$pipe-dl-dt-bullet-padding-left : 10px                !default;
+
+$pipe-dl-dt-margin-top          : 0.5rem              !default;
+$pipe-dl-dt-margin-right        : 0                   !default;
+$pipe-dl-dt-margin-bottom       : 0.5rem              !default;
+$pipe-dl-dt-margin-left         : 0                   !default;
+
+$pipe-dl-dd-line-height         : 1.7                 !default;
+$pipe-dl-dd-margin-top          : 0                   !default;
+$pipe-dl-dd-margin-right        : 0                   !default;
+$pipe-dl-dd-margin-bottom       : 0                   !default;
+$pipe-dl-dd-margin-left         : 0                   !default;
+
+.pp-dl {
+	> dt {
+		margin-top    : $pipe-dl-dt-margin-top;
+		margin-right  : $pipe-dl-dt-margin-right;
+		margin-bottom : $pipe-dl-dt-margin-bottom;
+		margin-left   : $pipe-dl-dt-margin-left;
+	}
+
+	> dd {
+		line-height   : $pipe-dl-dd-line-height;
+		margin-top    : $pipe-dl-dd-margin-top;
+		margin-right  : $pipe-dl-dd-margin-right;
+		margin-bottom : $pipe-dl-dd-margin-bottom;
+		margin-left   : $pipe-dl-dd-margin-left;
+	}
+
+	&__dt {
+		&--bold {
+			font-weight: bold;
+		}
+
+		&--underline {
+			text-decoration: underline;
+		}
+
+		&--bullet {
+			border-left: $pipe-dl-dt-bullet-border-left solid $pipe-color-primary;
+			padding-left: $pipe-dl-dt-bullet-padding-left;
+		}
+	}
+}
