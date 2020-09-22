@@ -45,6 +45,17 @@
 						<option>Sendai</option>
 					</select>
 				</div>
+
+			<div class="pp-select--max">
+				<select>
+					<option>Please select a value</option>
+					<option>Tokyo</option>
+					<option>Yokohama</option>
+					<option>Osaka</option>
+					<option>Nagoya</option>
+					<option>Sendai</option>
+				</select>
+			</div>
 		</section>
 
 		<section>
