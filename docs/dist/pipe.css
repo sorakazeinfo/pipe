@@ -486,6 +486,43 @@ label > .pp-input {
   margin-right: 0.5rem;
 }
 
+.pp-list--decimal {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 2rem;
+}
+
+.pp-list--circle, .pp-list--disc, .pp-list--sqaure {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 1rem;
+}
+
+.pp-list > li, .pp-list--circle > li, .pp-list--decimal > li, .pp-list--disc > li, .pp-list--sqaure > li {
+  margin-top: 0.4rem;
+  margin-right: 0;
+  margin-bottom: 0.4rem;
+  margin-left: 0;
+}
+
+.pp-list--circle {
+  list-style-type: circle;
+}
+
+.pp-list--decimal {
+  list-style-type: decimal;
+}
+
+.pp-list--disc {
+  list-style-type: disc;
+}
+
+.pp-list--sqaure {
+  list-style-type: square;
+}
+
 .pp-margin {
   margin: 1rem;
 }
