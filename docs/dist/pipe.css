@@ -10,7 +10,7 @@ html {
   scroll-behavior: smooth;
 }
 
-body, h1, h2, h3, h4, h5, h6, ul, ol, li, select {
+body, h1, h2, h3, h4, h5, h6, ul, ol, li, select, dl, dt, dd {
   margin: 0;
   padding: 0;
 }
