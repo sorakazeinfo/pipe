@@ -15,6 +15,60 @@
 		</section>
 
 		<section>
+			<h2>Input with button</h2>
+			<div>
+				<p class="pp-inputbox">
+					<input type="text" placeholder="text" class="pp-inputbox__input"><button type="button" class="pp-inputbox__button">Submit</button>
+				</p>
+			</div>
+			<div>
+				<p class="pp-inputbox">
+					<input type="text" placeholder="text" class="pp-inputbox__input"><button type="button" class="pp-inputbox__button--primary">Submit</button>
+				</p>
+			</div>
+			<div>
+				<p class="pp-inputbox">
+					<input type="text" placeholder="text" class="pp-inputbox__input"><button type="button" class="pp-inputbox__button--secondary">Submit</button>
+				</p>
+			</div>
+			<div>
+				<p class="pp-inputbox">
+					<input type="text" placeholder="text" class="pp-inputbox__input"><button type="button" class="pp-inputbox__button--info">Submit</button>
+				</p>
+			</div>
+			<div>
+				<p class="pp-inputbox">
+					<input type="text" placeholder="text" class="pp-inputbox__input"><button type="button" class="pp-inputbox__button--success">Submit</button>
+				</p>
+			</div>
+			<div>
+				<p class="pp-inputbox">
+					<input type="text" placeholder="text" class="pp-inputbox__input"><button type="button" class="pp-inputbox__button--warning">Submit</button>
+				</p>
+			</div>
+			<div>
+				<p class="pp-inputbox">
+					<input type="text" placeholder="text" class="pp-inputbox__input"><button type="button" class="pp-inputbox__button--danger">Submit</button>
+				</p>
+			</div>
+			<div>
+				<p class="pp-inputbox">
+					<input type="text" placeholder="text" class="pp-inputbox__input--max"><button type="button" class="pp-inputbox__button">Submit</button>
+				</p>
+			</div>
+			<div>
+				<p class="pp-inputbox">
+					<input type="text" placeholder="text" class="pp-inputbox__input"><button type="button" class="pp-inputbox__button"><i class="fas fa-search"></i></button>
+				</p>
+			</div>
+			<div>
+				<p class="pp-inputbox pp-inputbox--round">
+					<input type="text" placeholder="text" class="pp-inputbox__input"><button type="button" class="pp-inputbox__button"><i class="fas fa-search"></i></button>
+				</p>
+			</div>
+		</section>
+
+		<section>
 			<h2>Textarea</h2>
 			<p><textarea class="pp-textarea" placeholder="type=textarea"></textarea></p>
 			<p><textarea class="pp-textarea" placeholder="type=textarea">with .pp-textarea--error</textarea></p>
