@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import VueRouter from "vue-router";
 import Accordion from "./components/accordion";
+import Agreement from "./components/agreement";
 import Breadcrumb from "./components/breadcrumb";
 import Button from "./components/button";
 import Clearfix from "./components/clearfix";
@@ -27,6 +28,7 @@ Vue.use(VueRouter);
 
 const routes = [
 	{path: "/accordion", component: Accordion},
+	{path: "/agreement", component: Agreement},
 	{path: "/breadcrumb", component: Breadcrumb},
 	{path: "/button", component: Button},
 	{path: "/clearfix", component: Clearfix},
