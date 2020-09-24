@@ -1,0 +1,77 @@
+$pipe-list-ol-margin-top     : 0       !default;
+$pipe-list-ol-margin-right   : 0       !default;
+$pipe-list-ol-margin-bottom  : 0       !default;
+$pipe-list-ol-margin-left    : 2rem    !default;
+
+$pipe-list-ul-margin-top     : 0       !default;
+$pipe-list-ul-margin-right   : 0       !default;
+$pipe-list-ul-margin-bottom  : 0       !default;
+$pipe-list-ul-margin-left    : 1rem    !default;
+
+$pipe-list-li-margin-top     : 0.4rem  !default;
+$pipe-list-li-margin-right   : 0       !default;
+$pipe-list-li-margin-bottom  : 0.4rem  !default;
+$pipe-list-li-margin-left    : 0       !default;
+
+%pipe-list-ol-default-margin {
+	margin-top: $pipe-list-ol-margin-top;
+	margin-right: $pipe-list-ol-margin-right;
+	margin-bottom: $pipe-list-ol-margin-bottom;
+	margin-left: $pipe-list-ol-margin-left;
+}
+
+%pipe-list-ul-default-margin {
+	margin-top: $pipe-list-ul-margin-top;
+	margin-right: $pipe-list-ul-margin-right;
+	margin-bottom: $pipe-list-ul-margin-bottom;
+	margin-left: $pipe-list-ul-margin-left;
+}
+
+%pipe-list-li-default-margin {
+	margin-top: $pipe-list-li-margin-top;
+	margin-right: $pipe-list-li-margin-right;
+	margin-bottom: $pipe-list-li-margin-bottom;
+	margin-left: $pipe-list-li-margin-left;
+}
+
+.pp-list {
+	> li {
+		@extend %pipe-list-li-default-margin;
+	}
+
+	&--circle {
+		list-style-type: circle;
+		@extend %pipe-list-ul-default-margin;
+
+		> li {
+			@extend %pipe-list-li-default-margin;
+		}
+	}
+
+	&--decimal {
+		list-style-type: decimal;
+		@extend %pipe-list-ol-default-margin;
+
+		> li {
+			@extend %pipe-list-li-default-margin;
+		}
+	}
+
+	&--disc {
+		list-style-type: disc;
+		@extend %pipe-list-ul-default-margin;
+
+		> li {
+			@extend %pipe-list-li-default-margin;
+		}
+	}
+
+	&--sqaure {
+		list-style-type: square;
+		@extend %pipe-list-ul-default-margin;
+
+		> li {
+			@extend %pipe-list-li-default-margin;
+		}
+	}
+}

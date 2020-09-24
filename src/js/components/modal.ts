@@ -45,6 +45,15 @@ export default class Modal {
 							modal.style.display = "none";
 						});
 					}
+
+					// Close Action
+					const closeAction = modal.querySelector(".pp-modal__close-action");
+					if (closeAction !== null) {
+						closeAction.addEventListener("click", (e: Event) => {
+							e.preventDefault();
+							modal.style.display = "none";
+						});
+					}
 				}
 			});
 		}

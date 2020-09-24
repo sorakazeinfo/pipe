@@ -1,0 +1,58 @@
+$pipe-divider-backgroud-color : #333 !default;
+$pipe-divider-border-height   : 1px  !default;
+
+%pipe-divider-default {
+	display: flex;
+	align-items: center;
+}
+
+@mixin pipe-divider-border($background-color: #333, $height: 1px) {
+	background-color: $background-color;
+	content: '';
+	height: $height;
+	flex-grow: 1;
+}
+
+.pp-divider {
+	@extend %pipe-divider-default;
+
+	&:before,
+	&:after {
+		@include pipe-divider-border($pipe-divider-backgroud-color, $pipe-divider-border-height);
+	}
+
+	&--center {
+		@extend %pipe-divider-default;
+
+		&:before,
+		&:after {
+			@include pipe-divider-border($pipe-divider-backgroud-color, $pipe-divider-border-height);
+		}
+
+		&:before {
+			margin-right: 1rem;
+		}
+
+		&:after {
+			margin-left: 1rem;
+		}
+	}
+
+	&--right {
+		@extend %pipe-divider-default;
+
+		&:before {
+			@include pipe-divider-border($pipe-divider-backgroud-color, $pipe-divider-border-height);
+			margin-right: 1rem;
+		}
+	}
+
+	&--left {
+		@extend %pipe-divider-default;
+
+		&:after {
+			@include pipe-divider-border($pipe-divider-backgroud-color, $pipe-divider-border-height);
+			margin-left: 1rem;
+		}
+	}
+}

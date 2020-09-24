@@ -1,14 +1,18 @@
 import Vue from 'vue';
 import VueRouter from "vue-router";
 import Accordion from "./components/accordion";
+import Agreement from "./components/agreement";
 import Breadcrumb from "./components/breadcrumb";
 import Button from "./components/button";
 import Clearfix from "./components/clearfix";
 import Contract from "./components/contract";
+import Divider from "./components/divider";
 import Footer from "./components/Footer";
 import Form from "./components/form";
 import Heading from "./components/heading";
 import Hidden from "./components/hidden";
+import List from "./components/list";
+import Loading from "./components/loading";
 import Margin from "./components/margin";
 import Modal from "./components/modal";
 import Notification from "./components/notification";
@@ -24,14 +28,18 @@ Vue.use(VueRouter);
 
 const routes = [
 	{path: "/accordion", component: Accordion},
+	{path: "/agreement", component: Agreement},
 	{path: "/breadcrumb", component: Breadcrumb},
 	{path: "/button", component: Button},
 	{path: "/clearfix", component: Clearfix},
 	{path: "/contract", component: Contract},
+	{path: "/divider", component: Divider},
 	{path: "/footer", component: Footer},
 	{path: "/form", component: Form},
 	{path: "/heading", component: Heading},
 	{path: "/hidden", component: Hidden},
+	{path: "/list", component: List},
+	{path: "/loading", component: Loading},
 	{path: "/margin", component: Margin},
 	{path: "/modal", component: Modal},
 	{path: "/notification", component: Notification},
