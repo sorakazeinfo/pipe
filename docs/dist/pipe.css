@@ -52,6 +52,12 @@ select {
   font-size: 100%;
 }
 
+.pp-accordion {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
 .pp-breadcrumb {
   display: flex;
   padding: 0 0.5rem;
