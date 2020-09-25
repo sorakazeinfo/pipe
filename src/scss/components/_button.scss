@@ -110,4 +110,45 @@ $pipe-button-disable-opacity : 0.6                 !default;
 			$pipe-color-danger-text-inverse
 		);
 	}
+
+	&--twitter {
+		@extend %pipe-button-default;
+		@include pipe-button-style(
+			$pipe-color-twitter,
+			$pipe-color-twitter-hover,
+			$pipe-color-twitter-active,
+			$pipe-color-twitter-text-inverse
+		);
+	}
+
+	&--facebook {
+		@extend %pipe-button-default;
+		@include pipe-button-style(
+			$pipe-color-facebook,
+			$pipe-color-facebook-hover,
+			$pipe-color-facebook-active,
+			$pipe-color-facebook-text-inverse
+		);
+	}
+
+	&--google {
+		@extend %pipe-button-default;
+		@include pipe-button-style(
+			$pipe-color-google,
+			$pipe-color-google-hover,
+			$pipe-color-google-active,
+			$pipe-color-google-text-inverse
+		);
+	}
+
+	&--line {
+		@extend %pipe-button-default;
+		@include pipe-button-style(
+			$pipe-color-line,
+			$pipe-color-line-hover,
+			$pipe-color-line-active,
+			$pipe-color-line-text-inverse
+		);
+	}
+
 }

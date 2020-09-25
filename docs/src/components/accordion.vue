@@ -9,7 +9,7 @@
 					<a href="#">toggle</a>
 			</div>
 
-			<div id="description">
+			<div id="description" class="pp-accordion">
 				<div style="padding: 1rem">toggle1 description.
 				</div>
 			</div>
@@ -24,7 +24,7 @@
 					<a href="#">toggle2</a>
 			</div>
 
-			<div id="description2">
+			<div id="description2" class="pp-accordion">
 				<div style="padding: 1rem">toggle2 description.
 				</div>
 			</div>
@@ -42,12 +42,5 @@
 		display: block;
 		text-decoration: none;
 		padding: 1rem 0.5rem;
-	}
-
-	.item > div:last-child {
-		/* Please using 'pipe-accordion' mixin in your project */
-		max-height: 0;
-		overflow: hidden;
-		transition: max-height 0.3s ease;
 	}
 </style>

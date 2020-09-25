@@ -191,5 +191,112 @@
 			</table>
 		</section>
 
+		<section>
+			<h2>.pp-button--twitter</h2>
+
+			<table>
+				<tr>
+					<th>Tag</th>
+					<th>Normal</th>
+					<th>Disabled</th>
+					<th>With icon</th>
+				</tr>
+
+				<tr>
+					<th>&lt;a&gt;</th>
+					<td><a href="#" class="pp-button--twitter">pp-button--twitter</a></td>
+					<td>invalid</td>
+					<td><a href="#" class="pp-button--twitter"><i class="fas fa-times-circle"></i>&nbsp;pp-button--twitter</a></td>
+				</tr>
+
+				<tr>
+					<th>&lt;button&gt;</th>
+					<td><button class="pp-button--twitter">pp-button--twitter</button></td>
+					<td><button class="pp-button--twitter" disabled>pp-button--twitter</button></td>
+					<td><button class="pp-button--twitter"><i class="fas fa-times-circle"></i>&nbsp;pp-button--twitter</button></td>
+				</tr>
+			</table>
+		</section>
+
+		<section>
+			<h2>.pp-button--facebook</h2>
+
+			<table>
+				<tr>
+					<th>Tag</th>
+					<th>Normal</th>
+					<th>Disabled</th>
+					<th>With icon</th>
+				</tr>
+
+				<tr>
+					<th>&lt;a&gt;</th>
+					<td><a href="#" class="pp-button--facebook">pp-button--facebook</a></td>
+					<td>invalid</td>
+					<td><a href="#" class="pp-button--facebook"><i class="fas fa-times-circle"></i>&nbsp;pp-button--facebook</a></td>
+				</tr>
+
+				<tr>
+					<th>&lt;button&gt;</th>
+					<td><button class="pp-button--facebook">pp-button--facebook</button></td>
+					<td><button class="pp-button--facebook" disabled>pp-button--facebook</button></td>
+					<td><button class="pp-button--facebook"><i class="fas fa-times-circle"></i>&nbsp;pp-button--facebook</button></td>
+				</tr>
+			</table>
+		</section>
+
+		<section>
+			<h2>.pp-button--google</h2>
+
+			<table>
+				<tr>
+					<th>Tag</th>
+					<th>Normal</th>
+					<th>Disabled</th>
+					<th>With icon</th>
+				</tr>
+
+				<tr>
+					<th>&lt;a&gt;</th>
+					<td><a href="#" class="pp-button--google">pp-button--google</a></td>
+					<td>invalid</td>
+					<td><a href="#" class="pp-button--google"><i class="fas fa-times-circle"></i>&nbsp;pp-button--google</a></td>
+				</tr>
+
+				<tr>
+					<th>&lt;button&gt;</th>
+					<td><button class="pp-button--google">pp-button--google</button></td>
+					<td><button class="pp-button--google" disabled>pp-button--google</button></td>
+					<td><button class="pp-button--google"><i class="fas fa-times-circle"></i>&nbsp;pp-button--google</button></td>
+				</tr>
+			</table>
+		</section>
+
+		<section>
+			<h2>.pp-button--line</h2>
+
+			<table>
+				<tr>
+					<th>Tag</th>
+					<th>Normal</th>
+					<th>Disabled</th>
+					<th>With icon</th>
+				</tr>
+
+				<tr>
+					<th>&lt;a&gt;</th>
+					<td><a href="#" class="pp-button--line">pp-button--line</a></td>
+					<td>invalid</td>
+					<td><a href="#" class="pp-button--line"><i class="fas fa-times-circle"></i>&nbsp;pp-button--line</a></td>
+				</tr>
+
+				<tr>
+					<th>&lt;button&gt;</th>
+					<td><button class="pp-button--line">pp-button--line</button></td>
+					<td><button class="pp-button--line" disabled>pp-button--line</button></td>
+					<td><button class="pp-button--line"><i class="fas fa-times-circle"></i>&nbsp;pp-button--line</button></td>
+				</tr>
+			</table>
+		</section>
 	</div>
 </template>

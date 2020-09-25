@@ -1,10 +1,11 @@
 $pipe-breadcrumb-not-link-color: $pipe-color-black !default;
 $pipe-breadcrumb-divider       : ">"               !default;
 $pipe-breadcrumb-padding       : 0 0.5rem          !default;
-$pipe-beradcrumb-item-padding  : 1rem 0.55rem      !default;
+$pipe-beradcrumb-item-padding  : 0.5rem 0.55rem    !default;
 
 .pp-breadcrumb {
 	display: flex;
+	flex-wrap: wrap;
 	padding: $pipe-breadcrumb-padding;
 
 	li {
