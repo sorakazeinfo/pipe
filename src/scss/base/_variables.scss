@@ -1,74 +1,74 @@
 // breakpoints
-$pipe-breakpoint-mobile: 560px !default;
-$pipe-breakpoint-tablet: 960px !default;
-$pipe-breakpoint-max-mobile: "screen and (max-width: #{$pipe-breakpoint-mobile - 1})" !default;
-$pipe-breakpoint-min-mobile: "screen and (min-width: #{$pipe-breakpoint-mobile})" !default;
+$pipe-breakpoint-mobile     : 560px !default;
+$pipe-breakpoint-tablet     : 960px !default;
+$pipe-breakpoint-max-mobile : "screen and (max-width: #{$pipe-breakpoint-mobile - 1})" !default;
+$pipe-breakpoint-min-mobile : "screen and (min-width: #{$pipe-breakpoint-mobile})" !default;
 
 // colors
-$pipe-color-white: #fff        !default;
-$pipe-color-lighter-gray: #eee !default;
-$pipe-color-light-gray: #ddd   !default;
-$pipe-color-gray: #ccc         !default;
-$pipe-color-dark-gray: #bbb    !default;
-$pipe-color-darker-gray: #aaa  !default;
-$pipe-color-black: #333        !default;
+$pipe-color-white                  : #fff                             !default;
+$pipe-color-lighter-gray           : #eee                             !default;
+$pipe-color-light-gray             : #ddd                             !default;
+$pipe-color-gray                   : #ccc                             !default;
+$pipe-color-dark-gray              : #bbb                             !default;
+$pipe-color-darker-gray            : #aaa                             !default;
+$pipe-color-black                  : #333                             !default;
 
-$pipe-color-primary: #dc143c !default;
-$pipe-color-primary-hover: darken($pipe-color-primary, 5%)          !default;
-$pipe-color-primary-active: darken($pipe-color-primary, 10%)        !default;
-$pipe-color-primary-input-border: lighten($pipe-color-primary, 30%) !default;
-$pipe-color-primary-text: darken($pipe-color-primary, 5%)           !default;
-$pipe-color-primary-text-inverse: $pipe-color-white                 !default;
+$pipe-color-primary                : #dc143c !default;
+$pipe-color-primary-hover          : darken($pipe-color-primary, 5%)    !default;
+$pipe-color-primary-active         : darken($pipe-color-primary, 10%)   !default;
+$pipe-color-primary-input-border   : lighten($pipe-color-primary, 30%)  !default;
+$pipe-color-primary-text           : darken($pipe-color-primary, 5%)    !default;
+$pipe-color-primary-text-inverse   : $pipe-color-white                  !default;
 
-$pipe-color-secondary: #c9c908 !default;
-$pipe-color-secondary-hover: darken($pipe-color-secondary, 5%)   !default;
-$pipe-color-secondary-active: darken($pipe-color-secondary, 10%) !default;
-$pipe-color-secondary-text-inverse: $pipe-color-white            !default;
+$pipe-color-secondary              : #c9c908 !default;
+$pipe-color-secondary-hover        : darken($pipe-color-secondary, 5%)  !default;
+$pipe-color-secondary-active       : darken($pipe-color-secondary, 10%) !default;
+$pipe-color-secondary-text-inverse : $pipe-color-white                  !default;
 
-$pipe-color-info: #3298dc !default;
-$pipe-color-info-hover: darken($pipe-color-info, 5%)   !default;
-$pipe-color-info-active: darken($pipe-color-info, 10%) !default;
-$pipe-color-info-text-inverse: $pipe-color-white       !default;
+$pipe-color-info                   : #3298dc !default;
+$pipe-color-info-hover             : darken($pipe-color-info, 5%)       !default;
+$pipe-color-info-active            : darken($pipe-color-info, 10%)      !default;
+$pipe-color-info-text-inverse      : $pipe-color-white                  !default;
 
-$pipe-color-success: #48c774 !default;
-$pipe-color-success-hover: darken($pipe-color-success, 5%)   !default;
-$pipe-color-success-active: darken($pipe-color-success, 10%) !default;
-$pipe-color-success-text-inverse: $pipe-color-white          !default;
+$pipe-color-success                : #48c774 !default;
+$pipe-color-success-hover          : darken($pipe-color-success, 5%)    !default;
+$pipe-color-success-active         : darken($pipe-color-success, 10%)   !default;
+$pipe-color-success-text-inverse   : $pipe-color-white                  !default;
 
-$pipe-color-warning: #ffdd57 !default;
-$pipe-color-warning-hover: darken($pipe-color-warning, 5%)   !default;
-$pipe-color-warning-active: darken($pipe-color-warning, 10%) !default;
-$pipe-color-warning-text-inverse: $pipe-color-black          !default;
+$pipe-color-warning                : #ffdd57 !default;
+$pipe-color-warning-hover          : darken($pipe-color-warning, 5%)    !default;
+$pipe-color-warning-active         : darken($pipe-color-warning, 10%)   !default;
+$pipe-color-warning-text-inverse   : $pipe-color-black                  !default;
 
-$pipe-color-danger: #f14668 !default;
-$pipe-color-danger-hover: darken($pipe-color-danger, 5%)   !default;
-$pipe-color-danger-active: darken($pipe-color-danger, 10%) !default;
-$pipe-color-danger-text-inverse: $pipe-color-white         !default;
+$pipe-color-danger                 : #f14668 !default;
+$pipe-color-danger-hover           : darken($pipe-color-danger, 5%)     !default;
+$pipe-color-danger-active          : darken($pipe-color-danger, 10%)    !default;
+$pipe-color-danger-text-inverse    : $pipe-color-white                  !default;
 
-$pipe-color-twitter: #1da1f2                               !default;
-$pipe-color-twitter-hover: darken($pipe-color-twitter, 5%)   !default;
-$pipe-color-twitter-active: darken($pipe-color-twitter, 10%) !default;
-$pipe-color-twitter-text-inverse: $pipe-color-white          !default;
+$pipe-color-twitter                : #1da1f2                          !default;
+$pipe-color-twitter-hover          : darken($pipe-color-twitter, 5%)    !default;
+$pipe-color-twitter-active         : darken($pipe-color-twitter, 10%)   !default;
+$pipe-color-twitter-text-inverse   : $pipe-color-white                  !default;
 
-$pipe-color-facebook: #3b5998                                !default; // or new color code is #1877f2
-$pipe-color-facebook-hover: darken($pipe-color-facebook, 5%)   !default;
-$pipe-color-facebook-active: darken($pipe-color-facebook, 10%) !default;
-$pipe-color-facebook-text-inverse: $pipe-color-white           !default;
+$pipe-color-facebook               : #3b5998                          !default; // or new color code is #1877f2
+$pipe-color-facebook-hover         : darken($pipe-color-facebook, 5%)   !default;
+$pipe-color-facebook-active        : darken($pipe-color-facebook, 10%)  !default;
+$pipe-color-facebook-text-inverse  : $pipe-color-white                  !default;
 
-$pipe-color-google: #db4437                              !default;
-$pipe-color-google-hover: darken($pipe-color-google, 5%)   !default;
-$pipe-color-google-active: darken($pipe-color-google, 10%) !default;
-$pipe-color-google-text-inverse: $pipe-color-white         !default;
+$pipe-color-google                 : #db4437                          !default;
+$pipe-color-google-hover           : darken($pipe-color-google, 5%)     !default;
+$pipe-color-google-active          : darken($pipe-color-google, 10%)    !default;
+$pipe-color-google-text-inverse    : $pipe-color-white                  !default;
 
-$pipe-color-line: #00b900                            !default;
-$pipe-color-line-hover: darken($pipe-color-line, 5%)   !default;
-$pipe-color-line-active: darken($pipe-color-line, 10%) !default;
-$pipe-color-line-text-inverse: $pipe-color-white       !default;
+$pipe-color-line                   : #00b900                          !default;
+$pipe-color-line-hover             : darken($pipe-color-line, 5%)       !default;
+$pipe-color-line-active            : darken($pipe-color-line, 10%)      !default;
+$pipe-color-line-text-inverse      : $pipe-color-white                  !default;
 
-$pipe-color-link: $pipe-color-primary         !default;
-$pipe-color-link-visited: $pipe-color-primary !default;
-$pipe-color-link-hover: $pipe-color-primary   !default;
-$pipe-color-link-active: $pipe-color-primary  !default;
+$pipe-color-link                   : $pipe-color-primary                !default;
+$pipe-color-link-visited           : $pipe-color-primary                !default;
+$pipe-color-link-hover             : $pipe-color-primary                !default;
+$pipe-color-link-active            : $pipe-color-primary                !default;
 
 // Others
 $pipe-border-radius: 4px !default;
