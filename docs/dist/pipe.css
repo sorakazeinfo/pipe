@@ -60,12 +60,13 @@ select {
 
 .pp-breadcrumb {
   display: flex;
+  flex-wrap: wrap;
   padding: 0 0.5rem;
 }
 
 .pp-breadcrumb li a {
   display: inline-block;
-  padding: 1rem 0.55rem;
+  padding: 0.5rem 0.55rem;
 }
 
 .pp-breadcrumb li a:not([href]) {
