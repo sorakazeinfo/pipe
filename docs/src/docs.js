@@ -17,6 +17,7 @@ import Margin from "./components/margin";
 import Modal from "./components/modal";
 import Notification from "./components/notification";
 import Pagination from "./components/pagination";
+import Toggle from "./components/toggle";
 import ToScroll from "./components/to_scroll";
 import Snackbar from "./components/snackbar";
 import Tab from "./components/tab";
@@ -44,6 +45,7 @@ const routes = [
 	{path: "/modal", component: Modal},
 	{path: "/notification", component: Notification},
 	{path: "/pagination", component: Pagination},
+	{path: "/toggle", component: Toggle},
 	{path: "/to-scroll", component: ToScroll},
 	{path: "/snackbar", component: Snackbar},
 	{path: "/tab", component: Tab},
