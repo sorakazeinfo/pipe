@@ -6,6 +6,7 @@ import ToScroll from "./components/to_scroll";
 import StretchTextarea from "./components/stretch_textarea";
 import Tab from "./components/tab";
 import TextCounter from "./components/text_counter";
+import Toggle from "./components/toggle";
 
 (new Accordion()).initialize();
 (new Agreement()).initialize();
@@ -15,3 +16,4 @@ import TextCounter from "./components/text_counter";
 (new StretchTextarea()).initialize();
 (new Tab()).initialize();
 (new TextCounter()).initialize();
+(new Toggle()).initialize();
