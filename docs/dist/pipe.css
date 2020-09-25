@@ -1060,6 +1060,10 @@ label > .pp-radio--large {
   text-align: center;
 }
 
+.pp-snackbar--top, .pp-snackbar--top--success, .pp-snackbar--top--error, .pp-snackbar--bottom, .pp-snackbar--bottom--success, .pp-snackbar--bottom--error {
+  display: none;
+}
+
 .pp-snackbar--top, .pp-snackbar--top--success, .pp-snackbar--top--error {
   top: 0;
   margin-top: 1rem;
@@ -1085,9 +1089,33 @@ label > .pp-radio--large {
   color: #fff;
 }
 
+.pp-snackbar--top--success > span > a, .pp-snackbar--bottom--success > span > a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .pp-snackbar--top--error > span, .pp-snackbar--bottom--error > span {
   background-color: #f14668;
   color: #fff;
+}
+
+.pp-snackbar--top--error > span > a, .pp-snackbar--bottom--error > span > a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.pp-snackbar--active {
+  display: block !important;
+}
+
+.pp-snackbar--top > span > a {
+  color: #333;
+  text-decoration: none;
+}
+
+.pp-snackbar--bottom > span > a {
+  color: #333;
+  text-decoration: none;
 }
 
 .pp-tab__menu {
