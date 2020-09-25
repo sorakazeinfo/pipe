@@ -70,7 +70,7 @@ select {
   content: ">";
 }
 
-.pp-button, .pp-button--primary, .pp-button--secondary, .pp-button--info, .pp-button--success, .pp-button--warning, .pp-button--danger {
+.pp-button, .pp-button--primary, .pp-button--secondary, .pp-button--info, .pp-button--success, .pp-button--warning, .pp-button--danger, .pp-button--twitter, .pp-button--facebook, .pp-button--google, .pp-button--line {
   appearance: none;
   background: none;
   border: none;
@@ -86,11 +86,11 @@ select {
   padding: 0.6rem;
 }
 
-.pp-button > i, .pp-button--primary > i, .pp-button--secondary > i, .pp-button--info > i, .pp-button--success > i, .pp-button--warning > i, .pp-button--danger > i {
+.pp-button > i, .pp-button--primary > i, .pp-button--secondary > i, .pp-button--info > i, .pp-button--success > i, .pp-button--warning > i, .pp-button--danger > i, .pp-button--twitter > i, .pp-button--facebook > i, .pp-button--google > i, .pp-button--line > i {
   vertical-align: middle;
 }
 
-.pp-button:disabled, .pp-button--primary:disabled, .pp-button--secondary:disabled, .pp-button--info:disabled, .pp-button--success:disabled, .pp-button--warning:disabled, .pp-button--danger:disabled {
+.pp-button:disabled, .pp-button--primary:disabled, .pp-button--secondary:disabled, .pp-button--info:disabled, .pp-button--success:disabled, .pp-button--warning:disabled, .pp-button--danger:disabled, .pp-button--twitter:disabled, .pp-button--facebook:disabled, .pp-button--google:disabled, .pp-button--line:disabled {
   cursor: not-allowed;
   opacity: 0.6;
 }
@@ -210,6 +210,74 @@ select {
 
 .pp-button--danger:active:not(:disabled) {
   background-color: #ed1741;
+  color: #fff;
+  cursor: pointer;
+}
+
+.pp-button--twitter[href], .pp-button--twitter:not([href]) {
+  background-color: #1da1f2;
+  color: #fff;
+}
+
+.pp-button--twitter:hover:not(:disabled), .pp-button--twitter:focus:not(:disabled) {
+  background-color: #0d95e8;
+  color: #fff;
+  cursor: pointer;
+}
+
+.pp-button--twitter:active:not(:disabled) {
+  background-color: #0c85d0;
+  color: #fff;
+  cursor: pointer;
+}
+
+.pp-button--facebook[href], .pp-button--facebook:not([href]) {
+  background-color: #3b5998;
+  color: #fff;
+}
+
+.pp-button--facebook:hover:not(:disabled), .pp-button--facebook:focus:not(:disabled) {
+  background-color: #344e86;
+  color: #fff;
+  cursor: pointer;
+}
+
+.pp-button--facebook:active:not(:disabled) {
+  background-color: #2d4373;
+  color: #fff;
+  cursor: pointer;
+}
+
+.pp-button--google[href], .pp-button--google:not([href]) {
+  background-color: #db4437;
+  color: #fff;
+}
+
+.pp-button--google:hover:not(:disabled), .pp-button--google:focus:not(:disabled) {
+  background-color: #d33426;
+  color: #fff;
+  cursor: pointer;
+}
+
+.pp-button--google:active:not(:disabled) {
+  background-color: #bd2e22;
+  color: #fff;
+  cursor: pointer;
+}
+
+.pp-button--line[href], .pp-button--line:not([href]) {
+  background-color: #00b900;
+  color: #fff;
+}
+
+.pp-button--line:hover:not(:disabled), .pp-button--line:focus:not(:disabled) {
+  background-color: #00a000;
+  color: #fff;
+  cursor: pointer;
+}
+
+.pp-button--line:active:not(:disabled) {
+  background-color: #008600;
   color: #fff;
   cursor: pointer;
 }

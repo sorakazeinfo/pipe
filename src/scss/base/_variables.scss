@@ -45,6 +45,26 @@ $pipe-color-danger-hover: darken($pipe-color-danger, 5%)   !default;
 $pipe-color-danger-active: darken($pipe-color-danger, 10%) !default;
 $pipe-color-danger-text-inverse: $pipe-color-white         !default;
 
+$pipe-color-twitter: #1da1f2                               !default;
+$pipe-color-twitter-hover: darken($pipe-color-twitter, 5%)   !default;
+$pipe-color-twitter-active: darken($pipe-color-twitter, 10%) !default;
+$pipe-color-twitter-text-inverse: $pipe-color-white          !default;
+
+$pipe-color-facebook: #3b5998                                !default; // or new color code is #1877f2
+$pipe-color-facebook-hover: darken($pipe-color-facebook, 5%)   !default;
+$pipe-color-facebook-active: darken($pipe-color-facebook, 10%) !default;
+$pipe-color-facebook-text-inverse: $pipe-color-white           !default;
+
+$pipe-color-google: #db4437                              !default;
+$pipe-color-google-hover: darken($pipe-color-google, 5%)   !default;
+$pipe-color-google-active: darken($pipe-color-google, 10%) !default;
+$pipe-color-google-text-inverse: $pipe-color-white         !default;
+
+$pipe-color-line: #00b900                            !default;
+$pipe-color-line-hover: darken($pipe-color-line, 5%)   !default;
+$pipe-color-line-active: darken($pipe-color-line, 10%) !default;
+$pipe-color-line-text-inverse: $pipe-color-white       !default;
+
 $pipe-color-link: $pipe-color-primary         !default;
 $pipe-color-link-visited: $pipe-color-primary !default;
 $pipe-color-link-hover: $pipe-color-primary   !default;
