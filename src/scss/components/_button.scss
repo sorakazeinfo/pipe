@@ -1,22 +1,11 @@
 $pipe-button-border-radius   : $pipe-border-radius !default;
-$pipe-button-padding         : 0.6rem              !default;
 $pipe-button-disable-opacity : 0.6                 !default;
-
-%pipe-button-default {
-	@include pipe-resetButton;
-	border-radius: $pipe-button-border-radius;
-	font-family: inherit;
-	padding: $pipe-button-padding;
-
-	> i {
-		vertical-align: middle;
-	}
-
-	&:disabled {
-		cursor: not-allowed;
-		opacity: $pipe-button-disable-opacity;
-	}
-}
+$pipe-button-font-size       : inherit             !default;
+$pipe-button-font-size-large : 110%                !default;
+$pipe-button-font-size-small : 95%                 !default;
+$pipe-button-padding         : 0.6rem              !default;
+$pipe-button-padding-large   : 1rem                !default;
+$pipe-button-padding-small   : 0.3rem              !default;
 
 @mixin pipe-button-style(
 	$background-color,
@@ -42,113 +31,329 @@ $pipe-button-disable-opacity : 0.6                 !default;
 	}
 }
 
-.pp-button {
-	@extend %pipe-button-default;
+%pipe-button-default {
+	@include pipe-resetButton;
+	border-radius: $pipe-button-border-radius;
+	font-family: inherit;
+
+	> i {
+		vertical-align: middle;
+	}
+
+	&:disabled {
+		cursor: not-allowed;
+		opacity: $pipe-button-disable-opacity;
+	}
+}
+
+%pipe-button-small {
+	font-size: $pipe-button-font-size-small;
+	padding: $pipe-button-padding-small;
+}
+
+%pipe-button-normal {
+	font-size: $pipe-button-font-size;
+	padding: $pipe-button-padding;
+}
+
+%pipe-button-large {
+	font-size: $pipe-button-font-size-large;
+	padding: $pipe-button-padding-large;
+}
+
+%pipe-button-default-color {
 	@include pipe-button-style(
 		$pipe-color-lighter-gray,
 		$pipe-color-light-gray,
 		$pipe-color-gray,
 		$pipe-color-black
 	);
+}
+
+%pipe-button-primary-color {
+	@include pipe-button-style(
+		$pipe-color-primary,
+		$pipe-color-primary-hover,
+		$pipe-color-primary-active,
+		$pipe-color-primary-text-inverse
+	);
+}
+
+%pipe-button-secondary-color {
+	@include pipe-button-style(
+		$pipe-color-secondary,
+		$pipe-color-secondary-hover,
+		$pipe-color-secondary-active,
+		$pipe-color-secondary-text-inverse
+	);
+}
+
+%pipe-button-info-color {
+	@include pipe-button-style(
+		$pipe-color-info,
+		$pipe-color-info-hover,
+		$pipe-color-info-active,
+		$pipe-color-info-text-inverse
+	);
+}
+
+%pipe-button-success-color {
+	@include pipe-button-style(
+		$pipe-color-success,
+		$pipe-color-success-hover,
+		$pipe-color-success-active,
+		$pipe-color-success-text-inverse
+	);
+}
+
+%pipe-button-warning-color {
+	@include pipe-button-style(
+		$pipe-color-warning,
+		$pipe-color-warning-hover,
+		$pipe-color-warning-active,
+		$pipe-color-warning-text-inverse
+	);
+}
+
+%pipe-button-danger-color {
+	@include pipe-button-style(
+		$pipe-color-danger,
+		$pipe-color-danger-hover,
+		$pipe-color-danger-active,
+		$pipe-color-danger-text-inverse
+	);
+}
+
+%pipe-button-twitter-color {
+	@include pipe-button-style(
+		$pipe-color-twitter,
+		$pipe-color-twitter-hover,
+		$pipe-color-twitter-active,
+		$pipe-color-twitter-text-inverse
+	);
+}
+
+%pipe-button-facebook-color {
+	@include pipe-button-style(
+		$pipe-color-facebook,
+		$pipe-color-facebook-hover,
+		$pipe-color-facebook-active,
+		$pipe-color-facebook-text-inverse
+	);
+}
+
+%pipe-button-google-color {
+	@include pipe-button-style(
+		$pipe-color-google,
+		$pipe-color-google-hover,
+		$pipe-color-google-active,
+		$pipe-color-google-text-inverse
+	);
+}
+
+%pipe-button-line-color {
+	@include pipe-button-style(
+		$pipe-color-line,
+		$pipe-color-line-hover,
+		$pipe-color-line-active,
+		$pipe-color-line-text-inverse
+	);
+}
+
+.pp-button {
+	@extend %pipe-button-default;
+	@extend %pipe-button-normal;
+	@extend %pipe-button-default-color;
+
+	&--small {
+		@extend %pipe-button-default;
+		@extend %pipe-button-small;
+		@extend %pipe-button-default-color;
+	}
+
+	&--large {
+		@extend %pipe-button-default;
+		@extend %pipe-button-large;
+		@extend %pipe-button-default-color;
+	}
 
 	&--primary {
 		@extend %pipe-button-default;
-		@include pipe-button-style(
-			$pipe-color-primary,
-			$pipe-color-primary-hover,
-			$pipe-color-primary-active,
-			$pipe-color-primary-text-inverse
-		);
+		@extend %pipe-button-normal;
+		@extend %pipe-button-primary-color;
+
+		&--small {
+			@extend %pipe-button-default;
+			@extend %pipe-button-small;
+			@extend %pipe-button-primary-color;
+		}
+
+		&--large {
+			@extend %pipe-button-default;
+			@extend %pipe-button-large;
+			@extend %pipe-button-primary-color;
+		}
 	}
 
 	&--secondary {
 		@extend %pipe-button-default;
-		@include pipe-button-style(
-			$pipe-color-secondary,
-			$pipe-color-secondary-hover,
-			$pipe-color-secondary-active,
-			$pipe-color-secondary-text-inverse
-		);
+		@extend %pipe-button-normal;
+		@extend %pipe-button-secondary-color;
+
+		&--small {
+			@extend %pipe-button-default;
+			@extend %pipe-button-small;
+			@extend %pipe-button-secondary-color;
+		}
+
+		&--large {
+			@extend %pipe-button-default;
+			@extend %pipe-button-large;
+			@extend %pipe-button-secondary-color;
+		}
 	}
 
 	&--info {
 		@extend %pipe-button-default;
-		@include pipe-button-style(
-			$pipe-color-info,
-			$pipe-color-info-hover,
-			$pipe-color-info-active,
-			$pipe-color-info-text-inverse
-		);
+		@extend %pipe-button-normal;
+		@extend %pipe-button-info-color;
+
+		&--small {
+			@extend %pipe-button-default;
+			@extend %pipe-button-small;
+			@extend %pipe-button-info-color;
+		}
+
+		&--large {
+			@extend %pipe-button-default;
+			@extend %pipe-button-large;
+			@extend %pipe-button-info-color;
+		}
 	}
 
 	&--success {
 		@extend %pipe-button-default;
-		@include pipe-button-style(
-			$pipe-color-success,
-			$pipe-color-success-hover,
-			$pipe-color-success-active,
-			$pipe-color-success-text-inverse
-		);
+		@extend %pipe-button-normal;
+		@extend %pipe-button-success-color;
+
+		&--small {
+			@extend %pipe-button-default;
+			@extend %pipe-button-small;
+			@extend %pipe-button-success-color;
+		}
+
+		&--large {
+			@extend %pipe-button-default;
+			@extend %pipe-button-large;
+			@extend %pipe-button-success-color;
+		}
 	}
 
 	&--warning {
 		@extend %pipe-button-default;
-		@include pipe-button-style(
-			$pipe-color-warning,
-			$pipe-color-warning-hover,
-			$pipe-color-warning-active,
-			$pipe-color-warning-text-inverse
-		);
+		@extend %pipe-button-normal;
+		@extend %pipe-button-warning-color;
+
+		&--small {
+			@extend %pipe-button-default;
+			@extend %pipe-button-small;
+			@extend %pipe-button-warning-color;
+		}
+
+		&--large {
+			@extend %pipe-button-default;
+			@extend %pipe-button-large;
+			@extend %pipe-button-warning-color;
+		}
 	}
 
 	&--danger {
 		@extend %pipe-button-default;
-		@include pipe-button-style(
-			$pipe-color-danger,
-			$pipe-color-danger-hover,
-			$pipe-color-danger-active,
-			$pipe-color-danger-text-inverse
-		);
+		@extend %pipe-button-normal;
+		@extend %pipe-button-danger-color;
+
+		&--small {
+			@extend %pipe-button-default;
+			@extend %pipe-button-small;
+			@extend %pipe-button-danger-color;
+		}
+
+		&--large {
+			@extend %pipe-button-default;
+			@extend %pipe-button-large;
+			@extend %pipe-button-danger-color;
+		}
 	}
 
 	&--twitter {
 		@extend %pipe-button-default;
-		@include pipe-button-style(
-			$pipe-color-twitter,
-			$pipe-color-twitter-hover,
-			$pipe-color-twitter-active,
-			$pipe-color-twitter-text-inverse
-		);
+		@extend %pipe-button-normal;
+		@extend %pipe-button-twitter-color;
+
+		&--small {
+			@extend %pipe-button-default;
+			@extend %pipe-button-small;
+			@extend %pipe-button-twitter-color;
+		}
+
+		&--large {
+			@extend %pipe-button-default;
+			@extend %pipe-button-large;
+			@extend %pipe-button-twitter-color;
+		}
 	}
 
 	&--facebook {
 		@extend %pipe-button-default;
-		@include pipe-button-style(
-			$pipe-color-facebook,
-			$pipe-color-facebook-hover,
-			$pipe-color-facebook-active,
-			$pipe-color-facebook-text-inverse
-		);
+		@extend %pipe-button-normal;
+		@extend %pipe-button-facebook-color;
+
+		&--small {
+			@extend %pipe-button-default;
+			@extend %pipe-button-small;
+			@extend %pipe-button-facebook-color;
+		}
+
+		&--large {
+			@extend %pipe-button-default;
+			@extend %pipe-button-large;
+			@extend %pipe-button-facebook-color;
+		}
 	}
 
 	&--google {
 		@extend %pipe-button-default;
-		@include pipe-button-style(
-			$pipe-color-google,
-			$pipe-color-google-hover,
-			$pipe-color-google-active,
-			$pipe-color-google-text-inverse
-		);
+		@extend %pipe-button-normal;
+		@extend %pipe-button-google-color;
+
+		&--small {
+			@extend %pipe-button-default;
+			@extend %pipe-button-small;
+			@extend %pipe-button-google-color;
+		}
+
+		&--large {
+			@extend %pipe-button-default;
+			@extend %pipe-button-large;
+			@extend %pipe-button-google-color;
+		}
 	}
 
 	&--line {
 		@extend %pipe-button-default;
-		@include pipe-button-style(
-			$pipe-color-line,
-			$pipe-color-line-hover,
-			$pipe-color-line-active,
-			$pipe-color-line-text-inverse
-		);
-	}
+		@extend %pipe-button-normal;
+		@extend %pipe-button-line-color;
 
+		&--small {
+			@extend %pipe-button-default;
+			@extend %pipe-button-small;
+			@extend %pipe-button-line-color;
+		}
+
+		&--large {
+			@extend %pipe-button-default;
+			@extend %pipe-button-large;
+			@extend %pipe-button-line-color;
+		}
+	}
 }

@@ -1,5 +1,8 @@
-export default class Toggle {
-	private id: string = "toggle";
+import AppComponent from "../base/AppComponent";
+import ComponentInterface from "../base/ComponentInterface";
+
+export default class Toggle extends AppComponent implements ComponentInterface {
+	protected id: string = "toggle";
 
 	private setButtonLabel(trigger: HTMLElement, label: string): void {
 		if (label !== null) {
@@ -8,9 +11,9 @@ export default class Toggle {
 	}
 
 	public initialize(): void {
-		const triggers: NodeListOf<HTMLElement> = document.querySelectorAll(`[data-pipejs=${this.id}]`);
+		const triggerElements: NodeListOf<HTMLElement> = this.getTriggerElements();
 
-		triggers.forEach((trigger: HTMLElement) => {
+		triggerElements.forEach((trigger: HTMLElement) => {
 			const target: string = trigger.getAttribute("data-pipe-target");
 			const targetElements: NodeListOf<HTMLElement> = document.querySelectorAll(target);
 			const closeLabel: string = trigger.getAttribute("data-pipe-close-label");

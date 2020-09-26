@@ -1,12 +1,11 @@
-export default class StretchTextarea {
-	private id: string;
+import AppComponent from "../base/AppComponent";
+import ComponentInterface from "../base/ComponentInterface";
 
-	constructor() {
-		this.id = "textarea-expanded";
-	}
+export default class StretchTextarea extends AppComponent implements ComponentInterface {
+	protected id: string = "textarea-expanded";
 
-	initialize() {
-		const textareas = document.querySelectorAll(`textarea[data-pipejs=${this.id}]`);
+	public initialize(): void {
+		const textareas = document.querySelectorAll(`textarea[${this.entry}=${this.id}]`);
 		if (textareas.length > 0) {
 			textareas.forEach((textarea) => {
 				this.expandedTextarea(textarea);

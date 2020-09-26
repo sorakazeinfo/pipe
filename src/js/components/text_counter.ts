@@ -1,11 +1,9 @@
-export default class TextCounter {
-	private id: string;
-	private idStrict: string;
+import AppComponent from "../base/AppComponent";
+import ComponentInterface from "../base/ComponentInterface";
 
-	constructor() {
-		this.id = "text-counter";
-		this.idStrict = "text-counter-strict"
-	}
+export default class TextCounter extends AppComponent implements ComponentInterface {
+	protected id: string = "text-counter";
+	private idStrict: string = "text-counter-strict";
 
 	displayCounter(target: HTMLElement, length: number, minLength: number, maxLength: number): void {
 		if (minLength > 0) {

@@ -1,14 +1,13 @@
-export default class Tab {
-	private id: string;
-	private tabs: Array<TabContainer>;
+import AppComponent from "../base/AppComponent";
+import ComponentInterface from "../base/ComponentInterface";
 
-	constructor() {
-		this.id = "tab";
-		this.tabs = [];
-	}
+export default class Tab extends AppComponent implements ComponentInterface {
+	protected id: string = "tab";
+	private tabs: Array<TabContainer> = [];
 
-	initialize() {
-		const tabs = document.querySelectorAll(`[data-pipejs=${this.id}]`);
+	public initialize(): void {
+		const tabs: NodeListOf<HTMLElement> = this.getTriggerElements();
+
 		if (tabs.length > 0) {
 			tabs.forEach((tab: HTMLElement) => {
 				this.tabs.push(new TabContainer(tab));

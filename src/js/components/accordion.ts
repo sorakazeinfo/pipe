@@ -1,16 +1,14 @@
-export default class Accordion {
-	private id: string;
-	private activeClass: string;
+import AppComponent from "../base/AppComponent";
+import ComponentInterface from "../base/ComponentInterface";
 
-	constructor() {
-		this.id = "accordion";
-		this.activeClass = "pipejs-accordion-active";
-	}
+export default class Accordion extends AppComponent implements ComponentInterface {
+	protected id: string = "accordion";
+	private activeClass: string = "pipejs-accordion-active";
 
-	initialize() {
-		const triggers: NodeListOf<HTMLElement> = document.querySelectorAll(`[data-pipejs=${this.id}]`);
+	public initialize(): void {
+		const triggerElements: NodeListOf<HTMLElement> = this.getTriggerElements();
 
-		triggers.forEach(trigger => {
+		triggerElements.forEach(trigger => {
 			const target: string = trigger.getAttribute("data-pipe-target");
 			const targetElement: HTMLElement = document.querySelector(target);
 

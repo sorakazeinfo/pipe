@@ -1,31 +1,29 @@
-export default class ToScroll {
-	private id: string;
+import AppComponent from "../base/AppComponent";
+import ComponentInterface from "../base/ComponentInterface";
 
-	constructor() {
-		this.id = "scroll";
-	}
+export default class ToScroll extends AppComponent implements ComponentInterface {
+	protected id: string = "scroll_";
 
-	initialize() {
-		const scrollTriggers = document.querySelectorAll(`[data-pipejs=${this.id}]`);
-		if (scrollTriggers.length > 0) {
-			scrollTriggers.forEach(trigger => {
-				const href  = trigger.getAttribute("href");
-				const block = trigger.getAttribute("data-pipe-target") || "start";
+	public initialize(): void {
+		const triggerElements: NodeListOf<HTMLElement> = this.getTriggerElements();
 
-				if (href !== null && document.querySelector(href) === null) {
-					return;
-				}
+		triggerElements.forEach(trigger => {
+			const href  = trigger.getAttribute("href");
+			const block = trigger.getAttribute("data-pipe-target") || "start";
 
-				const destinationElement = document.querySelector(href) || document.getElementsByTagName("body")[0];
+			if (href !== null && document.querySelector(href) === null) {
+				return;
+			}
 
-				trigger.addEventListener("click", function(e) {
-					e.preventDefault();
-					destinationElement.scrollIntoView({
-						behavior: "smooth",
-						block: "start"
-					});
+			const destinationElement = document.querySelector(href) || document.getElementsByTagName("body")[0];
+
+			trigger.addEventListener("click", function(e) {
+				e.preventDefault();
+				destinationElement.scrollIntoView({
+					behavior: "smooth",
+					block: "start"
 				});
 			});
-		}
+		});
 	}
 }

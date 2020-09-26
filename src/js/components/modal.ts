@@ -1,61 +1,39 @@
-export default class Modal {
-	private id: string;
+import AppComponent from "../base/AppComponent";
+import ComponentInterface from "../base/ComponentInterface";
 
-	constructor() {
-		this.id = "modal";
-	}
+export default class Modal extends AppComponent implements ComponentInterface {
+	protected id: string = "modal";
 
-	initialize() {
-		const modalTriggers = document.querySelectorAll(`[data-pipejs=${this.id}]`);
-		if (modalTriggers.length > 0) {
-			modalTriggers.forEach(button => {
-				const id = button.getAttribute("data-pipe-target");
-				const modal: HTMLElement = document.querySelector(id);
+	public initialize(): void {
+		const triggerElements: NodeListOf<HTMLElement> = this.getTriggerElements();
 
-				if (modal !== null) {
-					// Trigger
-					button.addEventListener("click", function(e) {
-						e.preventDefault();
-						modal.style.display = "block";
-					});
+		triggerElements.forEach((triggerElement: HTMLElement) => {
+			const modal: HTMLElement = document.querySelector(triggerElement.getAttribute("data-pipe-target"));
 
-					// Overlay
-					const overlay = modal.querySelector(".pp-modal__overlay");
-					if (overlay !== null) {
-						overlay.addEventListener("click", function(e) {
+			if (modal !== null) {
+				// Trigger
+				triggerElement.addEventListener("click", function(e) {
+					e.preventDefault();
+					modal.style.display = "block";
+				});
+
+				// Closer actions
+				const closeActionSelectors: Array<string> = [
+					".pp-modal__overlay",
+					".pp-modal__close",
+					".pp-modal__contents__close",
+					".pp-modal__close-action",
+				];
+				closeActionSelectors.forEach((closeActionSelector: string) => {
+					const closeElement = modal.querySelector(closeActionSelector);
+					if (closeElement !== null) {
+						closeElement.addEventListener("click", (e: Event) => {
 							e.preventDefault();
 							modal.style.display = "none";
 						});
 					}
-
-					// Close
-					const overlayClose = modal.querySelector(".pp-modal__close");
-					if (overlayClose !== null) {
-						overlayClose.addEventListener("click", function(e) {
-							e.preventDefault();
-							modal.style.display = "none";
-						});
-					}
-
-					// Close in contents
-					const contentClose = modal.querySelector(".pp-modal__contents__close");
-					if (contentClose !== null) {
-						contentClose.addEventListener("click", function(e) {
-							e.preventDefault();
-							modal.style.display = "none";
-						});
-					}
-
-					// Close Action
-					const closeAction = modal.querySelector(".pp-modal__close-action");
-					if (closeAction !== null) {
-						closeAction.addEventListener("click", (e: Event) => {
-							e.preventDefault();
-							modal.style.display = "none";
-						});
-					}
-				}
-			});
-		}
+				});
+			}
+		});
 	}
 }

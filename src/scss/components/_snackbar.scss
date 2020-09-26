@@ -11,6 +11,10 @@ $pipe-snackbar-label-padding : 0.575rem            !default;
 	text-align: center;
 }
 
+%pipe-snackbar-default {
+	display: none;
+}
+
 %pipe-snackbar-position-top {
 	@extend %pipe-snackbar-position;
 	top: 0;
@@ -36,22 +40,44 @@ $pipe-snackbar-label-padding : 0.575rem            !default;
 %pipe-snackbar-theme-success {
 	background-color: $pipe-color-success;
 	color: $pipe-color-success-text-inverse;
+
+	> a {
+		color: $pipe-color-success-text-inverse;
+		text-decoration: none;
+	}
 }
 
 %pipe-snackbar-theme-error {
 	background-color: $pipe-color-danger;
 	color: $pipe-color-danger-text-inverse;
+
+	> a {
+		color: $pipe-color-danger-text-inverse;
+		text-decoration: none;
+	}
 }
 
 .pp-snackbar {
+	&--active {
+		display: block !important;
+	}
+
 	&--top {
+		@extend %pipe-snackbar-default;
 		@extend %pipe-snackbar-position-top;
+
 		> span {
 			@extend %pipe-snackbar-style;
 			@extend %pipe-snackbar-theme-default;
+
+			> a {
+				color: $pipe-color-black;
+				text-decoration: none;
+			}
 		}
 
 		&--success {
+			@extend %pipe-snackbar-default;
 			@extend %pipe-snackbar-position-top;
 
 			> span {
@@ -61,6 +87,7 @@ $pipe-snackbar-label-padding : 0.575rem            !default;
 		}
 
 		&--error {
+			@extend %pipe-snackbar-default;
 			@extend %pipe-snackbar-position-top;
 
 			> span {
@@ -71,13 +98,21 @@ $pipe-snackbar-label-padding : 0.575rem            !default;
 	}
 
 	&--bottom {
+		@extend %pipe-snackbar-default;
 		@extend %pipe-snackbar-position-bottom;
+
 		> span {
 			@extend %pipe-snackbar-style;
 			@extend %pipe-snackbar-theme-default;
+
+			> a {
+				color: $pipe-color-black;
+				text-decoration: none;
+			}
 		}
 
 		&--success {
+			@extend %pipe-snackbar-default;
 			@extend %pipe-snackbar-position-bottom;
 
 			> span {
@@ -87,6 +122,7 @@ $pipe-snackbar-label-padding : 0.575rem            !default;
 		}
 
 		&--error {
+			@extend %pipe-snackbar-default;
 			@extend %pipe-snackbar-position-bottom;
 
 			> span {
