@@ -77,7 +77,7 @@ select {
   content: ">";
 }
 
-.pp-button, .pp-button--primary, .pp-button--secondary, .pp-button--info, .pp-button--success, .pp-button--warning, .pp-button--danger, .pp-button--twitter, .pp-button--facebook, .pp-button--google, .pp-button--line {
+.pp-button, .pp-button--small, .pp-button--large, .pp-button--primary, .pp-button--primary--small, .pp-button--primary--large, .pp-button--secondary, .pp-button--secondary--small, .pp-button--secondary--large, .pp-button--info, .pp-button--info--small, .pp-button--info--large, .pp-button--success, .pp-button--success--small, .pp-button--success--large, .pp-button--warning, .pp-button--warning--small, .pp-button--warning--large, .pp-button--danger, .pp-button--danger--small, .pp-button--danger--large, .pp-button--twitter, .pp-button--twitter--small, .pp-button--twitter--large, .pp-button--facebook, .pp-button--facebook--small, .pp-button--facebook--large, .pp-button--google, .pp-button--google--small, .pp-button--google--large, .pp-button--line, .pp-button--line--small, .pp-button--line--large {
   appearance: none;
   -webkit-appearance: none;
   background: none;
@@ -91,200 +91,214 @@ select {
   text-decoration: none;
   border-radius: 4px;
   font-family: inherit;
-  padding: 0.6rem;
 }
 
-.pp-button > i, .pp-button--primary > i, .pp-button--secondary > i, .pp-button--info > i, .pp-button--success > i, .pp-button--warning > i, .pp-button--danger > i, .pp-button--twitter > i, .pp-button--facebook > i, .pp-button--google > i, .pp-button--line > i {
+.pp-button > i, .pp-button--small > i, .pp-button--large > i, .pp-button--primary > i, .pp-button--primary--small > i, .pp-button--primary--large > i, .pp-button--secondary > i, .pp-button--secondary--small > i, .pp-button--secondary--large > i, .pp-button--info > i, .pp-button--info--small > i, .pp-button--info--large > i, .pp-button--success > i, .pp-button--success--small > i, .pp-button--success--large > i, .pp-button--warning > i, .pp-button--warning--small > i, .pp-button--warning--large > i, .pp-button--danger > i, .pp-button--danger--small > i, .pp-button--danger--large > i, .pp-button--twitter > i, .pp-button--twitter--small > i, .pp-button--twitter--large > i, .pp-button--facebook > i, .pp-button--facebook--small > i, .pp-button--facebook--large > i, .pp-button--google > i, .pp-button--google--small > i, .pp-button--google--large > i, .pp-button--line > i, .pp-button--line--small > i, .pp-button--line--large > i {
   vertical-align: middle;
 }
 
-.pp-button:disabled, .pp-button--primary:disabled, .pp-button--secondary:disabled, .pp-button--info:disabled, .pp-button--success:disabled, .pp-button--warning:disabled, .pp-button--danger:disabled, .pp-button--twitter:disabled, .pp-button--facebook:disabled, .pp-button--google:disabled, .pp-button--line:disabled {
+.pp-button:disabled, .pp-button--small:disabled, .pp-button--large:disabled, .pp-button--primary:disabled, .pp-button--primary--small:disabled, .pp-button--primary--large:disabled, .pp-button--secondary:disabled, .pp-button--secondary--small:disabled, .pp-button--secondary--large:disabled, .pp-button--info:disabled, .pp-button--info--small:disabled, .pp-button--info--large:disabled, .pp-button--success:disabled, .pp-button--success--small:disabled, .pp-button--success--large:disabled, .pp-button--warning:disabled, .pp-button--warning--small:disabled, .pp-button--warning--large:disabled, .pp-button--danger:disabled, .pp-button--danger--small:disabled, .pp-button--danger--large:disabled, .pp-button--twitter:disabled, .pp-button--twitter--small:disabled, .pp-button--twitter--large:disabled, .pp-button--facebook:disabled, .pp-button--facebook--small:disabled, .pp-button--facebook--large:disabled, .pp-button--google:disabled, .pp-button--google--small:disabled, .pp-button--google--large:disabled, .pp-button--line:disabled, .pp-button--line--small:disabled, .pp-button--line--large:disabled {
   cursor: not-allowed;
   opacity: 0.6;
 }
 
-.pp-button[href], .pp-button:not([href]) {
+.pp-button--small, .pp-button--primary--small, .pp-button--secondary--small, .pp-button--info--small, .pp-button--success--small, .pp-button--warning--small, .pp-button--danger--small, .pp-button--twitter--small, .pp-button--facebook--small, .pp-button--google--small, .pp-button--line--small {
+  font-size: 95%;
+  padding: 0.3rem;
+}
+
+.pp-button, .pp-button--primary, .pp-button--secondary, .pp-button--info, .pp-button--success, .pp-button--warning, .pp-button--danger, .pp-button--twitter, .pp-button--facebook, .pp-button--google, .pp-button--line {
+  font-size: inherit;
+  padding: 0.6rem;
+}
+
+.pp-button--large, .pp-button--primary--large, .pp-button--secondary--large, .pp-button--info--large, .pp-button--success--large, .pp-button--warning--large, .pp-button--danger--large, .pp-button--twitter--large, .pp-button--facebook--large, .pp-button--google--large, .pp-button--line--large {
+  font-size: 110%;
+  padding: 1rem;
+}
+
+.pp-button[href], .pp-button--small[href], .pp-button--large[href], .pp-button:not([href]), .pp-button--small:not([href]), .pp-button--large:not([href]) {
   background-color: #eee;
   color: #333;
 }
 
-.pp-button:hover:not(:disabled), .pp-button:focus:not(:disabled) {
+.pp-button:hover:not(:disabled), .pp-button--small:hover:not(:disabled), .pp-button--large:hover:not(:disabled), .pp-button:focus:not(:disabled), .pp-button--small:focus:not(:disabled), .pp-button--large:focus:not(:disabled) {
   background-color: #ddd;
   color: #333;
   cursor: pointer;
 }
 
-.pp-button:active:not(:disabled) {
+.pp-button:active:not(:disabled), .pp-button--small:active:not(:disabled), .pp-button--large:active:not(:disabled) {
   background-color: #ccc;
   color: #333;
   cursor: pointer;
 }
 
-.pp-button--primary[href], .pp-button--primary:not([href]) {
+.pp-button--primary[href], .pp-button--primary--small[href], .pp-button--primary--large[href], .pp-button--primary:not([href]), .pp-button--primary--small:not([href]), .pp-button--primary--large:not([href]) {
   background-color: #dc143c;
   color: #fff;
 }
 
-.pp-button--primary:hover:not(:disabled), .pp-button--primary:focus:not(:disabled) {
+.pp-button--primary:hover:not(:disabled), .pp-button--primary--small:hover:not(:disabled), .pp-button--primary--large:hover:not(:disabled), .pp-button--primary:focus:not(:disabled), .pp-button--primary--small:focus:not(:disabled), .pp-button--primary--large:focus:not(:disabled) {
   background-color: #c51236;
   color: #fff;
   cursor: pointer;
 }
 
-.pp-button--primary:active:not(:disabled) {
+.pp-button--primary:active:not(:disabled), .pp-button--primary--small:active:not(:disabled), .pp-button--primary--large:active:not(:disabled) {
   background-color: #ad102f;
   color: #fff;
   cursor: pointer;
 }
 
-.pp-button--secondary[href], .pp-button--secondary:not([href]) {
+.pp-button--secondary[href], .pp-button--secondary--small[href], .pp-button--secondary--large[href], .pp-button--secondary:not([href]), .pp-button--secondary--small:not([href]), .pp-button--secondary--large:not([href]) {
   background-color: #c9c908;
   color: #fff;
 }
 
-.pp-button--secondary:hover:not(:disabled), .pp-button--secondary:focus:not(:disabled) {
+.pp-button--secondary:hover:not(:disabled), .pp-button--secondary--small:hover:not(:disabled), .pp-button--secondary--large:hover:not(:disabled), .pp-button--secondary:focus:not(:disabled), .pp-button--secondary--small:focus:not(:disabled), .pp-button--secondary--large:focus:not(:disabled) {
   background-color: #b0b007;
   color: #fff;
   cursor: pointer;
 }
 
-.pp-button--secondary:active:not(:disabled) {
+.pp-button--secondary:active:not(:disabled), .pp-button--secondary--small:active:not(:disabled), .pp-button--secondary--large:active:not(:disabled) {
   background-color: #989806;
   color: #fff;
   cursor: pointer;
 }
 
-.pp-button--info[href], .pp-button--info:not([href]) {
+.pp-button--info[href], .pp-button--info--small[href], .pp-button--info--large[href], .pp-button--info:not([href]), .pp-button--info--small:not([href]), .pp-button--info--large:not([href]) {
   background-color: #3298dc;
   color: #fff;
 }
 
-.pp-button--info:hover:not(:disabled), .pp-button--info:focus:not(:disabled) {
+.pp-button--info:hover:not(:disabled), .pp-button--info--small:hover:not(:disabled), .pp-button--info--large:hover:not(:disabled), .pp-button--info:focus:not(:disabled), .pp-button--info--small:focus:not(:disabled), .pp-button--info--large:focus:not(:disabled) {
   background-color: #248cd1;
   color: #fff;
   cursor: pointer;
 }
 
-.pp-button--info:active:not(:disabled) {
+.pp-button--info:active:not(:disabled), .pp-button--info--small:active:not(:disabled), .pp-button--info--large:active:not(:disabled) {
   background-color: #207dbb;
   color: #fff;
   cursor: pointer;
 }
 
-.pp-button--success[href], .pp-button--success:not([href]) {
+.pp-button--success[href], .pp-button--success--small[href], .pp-button--success--large[href], .pp-button--success:not([href]), .pp-button--success--small:not([href]), .pp-button--success--large:not([href]) {
   background-color: #48c774;
   color: #fff;
 }
 
-.pp-button--success:hover:not(:disabled), .pp-button--success:focus:not(:disabled) {
+.pp-button--success:hover:not(:disabled), .pp-button--success--small:hover:not(:disabled), .pp-button--success--large:hover:not(:disabled), .pp-button--success:focus:not(:disabled), .pp-button--success--small:focus:not(:disabled), .pp-button--success--large:focus:not(:disabled) {
   background-color: #3abc67;
   color: #fff;
   cursor: pointer;
 }
 
-.pp-button--success:active:not(:disabled) {
+.pp-button--success:active:not(:disabled), .pp-button--success--small:active:not(:disabled), .pp-button--success--large:active:not(:disabled) {
   background-color: #34a85c;
   color: #fff;
   cursor: pointer;
 }
 
-.pp-button--warning[href], .pp-button--warning:not([href]) {
+.pp-button--warning[href], .pp-button--warning--small[href], .pp-button--warning--large[href], .pp-button--warning:not([href]), .pp-button--warning--small:not([href]), .pp-button--warning--large:not([href]) {
   background-color: #ffdd57;
   color: #333;
 }
 
-.pp-button--warning:hover:not(:disabled), .pp-button--warning:focus:not(:disabled) {
+.pp-button--warning:hover:not(:disabled), .pp-button--warning--small:hover:not(:disabled), .pp-button--warning--large:hover:not(:disabled), .pp-button--warning:focus:not(:disabled), .pp-button--warning--small:focus:not(:disabled), .pp-button--warning--large:focus:not(:disabled) {
   background-color: #ffd83e;
   color: #333;
   cursor: pointer;
 }
 
-.pp-button--warning:active:not(:disabled) {
+.pp-button--warning:active:not(:disabled), .pp-button--warning--small:active:not(:disabled), .pp-button--warning--large:active:not(:disabled) {
   background-color: #ffd324;
   color: #333;
   cursor: pointer;
 }
 
-.pp-button--danger[href], .pp-button--danger:not([href]) {
+.pp-button--danger[href], .pp-button--danger--small[href], .pp-button--danger--large[href], .pp-button--danger:not([href]), .pp-button--danger--small:not([href]), .pp-button--danger--large:not([href]) {
   background-color: #f14668;
   color: #fff;
 }
 
-.pp-button--danger:hover:not(:disabled), .pp-button--danger:focus:not(:disabled) {
+.pp-button--danger:hover:not(:disabled), .pp-button--danger--small:hover:not(:disabled), .pp-button--danger--large:hover:not(:disabled), .pp-button--danger:focus:not(:disabled), .pp-button--danger--small:focus:not(:disabled), .pp-button--danger--large:focus:not(:disabled) {
   background-color: #ef2e55;
   color: #fff;
   cursor: pointer;
 }
 
-.pp-button--danger:active:not(:disabled) {
+.pp-button--danger:active:not(:disabled), .pp-button--danger--small:active:not(:disabled), .pp-button--danger--large:active:not(:disabled) {
   background-color: #ed1741;
   color: #fff;
   cursor: pointer;
 }
 
-.pp-button--twitter[href], .pp-button--twitter:not([href]) {
+.pp-button--twitter[href], .pp-button--twitter--small[href], .pp-button--twitter--large[href], .pp-button--twitter:not([href]), .pp-button--twitter--small:not([href]), .pp-button--twitter--large:not([href]) {
   background-color: #1da1f2;
   color: #fff;
 }
 
-.pp-button--twitter:hover:not(:disabled), .pp-button--twitter:focus:not(:disabled) {
+.pp-button--twitter:hover:not(:disabled), .pp-button--twitter--small:hover:not(:disabled), .pp-button--twitter--large:hover:not(:disabled), .pp-button--twitter:focus:not(:disabled), .pp-button--twitter--small:focus:not(:disabled), .pp-button--twitter--large:focus:not(:disabled) {
   background-color: #0d95e8;
   color: #fff;
   cursor: pointer;
 }
 
-.pp-button--twitter:active:not(:disabled) {
+.pp-button--twitter:active:not(:disabled), .pp-button--twitter--small:active:not(:disabled), .pp-button--twitter--large:active:not(:disabled) {
   background-color: #0c85d0;
   color: #fff;
   cursor: pointer;
 }
 
-.pp-button--facebook[href], .pp-button--facebook:not([href]) {
+.pp-button--facebook[href], .pp-button--facebook--small[href], .pp-button--facebook--large[href], .pp-button--facebook:not([href]), .pp-button--facebook--small:not([href]), .pp-button--facebook--large:not([href]) {
   background-color: #3b5998;
   color: #fff;
 }
 
-.pp-button--facebook:hover:not(:disabled), .pp-button--facebook:focus:not(:disabled) {
+.pp-button--facebook:hover:not(:disabled), .pp-button--facebook--small:hover:not(:disabled), .pp-button--facebook--large:hover:not(:disabled), .pp-button--facebook:focus:not(:disabled), .pp-button--facebook--small:focus:not(:disabled), .pp-button--facebook--large:focus:not(:disabled) {
   background-color: #344e86;
   color: #fff;
   cursor: pointer;
 }
 
-.pp-button--facebook:active:not(:disabled) {
+.pp-button--facebook:active:not(:disabled), .pp-button--facebook--small:active:not(:disabled), .pp-button--facebook--large:active:not(:disabled) {
   background-color: #2d4373;
   color: #fff;
   cursor: pointer;
 }
 
-.pp-button--google[href], .pp-button--google:not([href]) {
+.pp-button--google[href], .pp-button--google--small[href], .pp-button--google--large[href], .pp-button--google:not([href]), .pp-button--google--small:not([href]), .pp-button--google--large:not([href]) {
   background-color: #db4437;
   color: #fff;
 }
 
-.pp-button--google:hover:not(:disabled), .pp-button--google:focus:not(:disabled) {
+.pp-button--google:hover:not(:disabled), .pp-button--google--small:hover:not(:disabled), .pp-button--google--large:hover:not(:disabled), .pp-button--google:focus:not(:disabled), .pp-button--google--small:focus:not(:disabled), .pp-button--google--large:focus:not(:disabled) {
   background-color: #d33426;
   color: #fff;
   cursor: pointer;
 }
 
-.pp-button--google:active:not(:disabled) {
+.pp-button--google:active:not(:disabled), .pp-button--google--small:active:not(:disabled), .pp-button--google--large:active:not(:disabled) {
   background-color: #bd2e22;
   color: #fff;
   cursor: pointer;
 }
 
-.pp-button--line[href], .pp-button--line:not([href]) {
+.pp-button--line[href], .pp-button--line--small[href], .pp-button--line--large[href], .pp-button--line:not([href]), .pp-button--line--small:not([href]), .pp-button--line--large:not([href]) {
   background-color: #00b900;
   color: #fff;
 }
 
-.pp-button--line:hover:not(:disabled), .pp-button--line:focus:not(:disabled) {
+.pp-button--line:hover:not(:disabled), .pp-button--line--small:hover:not(:disabled), .pp-button--line--large:hover:not(:disabled), .pp-button--line:focus:not(:disabled), .pp-button--line--small:focus:not(:disabled), .pp-button--line--large:focus:not(:disabled) {
   background-color: #00a000;
   color: #fff;
   cursor: pointer;
 }
 
-.pp-button--line:active:not(:disabled) {
+.pp-button--line:active:not(:disabled), .pp-button--line--small:active:not(:disabled), .pp-button--line--large:active:not(:disabled) {
   background-color: #008600;
   color: #fff;
   cursor: pointer;
