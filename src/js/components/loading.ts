@@ -1,10 +1,8 @@
 import AppComponent from "../base/AppComponent";
+import ComponentInterface from "../base/ComponentInterface";
 
-export default class Loading extends AppComponent {
-	constructor() {
-		super();
-		this.id = "loading";
-	}
+export default class Loading extends AppComponent implements ComponentInterface {
+	protected id: string = "loading";
 
 	public initialize(): void {
 		const triggerElements: NodeListOf<HTMLElement> = this.getTriggerElements();

@@ -1,10 +1,13 @@
-export default class Snackbar {
-	private id: string = "snackbar";
+import AppComponent from "../base/AppComponent";
+import ComponentInterface from "../base/ComponentInterface";
+
+export default class Snackbar extends AppComponent implements ComponentInterface {
+	protected id: string = "snackbar";
 
 	public initialize(): void {
-		const triggers: NodeListOf<HTMLElement> = document.querySelectorAll(`[data-pipejs=${this.id}]`);
+		const triggerElements: NodeListOf<HTMLElement> = this.getTriggerElements();
 
-		triggers.forEach(trigger => {
+		triggerElements.forEach(trigger => {
 			const target: string = trigger.getAttribute("data-pipe-target");
 			const targetElement: HTMLElement = document.querySelector(target);
 			const hiddenTime: number = parseInt(trigger.getAttribute("data-pipe-hidden-time"));

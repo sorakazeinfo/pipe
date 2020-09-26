@@ -1,10 +1,13 @@
-export default class Agreement {
-	private id: string = "agreement";
+import AppComponent from "../base/AppComponent";
+import ComponentInterface from "../base/ComponentInterface";
+
+export default class Agreement extends AppComponent implements ComponentInterface {
+	protected id: string = "agreement";
 
 	public initialize(): void {
-		const triggers: NodeListOf<HTMLElement> = document.querySelectorAll(`[data-pipejs=${this.id}]`);
+		const triggerElements: NodeListOf<HTMLElement> = this.getTriggerElements();
 
-		triggers.forEach((trigger: HTMLElement) => {
+		triggerElements.forEach((trigger: HTMLElement) => {
 			const target: string = trigger.getAttribute("data-pipe-target");
 			const targetButton: HTMLElement = document.querySelector(target);
 			const targetCheckboxes: NodeListOf<HTMLElement> = trigger.querySelectorAll("input[type=checkbox]");

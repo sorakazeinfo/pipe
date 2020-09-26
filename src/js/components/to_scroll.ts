@@ -1,14 +1,13 @@
-export default class ToScroll {
-	private id: string;
+import AppComponent from "../base/AppComponent";
+import ComponentInterface from "../base/ComponentInterface";
 
-	constructor() {
-		this.id = "scroll";
-	}
+export default class ToScroll extends AppComponent implements ComponentInterface {
+	protected id: string = "scroll_";
 
-	initialize() {
-		const scrollTriggers = document.querySelectorAll(`[data-pipejs=${this.id}]`);
-		if (scrollTriggers.length > 0) {
-			scrollTriggers.forEach(trigger => {
+	public initialize(): void {
+		const triggerElements: NodeListOf<HTMLElement> = this.getTriggerElements();
+
+			triggerElements.forEach(trigger => {
 				const href  = trigger.getAttribute("href");
 				const block = trigger.getAttribute("data-pipe-target") || "start";
 
@@ -26,6 +25,5 @@ export default class ToScroll {
 					});
 				});
 			});
-		}
 	}
 }

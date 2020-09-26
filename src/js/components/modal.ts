@@ -1,14 +1,14 @@
-export default class Modal {
-	private id: string;
+import AppComponent from "../base/AppComponent";
+import ComponentInterface from "../base/ComponentInterface";
 
-	constructor() {
-		this.id = "modal";
-	}
+export default class Modal extends AppComponent implements ComponentInterface {
+	protected id: string = "modal";
 
-	initialize() {
-		const modalTriggers = document.querySelectorAll(`[data-pipejs=${this.id}]`);
-		if (modalTriggers.length > 0) {
-			modalTriggers.forEach(button => {
+	public initialize(): void {
+		const triggerElements: NodeListOf<HTMLElement> = this.getTriggerElements();
+
+		if (triggerElements.length > 0) {
+			triggerElements.forEach(button => {
 				const id = button.getAttribute("data-pipe-target");
 				const modal: HTMLElement = document.querySelector(id);
 
