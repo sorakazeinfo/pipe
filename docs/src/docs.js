@@ -20,6 +20,7 @@ import Notification from "./components/notification";
 import Pagination from "./components/pagination";
 import Toggle from "./components/toggle";
 import ToScroll from "./components/to_scroll";
+import SeeMore from "./components/see_more";
 import Snackbar from "./components/snackbar";
 import Tab from "./components/tab";
 import Text from "./components/text";
@@ -49,6 +50,7 @@ const routes = [
 	{path: "/pagination", component: Pagination},
 	{path: "/toggle", component: Toggle},
 	{path: "/to-scroll", component: ToScroll},
+	{path: "/see-more", component: SeeMore},
 	{path: "/snackbar", component: Snackbar},
 	{path: "/tab", component: Tab},
 	{path: "/text", component: Text},
