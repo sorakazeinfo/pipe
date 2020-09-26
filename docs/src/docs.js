@@ -11,6 +11,7 @@ import Footer from "./components/Footer";
 import Form from "./components/form";
 import Heading from "./components/heading";
 import Hidden from "./components/hidden";
+import ItemIndex from "./components/item_index";
 import List from "./components/list";
 import Loading from "./components/loading";
 import Margin from "./components/margin";
@@ -39,6 +40,7 @@ const routes = [
 	{path: "/form", component: Form},
 	{path: "/heading", component: Heading},
 	{path: "/hidden", component: Hidden},
+	{path: "/item-index", component: ItemIndex},
 	{path: "/list", component: List},
 	{path: "/loading", component: Loading},
 	{path: "/margin", component: Margin},
