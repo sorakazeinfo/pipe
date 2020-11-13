@@ -2,7 +2,7 @@ import AppComponent from "../base/AppComponent";
 import ComponentInterface from "../base/ComponentInterface";
 
 export default class ToScroll extends AppComponent implements ComponentInterface {
-	protected id: string = "scroll_";
+	protected id: string = "scroll";
 
 	public initialize(): void {
 		const triggerElements: NodeListOf<HTMLElement> = this.getTriggerElements();
