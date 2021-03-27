@@ -1,0 +1,125 @@
+$pipe-navbar-breakpoint-max-mobile : $pipe-breakpoint-max-mobile      !default;
+$pipe-navbar-breakpoint-min-mobile : $pipe-breakpoint-min-mobile      !default;
+$pipe-navbar-background-color      : $pipe-color-primary              !default;
+$pipe-navbar-foreground-color      : $pipe-color-primary-text-inverse !default;
+$pipe-navbar-padding               : 1.5rem 1.0rem                    !default;
+$pipe-navbar-menu-item-padding     : 0      0.5rem                    !default;
+
+%pipe-navbar {
+	padding: $pipe-navbar-padding;
+
+	* {
+		align-self : center;
+	}
+
+	a {
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+@mixin pipe-navbar-color($background-color, $foreground-color) {
+	background-color: $background-color;
+	color: $foreground-color;
+
+	a {
+		color: $foreground-color;
+	}
+}
+
+.pp-navbar {
+	@extend %pipe-navbar;
+	@include pipe-navbar-color($pipe-navbar-background-color, $pipe-navbar-foreground-color);
+
+	@media #{$pipe-navbar-breakpoint-min-mobile} {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__logo {
+		@if (mixin-exists(pipe-hook-navbar-logo)) {
+			@include pipe-hook-navbar-logo;
+		}
+	}
+
+	&__toggle {
+		@media #{$pipe-navbar-breakpoint-max-mobile} {
+			display: block;
+
+			&__open {
+				cursor: pointer;
+				display: block;
+			}
+
+			&__close {
+				cursor: pointer;
+				display: none;
+			}
+		}
+
+		@media #{$pipe-navbar-breakpoint-min-mobile} {
+			display: none;
+		}
+	}
+
+	&__start {
+		@media #{$pipe-navbar-breakpoint-max-mobile} {
+			display: flex;
+			justify-content: space-between;
+			flex-grow: 1;
+		}
+	}
+
+	&__end {
+		@media #{$pipe-navbar-breakpoint-max-mobile} {
+			display: none;
+			padding-top: 0.6rem;
+
+			&--active {
+				display: block;
+			}
+		}
+
+		@media #{$pipe-navbar-breakpoint-min-mobile} {
+			flex-grow: 1;
+		}
+	}
+
+	&__items {
+		@media #{$pipe-navbar-breakpoint-max-mobile} {
+			&__menu {
+				> li {
+					padding: 0.5rem 0;
+					position: relative;
+
+					> a {
+						&:after {
+							content: "";
+							position: absolute;
+							top: 0;
+							right: 0;
+							bottom: 0;
+							left: 0;
+						}
+					}
+				}
+			}
+		}
+
+		@media #{$pipe-navbar-breakpoint-min-mobile} {
+			display: flex;
+			justify-content: space-between;
+
+			&__menu {
+				display: flex;
+
+				> * {
+					padding: $pipe-navbar-menu-item-padding;
+				}
+			}
+		}
+	}
+}
