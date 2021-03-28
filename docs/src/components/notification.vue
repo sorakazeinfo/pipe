@@ -2,11 +2,8 @@
 	<div>
 		<h1>Notification</h1>
 
-		<p class="pp-notification--primary">.pp-notification--primary</p>
-		<p class="pp-notification--secondary">.pp-notification--secondary</p>
-		<p class="pp-notification--info">.pp-notification--info</p>
-		<p class="pp-notification--success">.pp-notification--success</p>
-		<p class="pp-notification--warning">.pp-notification--warning</p>
-		<p class="pp-notification--danger">.pp-notification--danger</p>
+		<div v-for="v in ['primary', 'secondary', 'info', 'success', 'warning', 'danger']">
+			<p v-bind:class="['pp-notification--' + v]">.pp-notification--{{ v }}</p>
+		</div>
 	</div>
 </template>
