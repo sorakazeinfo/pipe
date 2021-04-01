@@ -16,6 +16,7 @@ import List from "./components/list";
 import Loading from "./components/loading";
 import Margin from "./components/margin";
 import Modal from "./components/modal";
+import Navbar from "./components/navbar";
 import Notification from "./components/notification";
 import Pagination from "./components/pagination";
 import Toggle from "./components/toggle";
@@ -46,6 +47,7 @@ const routes = [
 	{path: "/loading", component: Loading},
 	{path: "/margin", component: Margin},
 	{path: "/modal", component: Modal},
+	{path: "/navbar", component: Navbar},
 	{path: "/notification", component: Notification},
 	{path: "/pagination", component: Pagination},
 	{path: "/toggle", component: Toggle},
