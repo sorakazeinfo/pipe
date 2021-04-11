@@ -1,3 +1,4 @@
+const TerserPlugin = require('terser-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 module.exports = {
@@ -31,5 +32,8 @@ module.exports = {
   plugins: [new VueLoaderPlugin()],
   devServer: {
 	  contentBase: `${__dirname}/dist`
+  },
+  optimization: {
+	  minimizer: [new TerserPlugin({extractComments: false})]
   }
 };
