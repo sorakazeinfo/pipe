@@ -70,6 +70,18 @@ $pipe-color-link-visited           : $pipe-color-primary                !default
 $pipe-color-link-hover             : $pipe-color-primary                !default;
 $pipe-color-link-active            : $pipe-color-primary                !default;
 
+// Mixin variables
+$pipe-mixin-focus-form-border-border-color       : $pipe-color-primary-input-border                        !default;
+$pipe-mixin-focus-form-border-box-shadow         : 0 0 0 .1em $pipe-mixin-focus-form-border-border-color   !default;
+
+$pipe-mixin-invalid-form-border-border-color     : $pipe-color-danger                                      !default;
+$pipe-mixin-invalid-form-border-box-shadow       : 0 0 0 .1em $pipe-mixin-invalid-form-border-border-color !default;
+
+$pipe-mixin-overlay-background                   : rgba(0, 0, 0, 0.5)                                      !default;
+
+$pipe-mixin-accordion-transition-duration        : 0.3s                                                    !default;
+$pipe-mixin-accordion-transition-timing-function : ease                                                    !default;
+
 // Others
 $pipe-border-radius : 4px    !default;
 $pipe-max-width     : 1200px !default;
