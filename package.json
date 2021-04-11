@@ -1,17 +1,17 @@
 {
   "name": "pipe",
-  "version": "3.1.1",
+  "version": "4.0.0",
   "description": "Pipe is CSS and JavaScript Framework",
   "main": "app.js",
   "scripts": {
     "build": "npm run build:css & npm run build.dev:css & npm run build:js",
-    "build:css": "node-sass ./src/scss/pipe.scss ./dist/pipe.min.css --output-style compressed",
-    "build.dev:css": "node-sass ./src/scss/pipe.scss ./dist/pipe.css --output-style expanded",
+    "build:css": "sass ./src/scss/pipe.scss ./dist/pipe.min.css --style compressed --no-source-map",
+    "build.dev:css": "sass ./src/scss/pipe.scss ./dist/pipe.css --style expanded --no-source-map",
     "build:js": "webpack --config webpack.prod.js",
     "dev": "npm run dev:css & npm run dev:js",
-    "dev:css": "node-sass ./src/scss/pipe.scss ./docs/dist/pipe.css --output-style expanded",
+    "dev:css": "sass ./src/scss/pipe.scss ./docs/dist/pipe.css --style expanded --no-source-map",
     "dev:js": "webpack --config webpack.dev.js",
-    "watch:css": "node-sass ./src/scss/pipe.scss ./docs/dist/pipe.css --output-style expanded --watch",
+    "watch:css": "sass ./src/scss/pipe.scss ./docs/dist/pipe.css --style expanded --watch --no-source-map",
     "watch:js": "webpack --config webpack.dev.js --watch"
   },
   "author": "Hyte Sorakaze",
@@ -20,12 +20,11 @@
     "smoothscroll-polyfill": "^0.4.4"
   },
   "devDependencies": {
-    "node-sass": "^4.14.1",
-    "ts-loader": "^8.0.18",
+    "sass": "^1.32.8",
+    "ts-loader": "^8.1.0",
     "typescript": "^4.2.3",
-    "webpack": "^4.46.0",
-    "webpack-cli": "^3.3.12",
-    "webpack-merge": "^4.2.2"
-  },
-  "dependencies": {}
+    "webpack": "^5.31.2",
+    "webpack-cli": "^4.6",
+    "webpack-merge": "^5.7.3"
+  }
 }
