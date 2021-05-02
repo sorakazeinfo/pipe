@@ -14,7 +14,7 @@
 
 @mixin pipe-focusFormBorder {
 	border: 1px solid $pipe-mixin-focus-form-border-border-color;
-	box-shadow: $pipe-mixin-focus-form-border-box-shadow;
+	box-shadow: 0 0 0 .1em $pipe-mixin-focus-form-border-box-shadow;
 	outline: 0;
 }
 
