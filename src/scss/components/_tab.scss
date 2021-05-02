@@ -7,9 +7,10 @@ $pipe-tab-menu-active-color            : $pipe-color-primary-text-inverse !defau
 $pipe-tab-menu-active-visited-color    : $pipe-color-primary-text-inverse !default;
 
 $pipe-tab-border-border-bottom-size         : 1px                 !default;
-$pipe-tab-border-border-bottom-color        : #aaa                !default;
+$pipe-tab-border-border-bottom-color        : #aaa              !default;
 $pipe-tab-border-border-bottom-color-active : $pipe-color-primary !default;
-$pipe-tab-border-menu-item-color            : $pipe-color-primary !default;
+$pipe-tab-border-menu-item-color            : $pipe-color-black   !default;
+$pipe-tab-border-menu-item-color-active     : $pipe-color-primary !default;
 $pipe-tab-border-menu-item-padding          : 0.5rem              !default;
 
 .pp-tab {
@@ -114,7 +115,8 @@ $pipe-tab-border-menu-item-padding          : 0.5rem              !default;
 
 		&__active > a {
 			border-bottom: $pipe-tab-border-border-bottom-size solid $pipe-tab-border-border-bottom-color-active !important;
-			color: $pipe-tab-border-menu-item-color;
+			color: $pipe-tab-border-menu-item-color-active !important;
+			pointer-events: none;
 		}
 	}
 

@@ -1219,7 +1219,7 @@ label > .pp-radio--large {
 }
 .pp-tab-border__menu > ul > li a {
   border-bottom: 1px solid #aaa;
-  color: #dc143c;
+  color: #333;
   display: block;
   padding: 0.5rem;
   text-decoration: none;
@@ -1229,7 +1229,8 @@ label > .pp-radio--large {
 }
 .pp-tab-border__menu__active > a {
   border-bottom: 1px solid #dc143c !important;
-  color: #dc143c;
+  color: #dc143c !important;
+  pointer-events: none;
 }
 .pp-tab-border__contents > div {
   display: none;
