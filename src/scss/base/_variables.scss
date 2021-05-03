@@ -65,11 +65,6 @@ $pipe-color-line-hover             : darken($pipe-color-line, 5%)       !default
 $pipe-color-line-active            : darken($pipe-color-line, 10%)      !default;
 $pipe-color-line-text-inverse      : $pipe-color-white                  !default;
 
-$pipe-color-link                   : $pipe-color-primary                !default;
-$pipe-color-link-visited           : $pipe-color-primary                !default;
-$pipe-color-link-hover             : $pipe-color-primary                !default;
-$pipe-color-link-active            : $pipe-color-primary                !default;
-
 // Mixin variables
 $pipe-mixin-focus-form-border-border-color       : $pipe-color-primary-input-border                        !default;
 $pipe-mixin-focus-form-border-box-shadow         : 0 0 0 .1em $pipe-mixin-focus-form-border-border-color   !default;

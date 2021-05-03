@@ -1,28 +1,38 @@
+$pipe-normalize-html-foreground              : $pipe-color-black                  !default;
+
+$pipe-normalize-color-link                   : $pipe-color-primary                !default;
+$pipe-normalize-color-link-visited           : $pipe-color-primary                !default;
+$pipe-normalize-color-link-hover             : $pipe-color-primary                !default;
+$pipe-normalize-color-link-active            : $pipe-color-primary                !default;
+
+$pipe-normalize-p-letter-spacing             : .3px                               !default;
+$pipe-normalize-p-line-height                : 1.7                                !default;
+
 html {
-	color: $pipe-color-black;
+	color: $pipe-normalize-html-foreground;
 }
 
 a {
 	&:link {
-		color: $pipe-color-link;
+		color: $pipe-normalize-color-link;
 	}
 
 	&:visited {
-		color: $pipe-color-link-visited;
+		color: $pipe-normalize-color-link-visited;
 	}
 
 	&:hover {
-		color: $pipe-color-link-hover;
+		color: $pipe-normalize-color-link-hover;
 	}
 
 	&:active {
-		color: $pipe-color-link-active;
+		color: $pipe-normalize-color-link-active;
 	}
 }
 
 p {
-	letter-spacing: .3px;
-	line-height: 1.7;
+	letter-spacing: $pipe-normalize-p-letter-spacing;
+	line-height: $pipe-normalize-p-line-height;
 }
 
 input,
