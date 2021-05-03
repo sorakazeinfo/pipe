@@ -1,0 +1,34 @@
+html {
+	color: $pipe-color-black;
+}
+
+a {
+	&:link {
+		color: $pipe-color-link;
+	}
+
+	&:visited {
+		color: $pipe-color-link-visited;
+	}
+
+	&:hover {
+		color: $pipe-color-link-hover;
+	}
+
+	&:active {
+		color: $pipe-color-link-active;
+	}
+}
+
+p {
+	letter-spacing: .3px;
+	line-height: 1.7;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+	font-size: 100%;
+}
