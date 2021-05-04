@@ -54,8 +54,11 @@ input,
 button,
 textarea,
 select {
-	background-color: var(--pipe-form-input-color);
-	color: var(--pipe-foreground-color);
 	font: inherit;
 	font-size: 100%;
+}
+
+input, textarea, select {
+	background-color: var(--pipe-form-input-color);
+	color: var(--pipe-foreground-color);
 }
