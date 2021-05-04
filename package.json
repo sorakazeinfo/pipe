@@ -1,6 +1,6 @@
 {
   "name": "pipe",
-  "version": "3.2.0",
+  "version": "4.0.0",
   "description": "Pipe is CSS and JavaScript Framework",
   "main": "app.js",
   "scripts": {
