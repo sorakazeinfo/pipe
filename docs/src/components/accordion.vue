@@ -43,4 +43,12 @@
 		text-decoration: none;
 		padding: 1rem 0.5rem;
 	}
+
+	html.dark .item {
+		border: 1px solid #777;
+	}
+
+	html.dark .item > div:first-child a {
+		background-color: #555;
+	}
 </style>

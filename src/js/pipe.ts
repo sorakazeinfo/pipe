@@ -1,5 +1,6 @@
 import Accordion from "./components/accordion";
 import Agreement from "./components/agreement";
+import Appearance from "./components/appearance";
 import Loading from "./components/loading";
 import Modal from "./components/modal";
 import NavbarToggle from "./components/navbar-toggle";
@@ -13,6 +14,7 @@ import Toggle from "./components/toggle";
 
 (new Accordion()).initialize();
 (new Agreement()).initialize();
+(new Appearance()).initialize();
 (new Loading()).initialize();
 (new Modal()).initialize();
 (new NavbarToggle()).initialize();

@@ -4,6 +4,7 @@ $pipe-modal-contents-border-radius : $pipe-border-radius           !default;
 $pipe-modal-contents-z-index       : $pipe-modal-base-z-index + 5  !default;
 $pipe-modal-contents-max-width     : 600px                         !default;
 $pipe-modal-contents-width         : 90%                           !default;
+$pipe-modal-contents-background    : var(--pipe-background-color)  !default;
 
 .pp-modal {
 	display: none;
@@ -30,7 +31,7 @@ $pipe-modal-contents-width         : 90%                           !default;
 	}
 
 	&__contents {
-		background-color: #fff;
+		background-color: $pipe-modal-contents-background;
 		border-radius: $pipe-modal-contents-border-radius;
 		padding: 1rem;
 		position: relative;

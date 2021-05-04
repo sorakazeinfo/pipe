@@ -1,0 +1,64 @@
+$pipe-normalize-color-link                   : $pipe-color-primary                !default;
+$pipe-normalize-color-link-visited           : $pipe-color-primary                !default;
+$pipe-normalize-color-link-hover             : $pipe-color-primary                !default;
+$pipe-normalize-color-link-active            : $pipe-color-primary                !default;
+
+$pipe-normalize-p-letter-spacing             : .3px                               !default;
+$pipe-normalize-p-line-height                : 1.7                                !default;
+
+html {
+	--pipe-background-color: #{red($pipe-color-background-light)}, #{green($pipe-color-background-light)}, #{blue($pipe-color-background-light)};
+	--pipe-foreground-color: #{$pipe-color-foreground-light};
+	--pipe-form-input-color: #{$pipe-color-form-input-light};
+	--pipe-middleground-color: #{$pipe-color-middleground-light};
+	--pipe-wallpaper-background: #{$pipe-wallpaper-background-light};
+
+	&.#{$pipe-dark-mode-class} {
+		--pipe-background-color: #{red($pipe-color-background-dark)}, #{green($pipe-color-background-dark)}, #{blue($pipe-color-background-dark)};
+		--pipe-foreground-color: #{$pipe-color-foreground-dark};
+		--pipe-form-input-color: #{$pipe-color-form-input-dark};
+		--pipe-middleground-color: #{$pipe-color-middleground-dark};
+		--pipe-wallpaper-background: #{$pipe-wallpaper-background-dark};
+	}
+}
+
+body {
+	background: var(--pipe-wallpaper-background);
+	color: var(--pipe-foreground-color);
+}
+
+a {
+	&:link {
+		color: $pipe-normalize-color-link;
+	}
+
+	&:visited {
+		color: $pipe-normalize-color-link-visited;
+	}
+
+	&:hover {
+		color: $pipe-normalize-color-link-hover;
+	}
+
+	&:active {
+		color: $pipe-normalize-color-link-active;
+	}
+}
+
+p {
+	letter-spacing: $pipe-normalize-p-letter-spacing;
+	line-height: $pipe-normalize-p-line-height;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+	font-size: 100%;
+}
+
+input:not([type="submit"]):not([type="button"]), textarea, select {
+	background-color: var(--pipe-form-input-color);
+	color: var(--pipe-foreground-color);
+}

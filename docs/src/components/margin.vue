@@ -2,7 +2,7 @@
 	<div>
 		<h1>Margin</h1>
 
-		<ul>
+		<ul class="vue-margin-ul">
 			<li class="pp-margin">.pp-margin</li>
 			<li class="pp-margin--large">.pp-margin--large</li>
 			<li class="pp-margin--small">.pp-margin--small</li>
@@ -19,8 +19,13 @@
 </template>
 
 <style scoped>
-	li {
+	ul.vue-margin-ul > li {
 		background-color: #eee;
 		border: 1px solid #ccc;
+	}
+
+	html.dark ul.vue-margin-ul > li {
+		background-color: #555;
+		border: 1px solid #777;
 	}
 </style>

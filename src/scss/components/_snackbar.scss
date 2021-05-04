@@ -34,7 +34,7 @@ $pipe-snackbar-label-padding : 0.575rem            !default;
 
 %pipe-snackbar-theme-default {
 	border: 1px solid #ccc;
-	background-color: #eee;
+	background-color: var(--pipe-background-color);
 }
 
 %pipe-snackbar-theme-success {
@@ -71,7 +71,7 @@ $pipe-snackbar-label-padding : 0.575rem            !default;
 			@extend %pipe-snackbar-theme-default;
 
 			> a {
-				color: $pipe-color-black;
+				color: var(--pipe-foreground-color);
 				text-decoration: none;
 			}
 		}
@@ -106,7 +106,7 @@ $pipe-snackbar-label-padding : 0.575rem            !default;
 			@extend %pipe-snackbar-theme-default;
 
 			> a {
-				color: $pipe-color-black;
+				color: var(--pipe-foreground-color);
 				text-decoration: none;
 			}
 		}

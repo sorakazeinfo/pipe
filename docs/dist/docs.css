@@ -38,3 +38,7 @@ body {
 .docs-ul li a:hover {
 	background-color: #eee;
 }
+
+html.dark .docs-ul li a:hover {
+	background-color: #222;
+}

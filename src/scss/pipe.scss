@@ -1,11 +1,14 @@
+// Import Reset
+@import "base/_reset";
+
 // Import variables
 @import "base/_variables";
 
 // Import mixins
 @import "base/_mixins";
 
-// Import Reset
-@import "base/_reset";
+// Import normalize
+@import "base/_normalize";
 
 // Import Components
 @import "components/_all";

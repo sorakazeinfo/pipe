@@ -1,17 +1,17 @@
-$pipe-tab-menu-border-default          : 1px solid $pipe-color-gray       !default;
-$pipe-tab-menu-border-hover            : 1px solid $pipe-color-primary    !default;
-$pipe-tab-menu-visited-link-color      : $pipe-color-primary              !default;
-$pipe-tab-menu-active-background-color : $pipe-color-primary              !default;
-$pipe-tab-menu-active-border-color     : $pipe-color-primary              !default;
-$pipe-tab-menu-active-color            : $pipe-color-primary-text-inverse !default;
-$pipe-tab-menu-active-visited-color    : $pipe-color-primary-text-inverse !default;
+$pipe-tab-menu-border-default               : 1px solid $pipe-color-gray       !default;
+$pipe-tab-menu-border-hover                 : 1px solid $pipe-color-primary    !default;
+$pipe-tab-menu-visited-link-color           : $pipe-color-primary              !default;
+$pipe-tab-menu-active-background-color      : $pipe-color-primary              !default;
+$pipe-tab-menu-active-border-color          : $pipe-color-primary              !default;
+$pipe-tab-menu-active-color                 : $pipe-color-primary-text-inverse !default;
+$pipe-tab-menu-active-visited-color         : $pipe-color-primary-text-inverse !default;
 
-$pipe-tab-border-border-bottom-size         : 1px                 !default;
-$pipe-tab-border-border-bottom-color        : #aaa              !default;
-$pipe-tab-border-border-bottom-color-active : $pipe-color-primary !default;
-$pipe-tab-border-menu-item-color            : $pipe-color-black   !default;
-$pipe-tab-border-menu-item-color-active     : $pipe-color-primary !default;
-$pipe-tab-border-menu-item-padding          : 0.5rem              !default;
+$pipe-tab-border-border-bottom-size         : 1px                              !default;
+$pipe-tab-border-border-bottom-color        : #aaa                           !default;
+$pipe-tab-border-border-bottom-color-active : $pipe-color-primary              !default;
+$pipe-tab-border-menu-item-color            : var(--pipe-foreground-color)     !default;
+$pipe-tab-border-menu-item-color-active     : $pipe-color-primary              !default;
+$pipe-tab-border-menu-item-padding          : 0.5rem                           !default;
 
 .pp-tab {
 	&__menu {

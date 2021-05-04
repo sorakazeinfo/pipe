@@ -5,7 +5,6 @@
 }
 
 html {
-	color: $pipe-color-black;
 	font-family: "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "Hiragino Sans", -apple-system, BlinkMacSystemFont, "Meiryo", system-ui, sans-serif;
 	scroll-behavior: smooth;
 }
@@ -21,35 +20,4 @@ img {
 
 ul, ol {
 	list-style: none;
-}
-
-p {
-	letter-spacing: .3px;
-	line-height: 1.7;
-}
-
-a {
-	&:link {
-		color: $pipe-color-link;
-	}
-
-	&:visited {
-		color: $pipe-color-link-visited;
-	}
-
-	&:hover {
-		color: $pipe-color-link-hover;
-	}
-
-	&:active {
-		color: $pipe-color-link-active;
-	}
-}
-
-input,
-button,
-textarea,
-select {
-	font: inherit;
-	font-size: 100%;
 }
