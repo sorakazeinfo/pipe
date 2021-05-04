@@ -68,7 +68,7 @@ select {
   font-size: 100%;
 }
 
-input, textarea, select {
+input:not([type=submit]):not([type=button]), textarea, select {
   background-color: var(--pipe-form-input-color);
   color: var(--pipe-foreground-color);
 }
