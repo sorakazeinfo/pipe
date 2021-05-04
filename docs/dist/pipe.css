@@ -23,7 +23,23 @@ ul, ol {
 }
 
 html {
-  color: #333;
+  --pipe-background-color: 238, 238, 238;
+  --pipe-foreground-color: #333;
+  --pipe-form-input-color: #fff;
+  --pipe-middleground-color: #ccc;
+  --pipe-wallpaper-background: #fff;
+}
+html.dark {
+  --pipe-background-color: 68, 68, 68;
+  --pipe-foreground-color: #ccc;
+  --pipe-form-input-color: #666;
+  --pipe-middleground-color: #777;
+  --pipe-wallpaper-background: #333;
+}
+
+body {
+  background: var(--pipe-wallpaper-background);
+  color: var(--pipe-foreground-color);
 }
 
 a:link {
@@ -48,6 +64,8 @@ input,
 button,
 textarea,
 select {
+  background-color: var(--pipe-form-input-color);
+  color: var(--pipe-foreground-color);
   font: inherit;
   font-size: 100%;
 }
@@ -338,13 +356,13 @@ label > .pp-checkbox--large {
 }
 
 .pp-divider:before, .pp-divider:after {
-  background-color: #333;
+  background-color: var(--pipe-foreground-color);
   content: "";
   height: 1px;
   flex-grow: 1;
 }
 .pp-divider--center:before, .pp-divider--center:after {
-  background-color: #333;
+  background-color: var(--pipe-foreground-color);
   content: "";
   height: 1px;
   flex-grow: 1;
@@ -356,14 +374,14 @@ label > .pp-checkbox--large {
   margin-left: 1rem;
 }
 .pp-divider--right:before {
-  background-color: #333;
+  background-color: var(--pipe-foreground-color);
   content: "";
   height: 1px;
   flex-grow: 1;
   margin-right: 1rem;
 }
 .pp-divider--left:after {
-  background-color: #333;
+  background-color: var(--pipe-foreground-color);
   content: "";
   height: 1px;
   flex-grow: 1;
@@ -395,7 +413,7 @@ label > .pp-checkbox--large {
 }
 
 .pp-footer {
-  background-color: #eee;
+  background-color: var(--pipe-background-color);
   padding-top: 2rem;
   padding-right: 1rem;
   padding-bottom: 2rem;
@@ -447,7 +465,7 @@ label > .pp-checkbox--large {
 }
 
 .pp-form--vertical .pp-form__control {
-  background-color: rgba(238, 238, 238, 0.7);
+  background-color: rgba(var(--pipe-background-color), 0.7);
   border-radius: 4px;
   margin: 0.75rem 0 0.75rem 0;
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
@@ -479,7 +497,7 @@ label > .pp-checkbox--large {
     flex-basis: 0;
     flex-grow: 5;
     flex-shrink: 1;
-    background-color: rgba(238, 238, 238, 0.7);
+    background-color: rgba(var(--pipe-background-color), 0.7);
     border-radius: 4px;
     margin: 0.75rem 0 0.75rem 0;
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
@@ -487,7 +505,7 @@ label > .pp-checkbox--large {
 }
 @media screen and (max-width: 559px) {
   .pp-form--horizontal .pp-form__control {
-    background-color: rgba(238, 238, 238, 0.7);
+    background-color: rgba(var(--pipe-background-color), 0.7);
     border-radius: 4px;
     margin: 0.75rem 0 0.75rem 0;
     padding: 0.5rem 0.5rem 0.5rem 0.5rem;
@@ -702,13 +720,13 @@ label > .pp-input {
 }
 .pp-item-index--alignment--between > li, .pp-item-index--alignment > li, .pp-item-index > li {
   border-radius: 4px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--pipe-middleground-color);
   margin: 0.25rem;
   padding: 0.5rem;
   position: relative;
 }
 .pp-item-index--alignment--between > li:hover, .pp-item-index--alignment > li:hover, .pp-item-index > li:hover {
-  border: 1px solid #666;
+  border: 1px solid var(--pipe-foreground-color);
 }
 .pp-item-index--alignment--between > li > a, .pp-item-index--alignment > li > a, .pp-item-index > li > a {
   text-decoration: none;
@@ -867,7 +885,7 @@ label > .pp-input {
   z-index: 20;
 }
 .pp-modal__contents {
-  background-color: #fff;
+  background-color: var(--pipe-background-color);
   border-radius: 4px;
   padding: 1rem;
   position: relative;
@@ -1123,7 +1141,7 @@ label > .pp-radio--large {
 
 .pp-snackbar--bottom > span, .pp-snackbar--top > span {
   border: 1px solid #ccc;
-  background-color: #eee;
+  background-color: var(--pipe-background-color);
 }
 
 .pp-snackbar--bottom--success > span, .pp-snackbar--top--success > span {
@@ -1148,11 +1166,11 @@ label > .pp-radio--large {
   display: block !important;
 }
 .pp-snackbar--top > span > a {
-  color: #333;
+  color: var(--pipe-foreground-color);
   text-decoration: none;
 }
 .pp-snackbar--bottom > span > a {
-  color: #333;
+  color: var(--pipe-foreground-color);
   text-decoration: none;
 }
 .pp-tab__menu {
@@ -1222,7 +1240,7 @@ label > .pp-radio--large {
 }
 .pp-tab-border__menu > ul > li a {
   border-bottom: 1px solid #aaa;
-  color: #333;
+  color: var(--pipe-foreground-color);
   display: block;
   padding: 0.5rem;
   text-decoration: none;

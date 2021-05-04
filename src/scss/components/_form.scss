@@ -1,7 +1,7 @@
 $pipe-form-breakpoint-min-mobile      : $pipe-breakpoint-min-mobile !default;
 $pipe-form-breakpoint-max-mobile      : $pipe-breakpoint-max-mobile !default;
 
-$pipe-form-control-background-color   : rgba(238, 238, 238, 0.7) !default;
+$pipe-form-control-background-color   : rgba(var(--pipe-background-color), 0.7) !default;
 $pipe-form-control-border-radius      : $pipe-border-radius        !default;
 
 $pipe-form-control-margin-top         : 0.75rem                    !default;

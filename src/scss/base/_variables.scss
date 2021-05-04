@@ -1,3 +1,5 @@
+$pipe-dark-mode-class : "dark";
+
 // breakpoints
 $pipe-breakpoint-mobile     : 560px !default;
 $pipe-breakpoint-tablet     : 960px !default;
@@ -5,6 +7,7 @@ $pipe-breakpoint-max-mobile : "screen and (max-width: #{$pipe-breakpoint-mobile 
 $pipe-breakpoint-min-mobile : "screen and (min-width: #{$pipe-breakpoint-mobile})" !default;
 
 // colors
+// Paints
 $pipe-color-white                  : #fff                             !default;
 $pipe-color-lighter-gray           : #eee                             !default;
 $pipe-color-light-gray             : #ddd                             !default;
@@ -12,6 +15,23 @@ $pipe-color-gray                   : #ccc                             !default;
 $pipe-color-dark-gray              : #bbb                             !default;
 $pipe-color-darker-gray            : #aaa                             !default;
 $pipe-color-black                  : #333                             !default;
+
+// wallpaper
+$pipe-wallpaper-background-light   : $pipe-color-white                  !default;
+$pipe-wallpaper-background-dark    : $pipe-color-black                  !default;
+
+// Core
+$pipe-color-foreground-light       : $pipe-color-black                  !default;
+$pipe-color-foreground-dark        : $pipe-color-gray                   !default;
+
+$pipe-color-background-light       : #eee                             !default;
+$pipe-color-background-dark        : #444                             !default;
+
+$pipe-color-middleground-light     : #ccc                             !default;
+$pipe-color-middleground-dark      : #777                             !default;
+
+$pipe-color-form-input-light       : #fff                             !default;
+$pipe-color-form-input-dark        : #666                             !default;
 
 $pipe-color-primary                : #dc143c !default;
 $pipe-color-primary-hover          : darken($pipe-color-primary, 5%)    !default;

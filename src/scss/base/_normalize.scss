@@ -1,5 +1,3 @@
-$pipe-normalize-html-foreground              : $pipe-color-black                  !default;
-
 $pipe-normalize-color-link                   : $pipe-color-primary                !default;
 $pipe-normalize-color-link-visited           : $pipe-color-primary                !default;
 $pipe-normalize-color-link-hover             : $pipe-color-primary                !default;
@@ -9,7 +7,24 @@ $pipe-normalize-p-letter-spacing             : .3px                             
 $pipe-normalize-p-line-height                : 1.7                                !default;
 
 html {
-	color: $pipe-normalize-html-foreground;
+	--pipe-background-color: #{red($pipe-color-background-light)}, #{green($pipe-color-background-light)}, #{blue($pipe-color-background-light)};
+	--pipe-foreground-color: #{$pipe-color-foreground-light};
+	--pipe-form-input-color: #{$pipe-color-form-input-light};
+	--pipe-middleground-color: #{$pipe-color-middleground-light};
+	--pipe-wallpaper-background: #{$pipe-wallpaper-background-light};
+
+	&.#{$pipe-dark-mode-class} {
+		--pipe-background-color: #{red($pipe-color-background-dark)}, #{green($pipe-color-background-dark)}, #{blue($pipe-color-background-dark)};
+		--pipe-foreground-color: #{$pipe-color-foreground-dark};
+		--pipe-form-input-color: #{$pipe-color-form-input-dark};
+		--pipe-middleground-color: #{$pipe-color-middleground-dark};
+		--pipe-wallpaper-background: #{$pipe-wallpaper-background-dark};
+	}
+}
+
+body {
+	background: var(--pipe-wallpaper-background);
+	color: var(--pipe-foreground-color);
 }
 
 a {
@@ -39,6 +54,8 @@ input,
 button,
 textarea,
 select {
+	background-color: var(--pipe-form-input-color);
+	color: var(--pipe-foreground-color);
 	font: inherit;
 	font-size: 100%;
 }

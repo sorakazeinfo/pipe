@@ -1,4 +1,4 @@
-$pipe-divider-backgroud-color : #333 !default;
+$pipe-divider-backgroud-color : var(--pipe-foreground-color) !default;
 $pipe-divider-border-height   : 1px  !default;
 
 %pipe-divider-default {
@@ -6,7 +6,7 @@ $pipe-divider-border-height   : 1px  !default;
 	align-items: center;
 }
 
-@mixin pipe-divider-border($background-color: #333, $height: 1px) {
+@mixin pipe-divider-border($background-color, $height: 1px) {
 	background-color: $background-color;
 	content: '';
 	height: $height;
